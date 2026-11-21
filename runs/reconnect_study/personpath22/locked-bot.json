@@ -1,0 +1,279 @@
+{
+  "tracker": "botsort-motion-only",
+  "config_sha256": "37b060a66e9e21b3cc8133df35b18b3d00e3cf990465e7af462d80164606a140",
+  "budgets": {
+    "0.2": {
+      "assignment": null,
+      "margin": null,
+      "linear": "linear_2",
+      "structured": "structured_2",
+      "structured_rank": "structured_rank_2"
+    },
+    "0.4215322888803974": {
+      "assignment": "assignment_1",
+      "margin": "margin_0",
+      "linear": "linear_1",
+      "structured": "structured_0",
+      "structured_rank": "structured_rank_0"
+    }
+  },
+  "references": {
+    "assignment_0": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 640,
+      "accepted": 653,
+      "wrong": 296,
+      "unverified_accepted": 71,
+      "wrong_per_acceptance": 0.45329249617151607,
+      "correct_per_gap": 0.14109347442680775,
+      "active_source_coverage": 0.8901098901098901
+    },
+    "assignment_1": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 640,
+      "accepted": 595,
+      "wrong": 231,
+      "unverified_accepted": 53,
+      "wrong_per_acceptance": 0.38823529411764707,
+      "correct_per_gap": 0.14109347442680775,
+      "active_source_coverage": 0.8681318681318682
+    },
+    "assignment_2": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 608,
+      "accepted": 456,
+      "wrong": 151,
+      "unverified_accepted": 31,
+      "wrong_per_acceptance": 0.33114035087719296,
+      "correct_per_gap": 0.13403880070546736,
+      "active_source_coverage": 0.8131868131868132
+    },
+    "assignment_3": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 589,
+      "accepted": 303,
+      "wrong": 80,
+      "unverified_accepted": 12,
+      "wrong_per_acceptance": 0.264026402640264,
+      "correct_per_gap": 0.12985008818342153,
+      "active_source_coverage": 0.6923076923076923
+    },
+    "assignment_4": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 585,
+      "accepted": 226,
+      "wrong": 54,
+      "unverified_accepted": 6,
+      "wrong_per_acceptance": 0.23893805309734514,
+      "correct_per_gap": 0.12896825396825398,
+      "active_source_coverage": 0.6483516483516484
+    },
+    "margin_0": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 621,
+      "accepted": 645,
+      "wrong": 269,
+      "unverified_accepted": 77,
+      "wrong_per_acceptance": 0.4170542635658915,
+      "correct_per_gap": 0.13690476190476192,
+      "active_source_coverage": 0.9010989010989011
+    },
+    "margin_1": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 613,
+      "accepted": 567,
+      "wrong": 218,
+      "unverified_accepted": 64,
+      "wrong_per_acceptance": 0.3844797178130511,
+      "correct_per_gap": 0.13514109347442682,
+      "active_source_coverage": 0.8791208791208791
+    },
+    "linear_0": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 631,
+      "accepted": 662,
+      "wrong": 260,
+      "unverified_accepted": 70,
+      "wrong_per_acceptance": 0.39274924471299094,
+      "correct_per_gap": 0.13910934744268078,
+      "active_source_coverage": 0.9230769230769231
+    },
+    "linear_1": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 633,
+      "accepted": 602,
+      "wrong": 178,
+      "unverified_accepted": 41,
+      "wrong_per_acceptance": 0.2956810631229236,
+      "correct_per_gap": 0.13955026455026456,
+      "active_source_coverage": 0.9120879120879121
+    },
+    "linear_2": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 611,
+      "accepted": 439,
+      "wrong": 78,
+      "unverified_accepted": 16,
+      "wrong_per_acceptance": 0.1776765375854214,
+      "correct_per_gap": 0.13470017636684303,
+      "active_source_coverage": 0.7802197802197802
+    },
+    "linear_3": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 597,
+      "accepted": 231,
+      "wrong": 32,
+      "unverified_accepted": 4,
+      "wrong_per_acceptance": 0.13852813852813853,
+      "correct_per_gap": 0.13161375661375663,
+      "active_source_coverage": 0.5824175824175825
+    },
+    "linear_4": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 579,
+      "accepted": 86,
+      "wrong": 6,
+      "unverified_accepted": 0,
+      "wrong_per_acceptance": 0.06976744186046512,
+      "correct_per_gap": 0.12764550264550265,
+      "active_source_coverage": 0.3076923076923077
+    },
+    "structured_0": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 641,
+      "accepted": 654,
+      "wrong": 247,
+      "unverified_accepted": 62,
+      "wrong_per_acceptance": 0.37767584097859325,
+      "correct_per_gap": 0.14131393298059966,
+      "active_source_coverage": 0.9340659340659341
+    },
+    "structured_1": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 636,
+      "accepted": 592,
+      "wrong": 170,
+      "unverified_accepted": 42,
+      "wrong_per_acceptance": 0.28716216216216217,
+      "correct_per_gap": 0.1402116402116402,
+      "active_source_coverage": 0.9120879120879121
+    },
+    "structured_2": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 609,
+      "accepted": 417,
+      "wrong": 74,
+      "unverified_accepted": 15,
+      "wrong_per_acceptance": 0.1774580335731415,
+      "correct_per_gap": 0.13425925925925927,
+      "active_source_coverage": 0.7582417582417582
+    },
+    "structured_3": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 598,
+      "accepted": 243,
+      "wrong": 29,
+      "unverified_accepted": 5,
+      "wrong_per_acceptance": 0.11934156378600823,
+      "correct_per_gap": 0.1318342151675485,
+      "active_source_coverage": 0.5604395604395604
+    },
+    "structured_4": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 582,
+      "accepted": 132,
+      "wrong": 9,
+      "unverified_accepted": 0,
+      "wrong_per_acceptance": 0.06818181818181818,
+      "correct_per_gap": 0.1283068783068783,
+      "active_source_coverage": 0.43956043956043955
+    },
+    "structured_rank_0": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 639,
+      "accepted": 660,
+      "wrong": 253,
+      "unverified_accepted": 61,
+      "wrong_per_acceptance": 0.38333333333333336,
+      "correct_per_gap": 0.14087301587301587,
+      "active_source_coverage": 0.9340659340659341
+    },
+    "structured_rank_1": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 635,
+      "accepted": 595,
+      "wrong": 170,
+      "unverified_accepted": 41,
+      "wrong_per_acceptance": 0.2857142857142857,
+      "correct_per_gap": 0.13999118165784832,
+      "active_source_coverage": 0.9010989010989011
+    },
+    "structured_rank_2": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 606,
+      "accepted": 407,
+      "wrong": 67,
+      "unverified_accepted": 13,
+      "wrong_per_acceptance": 0.16461916461916462,
+      "correct_per_gap": 0.1335978835978836,
+      "active_source_coverage": 0.7582417582417582
+    },
+    "structured_rank_3": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 593,
+      "accepted": 235,
+      "wrong": 30,
+      "unverified_accepted": 5,
+      "wrong_per_acceptance": 0.1276595744680851,
+      "correct_per_gap": 0.13073192239858908,
+      "active_source_coverage": 0.5824175824175825
+    },
+    "structured_rank_4": {
+      "frames": 11556,
+      "gaps": 4536,
+      "correct": 581,
+      "accepted": 139,
+      "wrong": 11,
+      "unverified_accepted": 0,
+      "wrong_per_acceptance": 0.07913669064748201,
+      "correct_per_gap": 0.12808641975308643,
+      "active_source_coverage": 0.43956043956043955
+    }
+  },
+  "test_policies": [
+    "assignment_1",
+    "cap_only",
+    "linear_1",
+    "linear_2",
+    "margin_0",
+    "structured_0",
+    "structured_2",
+    "structured_rank_0",
+    "structured_rank_2",
+    "unconstrained_tracker"
+  ],
+  "minimum_active_coverage": 0.2,
+  "selection_rule": "For each score and empirical budget, maximize correct natural-gap recoveries then correct accepted reactivations within calibration.",
+  "calibration_sha256": "b0b13ed6724c398adc4cdb98e4ba770f284a94fa886c16717033624e372128c6"
+}

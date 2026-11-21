@@ -1,0 +1,257 @@
+{
+  "test_sha256": "783422badb468c2a8297e3b175cdffd0daf3247e88e91673ae416e4120f5a10d",
+  "selection_sha256": "a0ff3b3f496a9262de190eec4d40eb139a635ececcb8d4331e63854c194603ef",
+  "tracker": "botsort-motion-only",
+  "comparisons": {
+    "0.2": {
+      "interaction_policy": "structured_2",
+      "comparisons": {
+        "cap_only": {
+          "source_count": 74,
+          "resampling_replicas": 10000,
+          "resampling_seed": 362,
+          "interpretation": "Paired empirical source resampling interval; separate from design-based risk bounds.",
+          "effects": {
+            "gap_recovery": {
+              "delta_percentage_points": -0.6339144215530903,
+              "empirical_95_percent_interval": [
+                -1.2369517058296289,
+                0.0
+              ],
+              "valid_replicas": 10000
+            },
+            "wrong_per_acceptance": {
+              "delta_percentage_points": -32.49981832715646,
+              "empirical_95_percent_interval": [
+                -38.87276939214903,
+                -26.271259126615327
+              ],
+              "valid_replicas": 10000
+            }
+          }
+        },
+        "linear_2": {
+          "source_count": 74,
+          "resampling_replicas": 10000,
+          "resampling_seed": 362,
+          "interpretation": "Paired empirical source resampling interval; separate from design-based risk bounds.",
+          "effects": {
+            "gap_recovery": {
+              "delta_percentage_points": 0.22187004754358197,
+              "empirical_95_percent_interval": [
+                0.049912341526083016,
+                0.47794483829388296
+              ],
+              "valid_replicas": 10000
+            },
+            "wrong_per_acceptance": {
+              "delta_percentage_points": -2.1228087952173484,
+              "empirical_95_percent_interval": [
+                -4.9444565540589895,
+                0.7511612525366385
+              ],
+              "valid_replicas": 10000
+            }
+          }
+        },
+        "structured_rank_2": {
+          "source_count": 74,
+          "resampling_replicas": 10000,
+          "resampling_seed": 362,
+          "interpretation": "Paired empirical source resampling interval; separate from design-based risk bounds.",
+          "effects": {
+            "gap_recovery": {
+              "delta_percentage_points": 0.06339144215530834,
+              "empirical_95_percent_interval": [
+                -0.11778736535686628,
+                0.29782032991404717
+              ],
+              "valid_replicas": 10000
+            },
+            "wrong_per_acceptance": {
+              "delta_percentage_points": -1.4388489208633088,
+              "empirical_95_percent_interval": [
+                -3.2688960157829614,
+                0.2731886908630645
+              ],
+              "valid_replicas": 10000
+            }
+          }
+        },
+        "unconstrained_tracker": {
+          "source_count": 74,
+          "resampling_replicas": 10000,
+          "resampling_seed": 362,
+          "interpretation": "Paired empirical source resampling interval; separate from design-based risk bounds.",
+          "effects": {
+            "gap_recovery": {
+              "delta_percentage_points": -2.852614896988907,
+              "empirical_95_percent_interval": [
+                -3.7347641685528337,
+                -1.9797149981130617
+              ],
+              "valid_replicas": 10000
+            },
+            "wrong_per_acceptance": {
+              "delta_percentage_points": -37.20369237441048,
+              "empirical_95_percent_interval": [
+                -43.353434525353194,
+                -30.587542657008193
+              ],
+              "valid_replicas": 10000
+            }
+          }
+        }
+      }
+    },
+    "0.4215322888803974": {
+      "interaction_policy": "structured_0",
+      "comparisons": {
+        "assignment_1": {
+          "source_count": 74,
+          "resampling_replicas": 10000,
+          "resampling_seed": 362,
+          "interpretation": "Paired empirical source resampling interval; separate from design-based risk bounds.",
+          "effects": {
+            "gap_recovery": {
+              "delta_percentage_points": 0.0950871632329639,
+              "empirical_95_percent_interval": [
+                -0.26911200196441276,
+                0.4297648080268118
+              ],
+              "valid_replicas": 10000
+            },
+            "wrong_per_acceptance": {
+              "delta_percentage_points": -0.47831632653060896,
+              "empirical_95_percent_interval": [
+                -5.868030871873356,
+                4.83041208800141
+              ],
+              "valid_replicas": 10000
+            }
+          }
+        },
+        "cap_only": {
+          "source_count": 74,
+          "resampling_replicas": 10000,
+          "resampling_seed": 362,
+          "interpretation": "Paired empirical source resampling interval; separate from design-based risk bounds.",
+          "effects": {
+            "gap_recovery": {
+              "delta_percentage_points": -0.25356576862123614,
+              "empirical_95_percent_interval": [
+                -0.6620002166243734,
+                0.13249486181122988
+              ],
+              "valid_replicas": 10000
+            },
+            "wrong_per_acceptance": {
+              "delta_percentage_points": -11.410082972582975,
+              "empirical_95_percent_interval": [
+                -15.932283851880474,
+                -7.032442885534232
+              ],
+              "valid_replicas": 10000
+            }
+          }
+        },
+        "linear_1": {
+          "source_count": 74,
+          "resampling_replicas": 10000,
+          "resampling_seed": 362,
+          "interpretation": "Paired empirical source resampling interval; separate from design-based risk bounds.",
+          "effects": {
+            "gap_recovery": {
+              "delta_percentage_points": 0.22187004754358197,
+              "empirical_95_percent_interval": [
+                -0.23303378749812537,
+                0.708460205288789
+              ],
+              "valid_replicas": 10000
+            },
+            "wrong_per_acceptance": {
+              "delta_percentage_points": 12.087868837711408,
+              "empirical_95_percent_interval": [
+                8.426296328402552,
+                15.85061926216971
+              ],
+              "valid_replicas": 10000
+            }
+          }
+        },
+        "margin_0": {
+          "source_count": 74,
+          "resampling_replicas": 10000,
+          "resampling_seed": 362,
+          "interpretation": "Paired empirical source resampling interval; separate from design-based risk bounds.",
+          "effects": {
+            "gap_recovery": {
+              "delta_percentage_points": -0.03169572107765417,
+              "empirical_95_percent_interval": [
+                -0.31884404687608314,
+                0.240867726041995
+              ],
+              "valid_replicas": 10000
+            },
+            "wrong_per_acceptance": {
+              "delta_percentage_points": -3.743169939816282,
+              "empirical_95_percent_interval": [
+                -7.269856057815074,
+                -0.2516737093982304
+              ],
+              "valid_replicas": 10000
+            }
+          }
+        },
+        "structured_rank_0": {
+          "source_count": 74,
+          "resampling_replicas": 10000,
+          "resampling_seed": 362,
+          "interpretation": "Paired empirical source resampling interval; separate from design-based risk bounds.",
+          "effects": {
+            "gap_recovery": {
+              "delta_percentage_points": 0.06339144215530834,
+              "empirical_95_percent_interval": [
+                0.0,
+                0.16009222451247115
+              ],
+              "valid_replicas": 10000
+            },
+            "wrong_per_acceptance": {
+              "delta_percentage_points": -0.5009920634920617,
+              "empirical_95_percent_interval": [
+                -1.5545464840514385,
+                0.5381745718225045
+              ],
+              "valid_replicas": 10000
+            }
+          }
+        },
+        "unconstrained_tracker": {
+          "source_count": 74,
+          "resampling_replicas": 10000,
+          "resampling_seed": 362,
+          "interpretation": "Paired empirical source resampling interval; separate from design-based risk bounds.",
+          "effects": {
+            "gap_recovery": {
+              "delta_percentage_points": -2.472266244057053,
+              "empirical_95_percent_interval": [
+                -3.4128769512828,
+                -1.62519244617715
+              ],
+              "valid_replicas": 10000
+            },
+            "wrong_per_acceptance": {
+              "delta_percentage_points": -16.113957019836995,
+              "empirical_95_percent_interval": [
+                -22.845293214285086,
+                -9.62736517574043
+              ],
+              "valid_replicas": 10000
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "BoT-SORT": {
+    "url": "https://github.com/NirAharon/BoT-SORT.git",
+    "commit": "251985436d6712aaf682aaaf5f71edb4987224bd"
+  },
+  "ByteTrack": {
+    "url": "https://github.com/FoundationVision/ByteTrack.git",
+    "commit": "d1bf0191adff59bc8fcfeaa0b33d3d1642552a99"
+  },
+  "CAMELTrack": {
+    "url": "https://github.com/TrackingLaboratory/CAMELTrack.git",
+    "commit": "bc1c261075b0beacfe71c2896453be83643153c8"
+  },
+  "HyperMOT": {
+    "url": "https://github.com/SkyeSong38/HyperMOT.git",
+    "commit": "4819e3fb64c8f075fe76d4f15901393e44bb76a7"
+  },
+  "OC_SORT": {
+    "url": "https://github.com/noahcao/OC_SORT.git",
+    "commit": "8462e7e729a93ccd3bd995c0a79a890336cb3a0b"
+  },
+  "TrackTrack": {
+    "url": "https://github.com/kamkyu94/TrackTrack.git",
+    "commit": "ee7f1c5fcbdcac48ed8bfab38d52c0006bf304da"
+  },
+  "YOLOX": {
+    "url": "https://github.com/Megvii-BaseDetection/YOLOX.git",
+    "commit": "6ddff4824372906469a7fae2dc3206c7aa4bbaee"
+  }
+}

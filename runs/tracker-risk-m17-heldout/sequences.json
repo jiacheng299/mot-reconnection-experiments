@@ -1,0 +1,274 @@
+{
+  "MOT17-11-FRCNN": {
+    "cache": {
+      "evaluation_domain": "MOT17",
+      "sequence": "MOT17-11-FRCNN",
+      "frames": 900,
+      "count": 44912,
+      "frame_content_sha256": "f2ea279ee889ee1c173be227c5bee726ab1f5def510b1d81d270c5a317fa0952",
+      "detections_sha256": "d82e0f02012e4757647c8dbb67c3d5a260cf6bcf3b336c2cb7dd46b88ab5c305",
+      "detector": "D-MOT YOLOX-X",
+      "weights_sha256": "59b7ac51997e5a68de7c3e8f5e52ac785b7ac22a88c5139cd389cdd3b74aa469",
+      "min_score": 0.01,
+      "nms_iou": 0.65,
+      "input_size_hw": [
+        640,
+        640
+      ],
+      "batch_size": 4,
+      "precision": "float16"
+    },
+    "frames": 900,
+    "options": {
+      "BoT-SORT": {
+        "fast_reid_config": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\vendor\\BoT-SORT\\fast_reid\\configs\\Market1501\\sbs_S50.yml",
+        "fast_reid_weights": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\data\\p2\\market_sbs_S50.pth",
+        "device": "cuda",
+        "with_reid": true,
+        "track_high_thresh": 0.6,
+        "track_low_thresh": 0.1,
+        "new_track_thresh": 0.7,
+        "track_buffer": 30,
+        "proximity_thresh": 0.5,
+        "appearance_thresh": 0.25,
+        "match_thresh": 0.8,
+        "mot20": false,
+        "cmc_method": "sparseOptFlow",
+        "name": "MOT17-11-FRCNN",
+        "ablation": false
+      },
+      "RecentRecovery": {
+        "fast_reid_config": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\vendor\\BoT-SORT\\fast_reid\\configs\\Market1501\\sbs_S50.yml",
+        "fast_reid_weights": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\data\\p2\\market_sbs_S50.pth",
+        "device": "cuda",
+        "with_reid": true,
+        "track_high_thresh": 0.6,
+        "track_low_thresh": 0.1,
+        "new_track_thresh": 0.7,
+        "track_buffer": 30,
+        "proximity_thresh": 0.5,
+        "appearance_thresh": 0.25,
+        "match_thresh": 0.8,
+        "mot20": false,
+        "cmc_method": "sparseOptFlow",
+        "name": "MOT17-11-FRCNN",
+        "ablation": false
+      },
+      "RecoveryOnly": {
+        "fast_reid_config": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\vendor\\BoT-SORT\\fast_reid\\configs\\Market1501\\sbs_S50.yml",
+        "fast_reid_weights": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\data\\p2\\market_sbs_S50.pth",
+        "device": "cuda",
+        "with_reid": true,
+        "track_high_thresh": 0.6,
+        "track_low_thresh": 0.1,
+        "new_track_thresh": 0.7,
+        "track_buffer": 30,
+        "proximity_thresh": 0.5,
+        "appearance_thresh": 0.25,
+        "match_thresh": 0.8,
+        "mot20": false,
+        "cmc_method": "sparseOptFlow",
+        "name": "MOT17-11-FRCNN",
+        "ablation": false
+      },
+      "RecoveryRisk-0.37": {
+        "fast_reid_config": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\vendor\\BoT-SORT\\fast_reid\\configs\\Market1501\\sbs_S50.yml",
+        "fast_reid_weights": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\data\\p2\\market_sbs_S50.pth",
+        "device": "cuda",
+        "with_reid": true,
+        "track_high_thresh": 0.6,
+        "track_low_thresh": 0.1,
+        "new_track_thresh": 0.7,
+        "track_buffer": 30,
+        "proximity_thresh": 0.5,
+        "appearance_thresh": 0.25,
+        "match_thresh": 0.8,
+        "mot20": false,
+        "cmc_method": "sparseOptFlow",
+        "name": "MOT17-11-FRCNN",
+        "ablation": false
+      }
+    },
+    "tracks": {
+      "BoT-SORT": {
+        "rows": 7366,
+        "sha256": "bca3fe7a75620d50f796549c47e909ac29c6926d8816b710ad40f4c74c72c3a7",
+        "high_adjusted_edges": 0,
+        "high_adjusted_frames": 0
+      },
+      "RecentRecovery": {
+        "rows": 7457,
+        "sha256": "64e841d7e636f67d5ebcf94b8a37f5b2448cd5bdcdbe9fa048126679cc0c1971",
+        "high_adjusted_edges": 0,
+        "high_adjusted_frames": 0,
+        "low_adjusted_edges": 1102,
+        "low_adjusted_frames": 501,
+        "low_recovered_lost_tracks": 18
+      },
+      "RecoveryOnly": {
+        "rows": 7453,
+        "sha256": "f93f1cca3784ba4bf00204a8ac5d34d25fe91582e52438df5f43f6071b21dc2f",
+        "high_adjusted_edges": 0,
+        "high_adjusted_frames": 0,
+        "low_adjusted_edges": 296,
+        "low_adjusted_frames": 149,
+        "low_recovered_lost_tracks": 20
+      },
+      "RecoveryRisk-0.37": {
+        "rows": 7542,
+        "sha256": "1c87bd2f1e4d0642cf05c4fce1e2fa60f460f110c38e9a78f74abef2fb228d88",
+        "high_adjusted_edges": 0,
+        "high_adjusted_frames": 0,
+        "low_adjusted_edges": 300,
+        "low_adjusted_frames": 155,
+        "low_recovered_lost_tracks": 52
+      }
+    },
+    "baseline_audit": {
+      "first_stage_events": 6274,
+      "correct_high_match": 5985,
+      "no_labelled_raw_box": 82,
+      "admissible_high_missed": 27,
+      "no_labelled_high_box": 180,
+      "low_only_identity_retained": 164,
+      "admissible_high_wrong_assignment": 18,
+      "admissible_high_missed_at_output": 13
+    }
+  },
+  "MOT17-13-FRCNN": {
+    "cache": {
+      "evaluation_domain": "MOT17",
+      "sequence": "MOT17-13-FRCNN",
+      "frames": 750,
+      "count": 46333,
+      "frame_content_sha256": "2bd793e01f56d65c0a10915a1914f9cc49a54194a78a48be23a5934ebb236b8c",
+      "detections_sha256": "f258dc7adde9e3dcc1b9b98f0da75ab5e0fadf081c7c4f6b446a05c6dd0d4525",
+      "detector": "D-MOT YOLOX-X",
+      "weights_sha256": "59b7ac51997e5a68de7c3e8f5e52ac785b7ac22a88c5139cd389cdd3b74aa469",
+      "min_score": 0.01,
+      "nms_iou": 0.65,
+      "input_size_hw": [
+        640,
+        640
+      ],
+      "batch_size": 4,
+      "precision": "float16"
+    },
+    "frames": 750,
+    "options": {
+      "BoT-SORT": {
+        "fast_reid_config": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\vendor\\BoT-SORT\\fast_reid\\configs\\Market1501\\sbs_S50.yml",
+        "fast_reid_weights": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\data\\p2\\market_sbs_S50.pth",
+        "device": "cuda",
+        "with_reid": true,
+        "track_high_thresh": 0.6,
+        "track_low_thresh": 0.1,
+        "new_track_thresh": 0.7,
+        "track_buffer": 30,
+        "proximity_thresh": 0.5,
+        "appearance_thresh": 0.25,
+        "match_thresh": 0.8,
+        "mot20": false,
+        "cmc_method": "sparseOptFlow",
+        "name": "MOT17-13-FRCNN",
+        "ablation": false
+      },
+      "RecentRecovery": {
+        "fast_reid_config": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\vendor\\BoT-SORT\\fast_reid\\configs\\Market1501\\sbs_S50.yml",
+        "fast_reid_weights": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\data\\p2\\market_sbs_S50.pth",
+        "device": "cuda",
+        "with_reid": true,
+        "track_high_thresh": 0.6,
+        "track_low_thresh": 0.1,
+        "new_track_thresh": 0.7,
+        "track_buffer": 30,
+        "proximity_thresh": 0.5,
+        "appearance_thresh": 0.25,
+        "match_thresh": 0.8,
+        "mot20": false,
+        "cmc_method": "sparseOptFlow",
+        "name": "MOT17-13-FRCNN",
+        "ablation": false
+      },
+      "RecoveryOnly": {
+        "fast_reid_config": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\vendor\\BoT-SORT\\fast_reid\\configs\\Market1501\\sbs_S50.yml",
+        "fast_reid_weights": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\data\\p2\\market_sbs_S50.pth",
+        "device": "cuda",
+        "with_reid": true,
+        "track_high_thresh": 0.6,
+        "track_low_thresh": 0.1,
+        "new_track_thresh": 0.7,
+        "track_buffer": 30,
+        "proximity_thresh": 0.5,
+        "appearance_thresh": 0.25,
+        "match_thresh": 0.8,
+        "mot20": false,
+        "cmc_method": "sparseOptFlow",
+        "name": "MOT17-13-FRCNN",
+        "ablation": false
+      },
+      "RecoveryRisk-0.37": {
+        "fast_reid_config": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\vendor\\BoT-SORT\\fast_reid\\configs\\Market1501\\sbs_S50.yml",
+        "fast_reid_weights": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\data\\p2\\market_sbs_S50.pth",
+        "device": "cuda",
+        "with_reid": true,
+        "track_high_thresh": 0.6,
+        "track_low_thresh": 0.1,
+        "new_track_thresh": 0.7,
+        "track_buffer": 30,
+        "proximity_thresh": 0.5,
+        "appearance_thresh": 0.25,
+        "match_thresh": 0.8,
+        "mot20": false,
+        "cmc_method": "sparseOptFlow",
+        "name": "MOT17-13-FRCNN",
+        "ablation": false
+      }
+    },
+    "tracks": {
+      "BoT-SORT": {
+        "rows": 6515,
+        "sha256": "4743fd8399035c45f9b14877bdd4eb8dff3333bb2fc18dcbaf363f8e0e58c0ad",
+        "high_adjusted_edges": 0,
+        "high_adjusted_frames": 0
+      },
+      "RecentRecovery": {
+        "rows": 6767,
+        "sha256": "218d8641ccf47872adf54d98a475db74e8763953218313cf0f431257cfb01047",
+        "high_adjusted_edges": 0,
+        "high_adjusted_frames": 0,
+        "low_adjusted_edges": 2473,
+        "low_adjusted_frames": 583,
+        "low_recovered_lost_tracks": 38
+      },
+      "RecoveryOnly": {
+        "rows": 6697,
+        "sha256": "ef20941e3be672a863ea5e9b9855d58a6489b48be6b484799c027c42b4a2fa5e",
+        "high_adjusted_edges": 0,
+        "high_adjusted_frames": 0,
+        "low_adjusted_edges": 529,
+        "low_adjusted_frames": 188,
+        "low_recovered_lost_tracks": 46
+      },
+      "RecoveryRisk-0.37": {
+        "rows": 6902,
+        "sha256": "e0b4721d422547f43141f9f9660470d125f012ca13ad611add00d9cd441d13ad",
+        "high_adjusted_edges": 0,
+        "high_adjusted_frames": 0,
+        "low_adjusted_edges": 652,
+        "low_adjusted_frames": 213,
+        "low_recovered_lost_tracks": 112
+      }
+    },
+    "baseline_audit": {
+      "first_stage_events": 5164,
+      "correct_high_match": 4189,
+      "admissible_high_missed": 45,
+      "admissible_high_wrong_assignment": 34,
+      "no_labelled_high_box": 672,
+      "low_only_identity_retained": 613,
+      "no_labelled_raw_box": 258,
+      "admissible_high_missed_at_output": 33
+    }
+  }
+}

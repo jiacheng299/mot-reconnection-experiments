@@ -1,0 +1,1042 @@
+{
+  "tracker": "bytetrack",
+  "split": "test",
+  "config_sha256": "df1374d05870a03699fc37575b5cbb5fec6b7c70046d62c41419b9cef2eb7699",
+  "benchmark_manifest_sha256": "0dfdd97d7d88a9d0219a026bd39e03b4823f0e2d398cb8c341f5061f9b1d6c1b",
+  "transfer": true,
+  "acceptance_cap": 12,
+  "policies": {
+    "assignment_1": [
+      {
+        "name": "b1e0c01d-dd9e6e2f",
+        "source_id": "b1e0c01d-dd9e6e2f",
+        "frames": 202,
+        "split": "test",
+        "gaps": 27,
+        "correct": 0,
+        "accepted": 3,
+        "wrong": 1,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 26,
+          "switched": 1
+        },
+        "track_rows": 278,
+        "tracker_seconds": 0.11634159999994154
+      },
+      {
+        "name": "b206a78b-99f405ab",
+        "source_id": "b206a78b-99f405ab",
+        "frames": 202,
+        "split": "test",
+        "gaps": 14,
+        "correct": 0,
+        "accepted": 1,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 14
+        },
+        "track_rows": 24,
+        "tracker_seconds": 0.022266200000558456
+      },
+      {
+        "name": "b232c7c9-d251d9ee",
+        "source_id": "b232c7c9-d251d9ee",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 5,
+        "accepted": 3,
+        "wrong": 2,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 20,
+          "missed": 3,
+          "switched": 1,
+          "correct": 5
+        },
+        "track_rows": 289,
+        "tracker_seconds": 0.05874519999997574
+      },
+      {
+        "name": "b242f6b2-eaa39345",
+        "source_id": "b242f6b2-eaa39345",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 28,
+          "switched": 1
+        },
+        "track_rows": 77,
+        "tracker_seconds": 0.03360990000055608
+      },
+      {
+        "name": "b255cd6c-2f889586",
+        "source_id": "b255cd6c-2f889586",
+        "frames": 203,
+        "split": "test",
+        "gaps": 22,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 22
+        },
+        "track_rows": 7,
+        "tracker_seconds": 0.025938600000699807
+      }
+    ],
+    "cap_only": [
+      {
+        "name": "b1e0c01d-dd9e6e2f",
+        "source_id": "b1e0c01d-dd9e6e2f",
+        "frames": 202,
+        "split": "test",
+        "gaps": 27,
+        "correct": 0,
+        "accepted": 7,
+        "wrong": 7,
+        "unverified_accepted": 0,
+        "ignored_accepted": 5,
+        "recovery_outcomes": {
+          "no_anchor": 26,
+          "switched": 1
+        },
+        "track_rows": 285,
+        "tracker_seconds": 0.09141599999929895
+      },
+      {
+        "name": "b206a78b-99f405ab",
+        "source_id": "b206a78b-99f405ab",
+        "frames": 202,
+        "split": "test",
+        "gaps": 14,
+        "correct": 0,
+        "accepted": 1,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 14
+        },
+        "track_rows": 24,
+        "tracker_seconds": 0.015974699999787845
+      },
+      {
+        "name": "b232c7c9-d251d9ee",
+        "source_id": "b232c7c9-d251d9ee",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 5,
+        "accepted": 5,
+        "wrong": 4,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 20,
+          "missed": 3,
+          "switched": 1,
+          "correct": 5
+        },
+        "track_rows": 293,
+        "tracker_seconds": 0.053710099999989325
+      },
+      {
+        "name": "b242f6b2-eaa39345",
+        "source_id": "b242f6b2-eaa39345",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 28,
+          "switched": 1
+        },
+        "track_rows": 77,
+        "tracker_seconds": 0.03624709999985498
+      },
+      {
+        "name": "b255cd6c-2f889586",
+        "source_id": "b255cd6c-2f889586",
+        "frames": 203,
+        "split": "test",
+        "gaps": 22,
+        "correct": 0,
+        "accepted": 2,
+        "wrong": 1,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 22
+        },
+        "track_rows": 8,
+        "tracker_seconds": 0.01806540000052337
+      }
+    ],
+    "linear_0": [
+      {
+        "name": "b1e0c01d-dd9e6e2f",
+        "source_id": "b1e0c01d-dd9e6e2f",
+        "frames": 202,
+        "split": "test",
+        "gaps": 27,
+        "correct": 0,
+        "accepted": 7,
+        "wrong": 7,
+        "unverified_accepted": 0,
+        "ignored_accepted": 5,
+        "recovery_outcomes": {
+          "no_anchor": 26,
+          "switched": 1
+        },
+        "track_rows": 285,
+        "tracker_seconds": 0.07640330000049289
+      },
+      {
+        "name": "b206a78b-99f405ab",
+        "source_id": "b206a78b-99f405ab",
+        "frames": 202,
+        "split": "test",
+        "gaps": 14,
+        "correct": 0,
+        "accepted": 1,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 14
+        },
+        "track_rows": 24,
+        "tracker_seconds": 0.015186099999482394
+      },
+      {
+        "name": "b232c7c9-d251d9ee",
+        "source_id": "b232c7c9-d251d9ee",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 5,
+        "accepted": 5,
+        "wrong": 4,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 20,
+          "missed": 3,
+          "switched": 1,
+          "correct": 5
+        },
+        "track_rows": 293,
+        "tracker_seconds": 0.051808100000016566
+      },
+      {
+        "name": "b242f6b2-eaa39345",
+        "source_id": "b242f6b2-eaa39345",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 28,
+          "switched": 1
+        },
+        "track_rows": 77,
+        "tracker_seconds": 0.025898800000504707
+      },
+      {
+        "name": "b255cd6c-2f889586",
+        "source_id": "b255cd6c-2f889586",
+        "frames": 203,
+        "split": "test",
+        "gaps": 22,
+        "correct": 0,
+        "accepted": 2,
+        "wrong": 1,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 22
+        },
+        "track_rows": 8,
+        "tracker_seconds": 0.023738199999570497
+      }
+    ],
+    "linear_2": [
+      {
+        "name": "b1e0c01d-dd9e6e2f",
+        "source_id": "b1e0c01d-dd9e6e2f",
+        "frames": 202,
+        "split": "test",
+        "gaps": 27,
+        "correct": 0,
+        "accepted": 4,
+        "wrong": 1,
+        "unverified_accepted": 0,
+        "ignored_accepted": 2,
+        "recovery_outcomes": {
+          "no_anchor": 26,
+          "switched": 1
+        },
+        "track_rows": 283,
+        "tracker_seconds": 0.08872040000005654
+      },
+      {
+        "name": "b206a78b-99f405ab",
+        "source_id": "b206a78b-99f405ab",
+        "frames": 202,
+        "split": "test",
+        "gaps": 14,
+        "correct": 0,
+        "accepted": 1,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 14
+        },
+        "track_rows": 24,
+        "tracker_seconds": 0.017010300000038114
+      },
+      {
+        "name": "b232c7c9-d251d9ee",
+        "source_id": "b232c7c9-d251d9ee",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 5,
+        "accepted": 4,
+        "wrong": 3,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 20,
+          "missed": 3,
+          "switched": 1,
+          "correct": 5
+        },
+        "track_rows": 290,
+        "tracker_seconds": 0.057030500000109896
+      },
+      {
+        "name": "b242f6b2-eaa39345",
+        "source_id": "b242f6b2-eaa39345",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 28,
+          "switched": 1
+        },
+        "track_rows": 77,
+        "tracker_seconds": 0.03581639999993058
+      },
+      {
+        "name": "b255cd6c-2f889586",
+        "source_id": "b255cd6c-2f889586",
+        "frames": 203,
+        "split": "test",
+        "gaps": 22,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 22
+        },
+        "track_rows": 7,
+        "tracker_seconds": 0.028676500000074157
+      }
+    ],
+    "margin_1": [
+      {
+        "name": "b1e0c01d-dd9e6e2f",
+        "source_id": "b1e0c01d-dd9e6e2f",
+        "frames": 202,
+        "split": "test",
+        "gaps": 27,
+        "correct": 0,
+        "accepted": 7,
+        "wrong": 7,
+        "unverified_accepted": 0,
+        "ignored_accepted": 5,
+        "recovery_outcomes": {
+          "no_anchor": 26,
+          "switched": 1
+        },
+        "track_rows": 285,
+        "tracker_seconds": 0.07338009999966744
+      },
+      {
+        "name": "b206a78b-99f405ab",
+        "source_id": "b206a78b-99f405ab",
+        "frames": 202,
+        "split": "test",
+        "gaps": 14,
+        "correct": 0,
+        "accepted": 1,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 14
+        },
+        "track_rows": 24,
+        "tracker_seconds": 0.014236999999411637
+      },
+      {
+        "name": "b232c7c9-d251d9ee",
+        "source_id": "b232c7c9-d251d9ee",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 5,
+        "accepted": 5,
+        "wrong": 4,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 20,
+          "missed": 4,
+          "correct": 5
+        },
+        "track_rows": 290,
+        "tracker_seconds": 0.05030780000015511
+      },
+      {
+        "name": "b242f6b2-eaa39345",
+        "source_id": "b242f6b2-eaa39345",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 28,
+          "switched": 1
+        },
+        "track_rows": 77,
+        "tracker_seconds": 0.032187599999815575
+      },
+      {
+        "name": "b255cd6c-2f889586",
+        "source_id": "b255cd6c-2f889586",
+        "frames": 203,
+        "split": "test",
+        "gaps": 22,
+        "correct": 0,
+        "accepted": 2,
+        "wrong": 1,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 22
+        },
+        "track_rows": 8,
+        "tracker_seconds": 0.0226634999999078
+      }
+    ],
+    "structured_1": [
+      {
+        "name": "b1e0c01d-dd9e6e2f",
+        "source_id": "b1e0c01d-dd9e6e2f",
+        "frames": 202,
+        "split": "test",
+        "gaps": 27,
+        "correct": 0,
+        "accepted": 10,
+        "wrong": 7,
+        "unverified_accepted": 1,
+        "ignored_accepted": 2,
+        "recovery_outcomes": {
+          "no_anchor": 26,
+          "switched": 1
+        },
+        "track_rows": 288,
+        "tracker_seconds": 0.06949809999969148
+      },
+      {
+        "name": "b206a78b-99f405ab",
+        "source_id": "b206a78b-99f405ab",
+        "frames": 202,
+        "split": "test",
+        "gaps": 14,
+        "correct": 0,
+        "accepted": 1,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 14
+        },
+        "track_rows": 24,
+        "tracker_seconds": 0.014171400000122958
+      },
+      {
+        "name": "b232c7c9-d251d9ee",
+        "source_id": "b232c7c9-d251d9ee",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 5,
+        "accepted": 4,
+        "wrong": 3,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 20,
+          "missed": 3,
+          "switched": 1,
+          "correct": 5
+        },
+        "track_rows": 291,
+        "tracker_seconds": 0.06283649999932095
+      },
+      {
+        "name": "b242f6b2-eaa39345",
+        "source_id": "b242f6b2-eaa39345",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 28,
+          "switched": 1
+        },
+        "track_rows": 77,
+        "tracker_seconds": 0.03707800000029238
+      },
+      {
+        "name": "b255cd6c-2f889586",
+        "source_id": "b255cd6c-2f889586",
+        "frames": 203,
+        "split": "test",
+        "gaps": 22,
+        "correct": 0,
+        "accepted": 2,
+        "wrong": 1,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 22
+        },
+        "track_rows": 8,
+        "tracker_seconds": 0.017364599999382335
+      }
+    ],
+    "structured_2": [
+      {
+        "name": "b1e0c01d-dd9e6e2f",
+        "source_id": "b1e0c01d-dd9e6e2f",
+        "frames": 202,
+        "split": "test",
+        "gaps": 27,
+        "correct": 0,
+        "accepted": 3,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 2,
+        "recovery_outcomes": {
+          "no_anchor": 26,
+          "switched": 1
+        },
+        "track_rows": 281,
+        "tracker_seconds": 0.08789569999953528
+      },
+      {
+        "name": "b206a78b-99f405ab",
+        "source_id": "b206a78b-99f405ab",
+        "frames": 202,
+        "split": "test",
+        "gaps": 14,
+        "correct": 0,
+        "accepted": 1,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 14
+        },
+        "track_rows": 24,
+        "tracker_seconds": 0.014024999999492138
+      },
+      {
+        "name": "b232c7c9-d251d9ee",
+        "source_id": "b232c7c9-d251d9ee",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 5,
+        "accepted": 4,
+        "wrong": 3,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 20,
+          "missed": 3,
+          "switched": 1,
+          "correct": 5
+        },
+        "track_rows": 290,
+        "tracker_seconds": 0.060433999999986554
+      },
+      {
+        "name": "b242f6b2-eaa39345",
+        "source_id": "b242f6b2-eaa39345",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 28,
+          "switched": 1
+        },
+        "track_rows": 77,
+        "tracker_seconds": 0.02929039999980887
+      },
+      {
+        "name": "b255cd6c-2f889586",
+        "source_id": "b255cd6c-2f889586",
+        "frames": 203,
+        "split": "test",
+        "gaps": 22,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 22
+        },
+        "track_rows": 7,
+        "tracker_seconds": 0.01660730000003241
+      }
+    ],
+    "structured_rank_0": [
+      {
+        "name": "b1e0c01d-dd9e6e2f",
+        "source_id": "b1e0c01d-dd9e6e2f",
+        "frames": 202,
+        "split": "test",
+        "gaps": 27,
+        "correct": 0,
+        "accepted": 7,
+        "wrong": 7,
+        "unverified_accepted": 0,
+        "ignored_accepted": 5,
+        "recovery_outcomes": {
+          "no_anchor": 26,
+          "switched": 1
+        },
+        "track_rows": 285,
+        "tracker_seconds": 0.06810889999997016
+      },
+      {
+        "name": "b206a78b-99f405ab",
+        "source_id": "b206a78b-99f405ab",
+        "frames": 202,
+        "split": "test",
+        "gaps": 14,
+        "correct": 0,
+        "accepted": 1,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 14
+        },
+        "track_rows": 24,
+        "tracker_seconds": 0.013213600000199222
+      },
+      {
+        "name": "b232c7c9-d251d9ee",
+        "source_id": "b232c7c9-d251d9ee",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 5,
+        "accepted": 5,
+        "wrong": 4,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 20,
+          "missed": 3,
+          "switched": 1,
+          "correct": 5
+        },
+        "track_rows": 293,
+        "tracker_seconds": 0.0550253999999768
+      },
+      {
+        "name": "b242f6b2-eaa39345",
+        "source_id": "b242f6b2-eaa39345",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 28,
+          "switched": 1
+        },
+        "track_rows": 77,
+        "tracker_seconds": 0.03661319999991974
+      },
+      {
+        "name": "b255cd6c-2f889586",
+        "source_id": "b255cd6c-2f889586",
+        "frames": 203,
+        "split": "test",
+        "gaps": 22,
+        "correct": 0,
+        "accepted": 2,
+        "wrong": 1,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 22
+        },
+        "track_rows": 8,
+        "tracker_seconds": 0.020800400000553054
+      }
+    ],
+    "structured_rank_2": [
+      {
+        "name": "b1e0c01d-dd9e6e2f",
+        "source_id": "b1e0c01d-dd9e6e2f",
+        "frames": 202,
+        "split": "test",
+        "gaps": 27,
+        "correct": 0,
+        "accepted": 3,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 2,
+        "recovery_outcomes": {
+          "no_anchor": 26,
+          "switched": 1
+        },
+        "track_rows": 281,
+        "tracker_seconds": 0.07001630000013392
+      },
+      {
+        "name": "b206a78b-99f405ab",
+        "source_id": "b206a78b-99f405ab",
+        "frames": 202,
+        "split": "test",
+        "gaps": 14,
+        "correct": 0,
+        "accepted": 1,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 14
+        },
+        "track_rows": 24,
+        "tracker_seconds": 0.013337800000044808
+      },
+      {
+        "name": "b232c7c9-d251d9ee",
+        "source_id": "b232c7c9-d251d9ee",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 5,
+        "accepted": 4,
+        "wrong": 3,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 20,
+          "missed": 3,
+          "switched": 1,
+          "correct": 5
+        },
+        "track_rows": 290,
+        "tracker_seconds": 0.06163670000023558
+      },
+      {
+        "name": "b242f6b2-eaa39345",
+        "source_id": "b242f6b2-eaa39345",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 28,
+          "switched": 1
+        },
+        "track_rows": 77,
+        "tracker_seconds": 0.028525200000331097
+      },
+      {
+        "name": "b255cd6c-2f889586",
+        "source_id": "b255cd6c-2f889586",
+        "frames": 203,
+        "split": "test",
+        "gaps": 22,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 22
+        },
+        "track_rows": 7,
+        "tracker_seconds": 0.016804599999886705
+      }
+    ],
+    "unconstrained_tracker": [
+      {
+        "name": "b1e0c01d-dd9e6e2f",
+        "source_id": "b1e0c01d-dd9e6e2f",
+        "frames": 202,
+        "split": "test",
+        "gaps": 27,
+        "correct": 0,
+        "accepted": 17,
+        "wrong": 11,
+        "unverified_accepted": 0,
+        "ignored_accepted": 5,
+        "recovery_outcomes": {
+          "no_anchor": 26,
+          "switched": 1
+        },
+        "track_rows": 301,
+        "tracker_seconds": 0.07594319999952859
+      },
+      {
+        "name": "b206a78b-99f405ab",
+        "source_id": "b206a78b-99f405ab",
+        "frames": 202,
+        "split": "test",
+        "gaps": 14,
+        "correct": 0,
+        "accepted": 1,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 14
+        },
+        "track_rows": 24,
+        "tracker_seconds": 0.013340600000447012
+      },
+      {
+        "name": "b232c7c9-d251d9ee",
+        "source_id": "b232c7c9-d251d9ee",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 5,
+        "accepted": 5,
+        "wrong": 4,
+        "unverified_accepted": 0,
+        "ignored_accepted": 1,
+        "recovery_outcomes": {
+          "no_anchor": 20,
+          "missed": 3,
+          "switched": 1,
+          "correct": 5
+        },
+        "track_rows": 293,
+        "tracker_seconds": 0.055948199999875214
+      },
+      {
+        "name": "b242f6b2-eaa39345",
+        "source_id": "b242f6b2-eaa39345",
+        "frames": 202,
+        "split": "test",
+        "gaps": 29,
+        "correct": 0,
+        "accepted": 0,
+        "wrong": 0,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 28,
+          "switched": 1
+        },
+        "track_rows": 77,
+        "tracker_seconds": 0.031557100000100036
+      },
+      {
+        "name": "b255cd6c-2f889586",
+        "source_id": "b255cd6c-2f889586",
+        "frames": 203,
+        "split": "test",
+        "gaps": 22,
+        "correct": 0,
+        "accepted": 2,
+        "wrong": 1,
+        "unverified_accepted": 0,
+        "ignored_accepted": 0,
+        "recovery_outcomes": {
+          "no_anchor": 22
+        },
+        "track_rows": 8,
+        "tracker_seconds": 0.01902209999934712
+      }
+    ]
+  },
+  "aggregate": {
+    "assignment_1": {
+      "frames": 1011,
+      "gaps": 121,
+      "correct": 5,
+      "accepted": 7,
+      "wrong": 3,
+      "unverified_accepted": 0,
+      "ignored_accepted": 2,
+      "wrong_per_acceptance": 0.42857142857142855,
+      "correct_per_gap": 0.04132231404958678
+    },
+    "cap_only": {
+      "frames": 1011,
+      "gaps": 121,
+      "correct": 5,
+      "accepted": 15,
+      "wrong": 12,
+      "unverified_accepted": 0,
+      "ignored_accepted": 6,
+      "wrong_per_acceptance": 0.8,
+      "correct_per_gap": 0.04132231404958678
+    },
+    "linear_0": {
+      "frames": 1011,
+      "gaps": 121,
+      "correct": 5,
+      "accepted": 15,
+      "wrong": 12,
+      "unverified_accepted": 0,
+      "ignored_accepted": 6,
+      "wrong_per_acceptance": 0.8,
+      "correct_per_gap": 0.04132231404958678
+    },
+    "linear_2": {
+      "frames": 1011,
+      "gaps": 121,
+      "correct": 5,
+      "accepted": 9,
+      "wrong": 4,
+      "unverified_accepted": 0,
+      "ignored_accepted": 3,
+      "wrong_per_acceptance": 0.4444444444444444,
+      "correct_per_gap": 0.04132231404958678
+    },
+    "margin_1": {
+      "frames": 1011,
+      "gaps": 121,
+      "correct": 5,
+      "accepted": 15,
+      "wrong": 12,
+      "unverified_accepted": 0,
+      "ignored_accepted": 6,
+      "wrong_per_acceptance": 0.8,
+      "correct_per_gap": 0.04132231404958678
+    },
+    "structured_1": {
+      "frames": 1011,
+      "gaps": 121,
+      "correct": 5,
+      "accepted": 17,
+      "wrong": 11,
+      "unverified_accepted": 1,
+      "ignored_accepted": 3,
+      "wrong_per_acceptance": 0.6470588235294118,
+      "correct_per_gap": 0.04132231404958678
+    },
+    "structured_2": {
+      "frames": 1011,
+      "gaps": 121,
+      "correct": 5,
+      "accepted": 8,
+      "wrong": 3,
+      "unverified_accepted": 0,
+      "ignored_accepted": 3,
+      "wrong_per_acceptance": 0.375,
+      "correct_per_gap": 0.04132231404958678
+    },
+    "structured_rank_0": {
+      "frames": 1011,
+      "gaps": 121,
+      "correct": 5,
+      "accepted": 15,
+      "wrong": 12,
+      "unverified_accepted": 0,
+      "ignored_accepted": 6,
+      "wrong_per_acceptance": 0.8,
+      "correct_per_gap": 0.04132231404958678
+    },
+    "structured_rank_2": {
+      "frames": 1011,
+      "gaps": 121,
+      "correct": 5,
+      "accepted": 8,
+      "wrong": 3,
+      "unverified_accepted": 0,
+      "ignored_accepted": 3,
+      "wrong_per_acceptance": 0.375,
+      "correct_per_gap": 0.04132231404958678
+    },
+    "unconstrained_tracker": {
+      "frames": 1011,
+      "gaps": 121,
+      "correct": 5,
+      "accepted": 25,
+      "wrong": 16,
+      "unverified_accepted": 0,
+      "ignored_accepted": 6,
+      "wrong_per_acceptance": 0.64,
+      "correct_per_gap": 0.04132231404958678
+    }
+  },
+  "overall": {}
+}

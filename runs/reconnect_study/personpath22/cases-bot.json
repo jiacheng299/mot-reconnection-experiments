@@ -1,0 +1,71 @@
+{
+  "reference": "linear_2",
+  "candidate": "structured_2",
+  "cases": {
+    "improved": [
+      {
+        "sequence": "uid_vid_00019",
+        "person": 131,
+        "before": 59,
+        "after": 61,
+        "reference_outcome": "no_anchor",
+        "candidate_outcome": "correct",
+        "reference_trace_sha256": "513d4f091c58e27d45b98f63ffaed89ae20b86d751bbe68225e59c3caed6af4b",
+        "candidate_trace_sha256": "9f20fc6a0da5224d215acb05983bbb8cd29b3575a207857bed72f0aac58e8a87"
+      },
+      {
+        "sequence": "uid_vid_00019",
+        "person": 131,
+        "before": 61,
+        "after": 63,
+        "reference_outcome": "no_anchor",
+        "candidate_outcome": "correct",
+        "reference_trace_sha256": "513d4f091c58e27d45b98f63ffaed89ae20b86d751bbe68225e59c3caed6af4b",
+        "candidate_trace_sha256": "9f20fc6a0da5224d215acb05983bbb8cd29b3575a207857bed72f0aac58e8a87"
+      },
+      {
+        "sequence": "uid_vid_00024",
+        "person": 37,
+        "before": 25,
+        "after": 27,
+        "reference_outcome": "switched",
+        "candidate_outcome": "correct",
+        "reference_trace_sha256": "0dbdc9486436f6040fbbd41b6178a3527980874f25bf904deb745275b3fa5613",
+        "candidate_trace_sha256": "d38d152841b52ea220ceacc5fda11c8c02961dcbb1aed6c545a10cf1d1c56c58"
+      }
+    ],
+    "lost": [
+      {
+        "sequence": "uid_vid_00019",
+        "person": 148,
+        "before": 22,
+        "after": 24,
+        "reference_outcome": "correct",
+        "candidate_outcome": "no_anchor",
+        "reference_trace_sha256": "513d4f091c58e27d45b98f63ffaed89ae20b86d751bbe68225e59c3caed6af4b",
+        "candidate_trace_sha256": "9f20fc6a0da5224d215acb05983bbb8cd29b3575a207857bed72f0aac58e8a87"
+      },
+      {
+        "sequence": "uid_vid_00019",
+        "person": 11,
+        "before": 55,
+        "after": 57,
+        "reference_outcome": "correct",
+        "candidate_outcome": "missed",
+        "reference_trace_sha256": "513d4f091c58e27d45b98f63ffaed89ae20b86d751bbe68225e59c3caed6af4b",
+        "candidate_trace_sha256": "9f20fc6a0da5224d215acb05983bbb8cd29b3575a207857bed72f0aac58e8a87"
+      },
+      {
+        "sequence": "uid_vid_00024",
+        "person": 58,
+        "before": 72,
+        "after": 76,
+        "reference_outcome": "correct",
+        "candidate_outcome": "switched",
+        "reference_trace_sha256": "0dbdc9486436f6040fbbd41b6178a3527980874f25bf904deb745275b3fa5613",
+        "candidate_trace_sha256": "d38d152841b52ea220ceacc5fda11c8c02961dcbb1aed6c545a10cf1d1c56c58"
+      }
+    ]
+  },
+  "rule": "First recoveries gained and lost, sorted by source then evaluation event order."
+}

@@ -1,0 +1,81 @@
+{
+  "locked_profile": "RecoveryRisk-0.37",
+  "primary_event_total": 54,
+  "locked_counts": {
+    "no_anchor": 18,
+    "correct": 13,
+    "missed": 22,
+    "switched": 1
+  },
+  "tracktrack_points": [
+    {
+      "method": "TrackTrack",
+      "correct": 16,
+      "wrong": 3,
+      "missed": 16
+    },
+    {
+      "method": "TrackTrack-penalty-0.12",
+      "correct": 17,
+      "wrong": 3,
+      "missed": 17
+    },
+    {
+      "method": "TrackTrack-penalty-0.28",
+      "correct": 14,
+      "wrong": 2,
+      "missed": 18
+    },
+    {
+      "method": "TrackTrack-penalty-0.36",
+      "correct": 15,
+      "wrong": 0,
+      "missed": 19
+    },
+    {
+      "method": "TrackTrack-penalty-0.44",
+      "correct": 14,
+      "wrong": 0,
+      "missed": 21
+    },
+    {
+      "method": "TrackTrack-penalty-0.52",
+      "correct": 12,
+      "wrong": 0,
+      "missed": 23
+    }
+  ],
+  "best_tracktrack_point_reaching_locked_count": {
+    "method": "TrackTrack-penalty-0.36",
+    "correct": 15,
+    "wrong": 0,
+    "missed": 19
+  },
+  "has_exact_count": false,
+  "development_controls": {
+    "BoT-SORT": {
+      "no_anchor": 27,
+      "missed": 79,
+      "correct": 33,
+      "switched": 1
+    },
+    "RecentRecovery": {
+      "no_anchor": 27,
+      "missed": 57,
+      "correct": 52,
+      "switched": 4
+    },
+    "RecoveryOnly": {
+      "no_anchor": 27,
+      "missed": 63,
+      "correct": 49,
+      "switched": 1
+    },
+    "TrackTrack": {
+      "no_anchor": 33,
+      "missed": 42,
+      "correct": 55,
+      "switched": 10
+    }
+  }
+}

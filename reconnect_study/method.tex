@@ -1,0 +1,59 @@
+\section{Selective track reactivation}
+
+Let $x$ record the detector confidence, predicted box residuals, track
+age and observed gap, and the costs of competing one-to-one
+assignments when a tracker proposes reactivating an old track. Write
+$m_r$ and $m_c$ for the best admissible competitor cost minus
+the chosen cost in the same row or column. The model uses
+$m=\min(m_r,m_c)$ to represent the side with the weaker margin.
+We first apply base feature transformations $z(x)$, then form the
+interaction vector and standardize its coordinates before fitting
+the score
+\begin{align*}
+g(x) &= b+w^\top \phi(x),\\
+\phi(x) &= [z(x),\,m,\,|m_r-m_c|,\,h d,\,h o,\,h m,\,q m,\ldots].
+\end{align*}
+Here $h$ is the transformed elapsed gap, $d$ and $o$ are the
+normalized center difference and box overlap, and $q$ is detection
+confidence. The interaction terms allow the weight of motion
+agreement and assignment ambiguity to change with gap length.
+We fit $g$ with regularized logistic loss on annotated development
+proposals. An ablation adds a within-source ranking loss
+$\log(1+\exp(g_{\rm incorrect}-g_{\rm correct}))$.
+A threshold on $g$ governs reactivation. A rejected detection
+returns to the tracker as unmatched, allowing the next association
+step to reflect the new track state.
+
+\subsection{A finite-panel risk bound}
+We model outcomes at the source-video level. For each frozen policy
+and source $s$, let $W_s$ count failed evaluated reactivations and
+$A_s$ count evaluated accepted reactivations. The gate enforces an
+action cap $B$, so $0\leq W_s\leq A_s\leq B$. The event-weighted
+fixed-panel risk is $R=\sum_s W_s/\sum_s A_s$, defined when the
+denominator is positive. For a target $r\in(0,1)$ and fixed
+stake $t\in[0,1]$, define a nonnegative factor
+\[
+f_{s,t}(r) = 1+t\frac{r A_s - W_s}{B(1-r)}.
+\]
+If $R\geq r$, the arithmetic mean of $f_{s,t}(r)$ across the
+panel is at most one. For a uniformly drawn $n$-source subset $I$,
+the expected product $\operatorname{E}_I\prod_{s\in I}f_{s,t}(r)$ equals
+a normalized elementary symmetric mean. Maclaurin's inequality bounds
+it by the $n$th power of the arithmetic mean. The product therefore
+has expectation at most one under the null. We use the fixed mixture
+at $t=1/2$ and $t=1$ and invert one-sided tests obtained by Markov's
+inequality. The same construction estimates the average per-video risk
+across active videos by conditioning on the active sample count and
+using fractional losses $W_s/A_s$ on those sources.
+We allocate error probability across the two estimands and all frozen
+threshold policies. The guarantee is taken over the random calibration
+draw, conditional on source outcomes and frozen policies.
+
+Learn Then Test formulates this choice of usable risks as multiple
+testing \cite{angelopoulos2021learn}. Finite-population betting
+procedures motivate operating on sampled sources
+\cite{waudbysmith2020without}. Prior guaranteed tracking work controls
+coverage of candidate transition sets \cite{li2022pac}, and MOT-CUP
+propagates uncertainty about detector boxes \cite{su2024motcup}.
+Here the loss is defined on the reactivations that the tracker commits
+after closed-loop execution.

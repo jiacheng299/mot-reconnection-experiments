@@ -1,0 +1,189 @@
+\section{Experiments}
+
+\subsection{Data and evaluation}
+We evaluated online identity reconnection using the native manual keyframes of
+PersonPath22 \cite{shuai2022personpath22}. We used the publisher's FCOS
+person detections, trained on CrowdHuman, and aligned each detection frame
+with the corresponding annotated source frame. The resulting observation grid
+was nominally 5 Hz. Of the 236 public clips, we assigned 16 publisher-hosted
+training assets to development and 91 to calibration. We retained 74
+publisher-hosted official test assets for evaluation. We kept the 55 clips
+with external source mappings separate from this protocol. The detection
+input, annotation matching rules, and evaluation sequences were identical
+across tracker variants.
+
+To measure detector-gap recovery, we first matched detection boxes and
+ground-truth persons one to one at IoU $\geq 0.50$. For each ground-truth
+identity, a gap consisted of one to five intervening annotated keyframes with
+no matched detection. We counted a recovery if the track identifier at the
+first returned detection matched its identifier before the gap. We used the
+same ground-truth/detector gap list for all policies and included cases
+without an emitted pre-gap identity in the denominator.
+
+We also audited the tracker's reactivation actions separately from gap
+recovery. A reactivation was correct if the specified one-to-one matching
+assigned its previous emitted track and its new detector box to the same
+annotated person. Otherwise
+it was counted as wrong or unverifiable, except where an unmatched endpoint
+overlapped an annotated ignore region by more than half its own box area.
+We report these ignored actions separately. This evaluation is performed
+after tracking. The gate sees the detector and track state alone. Overall
+metrics were HOTA, AssA, IDF1, and ID switches, computed with TrackEval on
+the native keyframe grid \cite{luiten2021hota}. PersonPath22's distractor
+and crowd treatment was used for the overall metrics.
+
+\subsection{Comparison and model fitting}
+We replayed ByteTrack \cite{zhang2022bytetrack} and a motion-only BoT-SORT
+configuration \cite{aharon2022botsort}. Each gate accepted or declined a
+native old-ID reactivation before the tracker updated its state. Each
+policy started from frame one. We compared the unrestricted tracker, a
+source cap alone, a threshold on the native association cost, a threshold
+on the nearest competitor margin, an additive linear score, our interaction
+score, and the interaction score with a within-source ranking term.
+All capped policies allowed at most 12 admissions per source before
+evaluation. The cap applied to all admissions. The score was fit on the
+development sources for 200 updates with Adam (learning rate 0.04 and
+coefficient penalty 0.002) on a GeForce RTX 3060 Ti. Candidate thresholds
+were fixed from development score quantiles before calibration. We chose
+the strongest recovery operating point for each score within a common
+empirical calibration risk budget, with at least 20\% of calibration
+sources active. We then applied the selected policies to the official
+test assets without tuning.
+
+\subsection{Finite-panel risk analysis}
+We fixed a second analysis over the 165 non-development publisher-hosted
+assets and drew 91 sources uniformly without replacement. We computed
+simultaneous one-sided bounds for the frozen ByteTrack family by inverting
+the fixed betting-mixture tests. The event-weighted and active-video
+estimands each received half of a familywise error budget of 0.05.
+The target error budget was 20\%. We also assessed whether the same upper
+bounds reached 10\%. This randomization analysis concerns the fixed panel.
+The official-test comparison uses strategies chosen on the original
+calibration split with a separate selector. The randomized calibration
+sample included 41 official-test sources, and its complement included the
+other 33. The two analyses use overlapping data and answer different
+questions.
+
+\subsection{Official split results}
+The official test subset contained 9,320 keyframes and 3,155 eligible
+detector gaps. At a common empirical calibration ceiling of 47.23\%,
+the ByteTrack interaction gate reduced the tested incorrect or
+unverifiable action proportion from 46.77\% to 35.39\% relative to
+the native association threshold. It increased verified correct
+reactivations from 239 to 283, using 438 evaluated admissions instead
+of 449. The gap recoveries were 393 and 388. The paired source
+resampling interval was $[-16.57,-6.40]$ percentage points for the
+failure-rate difference and $[-0.33,0.67]$ for the gap-recovery
+difference (10,000 replicates, comparison-wise). The interaction score
+also reduced the failure proportion against the cap-only and linear
+controls at this ceiling.
+
+At the 20\% calibration ceiling, both ByteTrack scores recovered 383
+gaps, with observed failure proportions of 21.24\% for the interaction
+score and 21.15\% for the linear score. On motion-only BoT-SORT, the
+interaction score recovered 334 gaps versus 327 for the linear score
+and yielded 16.19\% versus 18.31\% checked failures. The paired
+resampling intervals were $[0.05,0.48]$ percentage points for gap
+recovery and $[-4.94,0.75]$ for the failure proportion. At the
+relaxed BoT-SORT ceiling (42.15\%), the linear score had lower
+observed failure than the interaction score (25.19\% versus 37.28\%).
+The added pairwise ranking loss did not produce a consistent benefit.
+
+\begin{table*}[t]
+\centering
+\small
+\caption{PersonPath22 native-keyframe official-test subset. Gap recovery
+uses the same 3,155 gaps for each policy. The evaluated admits and
+fails columns exclude ignored actions. HOTA, AssA and IDF1 are on a
+0--100 scale, and IDSW is a count. The risk column gives the observed
+failure proportion. The cap-only gate applies the same source cap.
+Within each tracker, rows without a strict marker use the relaxed
+calibration ceiling for score selection.}
+\label{tab:reconnection-main}
+\begin{tabular}{llrrrrrrrr}
+\hline
+Tracker & Reactivation policy & Gaps kept & Admits & Fails & Risk (\%) & HOTA & AssA & IDF1 & IDSW \\
+\hline
+OC-SORT & External reference & 174 & -- & -- & -- & 41.83 & 41.22 & 52.15 & 3790 \\
+\hline
+ByteTrack & Unrestricted & 529 & 2589 & 1552 & 59.95 & 46.64 & 42.33 & 56.73 & 6662 \\
+ & Cap only & 399 & 537 & 310 & 57.73 & 44.69 & 39.32 & 52.94 & 7129 \\
+ & Native cost & 388 & 449 & 210 & 46.77 & 44.76 & 39.41 & 53.16 & 7104 \\
+ & Nearest margin & 391 & 456 & 202 & 44.30 & 44.84 & 39.57 & 53.14 & 7132 \\
+ & Linear & 395 & 514 & 247 & 48.05 & 44.90 & 39.63 & 53.38 & 7131 \\
+ & Interaction & 393 & 438 & 155 & 35.39 & 44.99 & 39.81 & 53.38 & 7022 \\
+ & Interaction + ranking & 393 & 509 & 240 & 47.15 & 44.91 & 39.69 & 53.34 & 7131 \\
+ & Linear (strict) & 383 & 331 & 70 & 21.15 & 44.87 & 39.63 & 53.25 & 7120 \\
+ & Interaction (strict) & 383 & 339 & 72 & 21.24 & 44.87 & 39.63 & 53.23 & 7116 \\
+\hline
+BoT-SORT & Unrestricted & 424 & 1858 & 992 & 53.39 & 46.84 & 43.78 & 56.57 & 5909 \\
+(motion only) & Cap only & 354 & 495 & 241 & 48.69 & 45.04 & 40.71 & 53.03 & 6616 \\
+ & Native cost & 343 & 392 & 148 & 37.76 & 44.99 & 40.67 & 52.98 & 6656 \\
+ & Nearest margin & 347 & 451 & 185 & 41.02 & 45.10 & 40.83 & 53.07 & 6654 \\
+ & Linear & 339 & 397 & 100 & 25.19 & 45.20 & 40.99 & 53.29 & 6603 \\
+ & Interaction & 346 & 448 & 167 & 37.28 & 45.14 & 40.88 & 53.20 & 6566 \\
+ & Interaction + ranking & 344 & 450 & 170 & 37.78 & 45.14 & 40.87 & 53.16 & 6611 \\
+ & Linear (strict) & 327 & 284 & 52 & 18.31 & 45.05 & 40.83 & 53.05 & 6628 \\
+ & Interaction (strict) & 334 & 278 & 45 & 16.19 & 45.06 & 40.85 & 53.02 & 6626 \\
+\hline
+\end{tabular}
+\end{table*}
+
+The unrestricted trackers retained more natural gaps and attained
+higher overall HOTA as shown in Table~\ref{tab:reconnection-main}.
+Relative to unrestricted ByteTrack, the relaxed interaction gate
+reduced evaluated failures by 1,397 and retained 136 fewer natural gaps.
+HOTA declined by 1.65 points. These changes reflect the cost of selective
+admission. We include OC-SORT \cite{cao2023ocsort} as an overall
+tracking reference. Its output supported evaluating natural-gap
+continuity, while its internal reactivation mechanism used a different
+protocol.
+
+\subsection{Randomized finite panel}
+Two of the 23 frozen ByteTrack policies met the 20\% active-video
+bound. The interaction policy had an upper bound of 19.95\% and the
+linear policy had an upper bound of 19.72\%. The interaction policy
+was selected because it recovered 752 calibration gaps compared
+with 732 for the linear policy. None of the evaluated policies met
+the event-weighted 20\% bound. Its lowest upper bound was 32.28\%.
+The two probability budgets each used 0.025 familywise error.
+
+On the 74-source random complement, the selected interaction policy
+accepted 192 evaluated reactivations, of which 16 failed, and was
+active on 43 videos. The observed active-video mean was 9.34\%.
+It recovered 359 of 2,830 gaps. The eligible linear policy accepted
+74 actions, of which seven failed, with 353 recovered gaps. It was
+active on 26 videos. These observations describe the held-out complement.
+
+\subsection{Transfer across datasets}
+We transferred the PersonPath22 ByteTrack thresholds to 40 previously
+unseen clips under the DanceTrack training partition, with a frozen
+COCO YOLOX-X detector. The relaxed interaction gate recovered 1,506 of
+8,472 gaps and failed in 199 of 462 accepted actions (43.07\%). The
+native-cost gate recovered 1,500 gaps and failed in 212 of 463 actions
+(45.79\%). The 20\%-calibration interaction gate had 30.03\% evaluated
+failures in DanceTrack. In a five-video exploratory BDD100K transfer,
+the ByteTrack interaction gate at the stricter operating point had
+three failures among eight accepted actions, compared with 16 among
+25 for unrestricted ByteTrack. Each policy retained five of the 121
+eligible detector gaps. These data characterize transfer behavior
+under new detection inputs and acquisition conditions.
+
+\subsection{Label sensitivity and execution cost}
+We reassigned numerically equivalent duplicate detector boxes
+within 0.001 pixels per coordinate when their matched ground-truth
+identity was unambiguous. This post hoc check changed none of the
+accepted or failed action counts in the relaxed ByteTrack
+native-cost and interaction comparisons or the strict BoT-SORT
+linear and interaction comparisons. The relaxed ByteTrack
+interaction gate retained annotated identity 66 across keyframes
+47--49 of \texttt{uid\_vid\_00013}, where the native threshold
+missed the return. The converse occurred for identity 20 across
+keyframes 66--68 of \texttt{uid\_vid\_00008}.
+
+Median association and decision-logging time was 1.60 and
+1.54 ms per keyframe for unrestricted and relaxed interaction
+ByteTrack, and 1.48 and 1.49 ms for unrestricted and strict
+interaction BoT-SORT. These timings cover seven CPU replays, each
+with 293 development keyframes, excluding detector inference and
+evaluation.

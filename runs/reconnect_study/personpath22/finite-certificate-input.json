@@ -1,0 +1,44 @@
+{
+  "finite_population_design": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\reconnect_study\\personpath22\\finite-population-uniform-design.json",
+  "frozen_config": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\reconnect_study\\personpath22\\byte-config.json",
+  "benchmark_manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\reconnect_study\\personpath22\\manifest.json",
+  "policy_rows": "finite-certificate-input-rows.json",
+  "include_policies": [
+    "assignment_0",
+    "assignment_1",
+    "assignment_2",
+    "assignment_3",
+    "assignment_4",
+    "linear_0",
+    "linear_1",
+    "linear_2",
+    "linear_3",
+    "linear_4",
+    "margin_0",
+    "margin_1",
+    "margin_2",
+    "structured_0",
+    "structured_1",
+    "structured_2",
+    "structured_3",
+    "structured_4",
+    "structured_rank_0",
+    "structured_rank_1",
+    "structured_rank_2",
+    "structured_rank_3",
+    "structured_rank_4"
+  ],
+  "cohort": {
+    "description": "Prespecified uniform calibration subset of a fixed PersonPath22 panel.",
+    "iid_source_sampling": false,
+    "policies_frozen_before_calibration": true,
+    "caveats": [
+      "The certificate applies to the full fixed benchmark panel."
+    ]
+  },
+  "event_weighted_cap": {
+    "max_accepted": 12,
+    "enforcement": "Replay gate counts accepted actions by source and stops at cap.",
+    "enforced_in_replay_and_deployment": true
+  }
+}

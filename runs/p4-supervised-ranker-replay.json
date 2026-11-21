@@ -1,0 +1,26 @@
+{
+  "sequence": "MOT17-05-FRCNN",
+  "frames": 837,
+  "detection_cache_sha256": "f711e31a5dbb5e2f9915181f002a78b6ff96b8fc3bda04c78a997b62b3b31178",
+  "training_gt_sha256": "ed74c54176b21b38cb690eda79a4755cf16e4c4a9ca2f019b0ba8904636174f5",
+  "feature_names": [
+    "match_fraction",
+    "mean_iou",
+    "mean_confidence",
+    "mean_iou_times_confidence"
+  ],
+  "weights": [
+    -0.7863489452550821,
+    0.7354788269951005,
+    0.4178094374898416,
+    1.3153855617408272
+  ],
+  "supervised_groups": 5037,
+  "preference_pairs": 7064,
+  "labelled_tracks": 187,
+  "regularization": 0.01,
+  "iterations": 12,
+  "initial_loss": 0.6931471805599453,
+  "final_loss": 0.5922804363308007,
+  "train_pair_accuracy": 0.7061155152887882
+}

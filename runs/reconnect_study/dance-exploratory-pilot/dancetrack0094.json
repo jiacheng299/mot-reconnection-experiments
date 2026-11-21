@@ -1,0 +1,363 @@
+{
+  "assignment_0": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 32,
+    "accepted": 59,
+    "wrong": 29,
+    "unverified_accepted": 14,
+    "recovery_outcomes": {
+      "missed": 45,
+      "no_anchor": 218,
+      "correct": 32,
+      "switched": 2
+    },
+    "track_rows": 8809,
+    "tracker_seconds": 1.0688199999999597
+  },
+  "assignment_1": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 31,
+    "accepted": 33,
+    "wrong": 11,
+    "unverified_accepted": 4,
+    "recovery_outcomes": {
+      "missed": 46,
+      "no_anchor": 219,
+      "correct": 31,
+      "switched": 1
+    },
+    "track_rows": 8739,
+    "tracker_seconds": 0.9974299999998948
+  },
+  "assignment_2": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 29,
+    "accepted": 22,
+    "wrong": 7,
+    "unverified_accepted": 1,
+    "recovery_outcomes": {
+      "missed": 47,
+      "no_anchor": 220,
+      "correct": 29,
+      "switched": 1
+    },
+    "track_rows": 8717,
+    "tracker_seconds": 0.948185800000374
+  },
+  "assignment_3": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 26,
+    "accepted": 10,
+    "wrong": 2,
+    "unverified_accepted": 1,
+    "recovery_outcomes": {
+      "missed": 47,
+      "no_anchor": 223,
+      "correct": 26,
+      "switched": 1
+    },
+    "track_rows": 8674,
+    "tracker_seconds": 1.0097513000000617
+  },
+  "margin_0": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 30,
+    "accepted": 57,
+    "wrong": 28,
+    "unverified_accepted": 15,
+    "recovery_outcomes": {
+      "missed": 46,
+      "no_anchor": 219,
+      "correct": 30,
+      "switched": 2
+    },
+    "track_rows": 8802,
+    "tracker_seconds": 0.92916009999999
+  },
+  "margin_1": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 26,
+    "accepted": 31,
+    "wrong": 14,
+    "unverified_accepted": 9,
+    "recovery_outcomes": {
+      "missed": 47,
+      "no_anchor": 222,
+      "correct": 26,
+      "switched": 2
+    },
+    "track_rows": 8749,
+    "tracker_seconds": 0.9906896000002234
+  },
+  "margin_2": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 26,
+    "accepted": 30,
+    "wrong": 14,
+    "unverified_accepted": 9,
+    "recovery_outcomes": {
+      "missed": 47,
+      "no_anchor": 222,
+      "correct": 26,
+      "switched": 2
+    },
+    "track_rows": 8747,
+    "tracker_seconds": 0.9163386999998693
+  },
+  "linear_0": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 31,
+    "accepted": 54,
+    "wrong": 27,
+    "unverified_accepted": 13,
+    "recovery_outcomes": {
+      "missed": 43,
+      "no_anchor": 221,
+      "correct": 31,
+      "switched": 2
+    },
+    "track_rows": 8813,
+    "tracker_seconds": 1.1066684999996141
+  },
+  "linear_1": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 31,
+    "accepted": 31,
+    "wrong": 10,
+    "unverified_accepted": 5,
+    "recovery_outcomes": {
+      "missed": 46,
+      "no_anchor": 218,
+      "correct": 31,
+      "switched": 2
+    },
+    "track_rows": 8738,
+    "tracker_seconds": 0.910247000000254
+  },
+  "linear_2": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 27,
+    "accepted": 12,
+    "wrong": 1,
+    "unverified_accepted": 1,
+    "recovery_outcomes": {
+      "missed": 47,
+      "no_anchor": 222,
+      "correct": 27,
+      "switched": 1
+    },
+    "track_rows": 8700,
+    "tracker_seconds": 0.9267913000003318
+  },
+  "linear_3": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 26,
+    "accepted": 3,
+    "wrong": 0,
+    "unverified_accepted": 0,
+    "recovery_outcomes": {
+      "missed": 47,
+      "no_anchor": 223,
+      "correct": 26,
+      "switched": 1
+    },
+    "track_rows": 8664,
+    "tracker_seconds": 0.9318834999999126
+  },
+  "structured_0": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 34,
+    "accepted": 55,
+    "wrong": 24,
+    "unverified_accepted": 14,
+    "recovery_outcomes": {
+      "missed": 44,
+      "no_anchor": 217,
+      "correct": 34,
+      "switched": 2
+    },
+    "track_rows": 8804,
+    "tracker_seconds": 0.9015582000001814
+  },
+  "structured_1": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 32,
+    "accepted": 34,
+    "wrong": 11,
+    "unverified_accepted": 7,
+    "recovery_outcomes": {
+      "missed": 44,
+      "no_anchor": 219,
+      "correct": 32,
+      "switched": 2
+    },
+    "track_rows": 8750,
+    "tracker_seconds": 0.895953499999905
+  },
+  "structured_2": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 27,
+    "accepted": 11,
+    "wrong": 2,
+    "unverified_accepted": 2,
+    "recovery_outcomes": {
+      "missed": 47,
+      "no_anchor": 222,
+      "correct": 27,
+      "switched": 1
+    },
+    "track_rows": 8696,
+    "tracker_seconds": 0.9669561000000613
+  },
+  "structured_3": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 26,
+    "accepted": 3,
+    "wrong": 0,
+    "unverified_accepted": 0,
+    "recovery_outcomes": {
+      "missed": 47,
+      "no_anchor": 223,
+      "correct": 26,
+      "switched": 1
+    },
+    "track_rows": 8667,
+    "tracker_seconds": 1.3001186999999845
+  },
+  "structured_rank_0": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 34,
+    "accepted": 58,
+    "wrong": 28,
+    "unverified_accepted": 15,
+    "recovery_outcomes": {
+      "missed": 44,
+      "no_anchor": 217,
+      "correct": 34,
+      "switched": 2
+    },
+    "track_rows": 8807,
+    "tracker_seconds": 0.9701878000000761
+  },
+  "structured_rank_1": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 29,
+    "accepted": 30,
+    "wrong": 9,
+    "unverified_accepted": 6,
+    "recovery_outcomes": {
+      "missed": 47,
+      "no_anchor": 219,
+      "correct": 29,
+      "switched": 2
+    },
+    "track_rows": 8754,
+    "tracker_seconds": 0.8930230000000847
+  },
+  "structured_rank_2": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 28,
+    "accepted": 15,
+    "wrong": 3,
+    "unverified_accepted": 3,
+    "recovery_outcomes": {
+      "missed": 46,
+      "no_anchor": 222,
+      "correct": 28,
+      "switched": 1
+    },
+    "track_rows": 8702,
+    "tracker_seconds": 0.9036201999997502
+  },
+  "structured_rank_3": {
+    "name": "dancetrack0094",
+    "source_id": "dancetrack0094",
+    "frames": 603,
+    "split": "exploratory",
+    "gaps": 297,
+    "correct": 26,
+    "accepted": 4,
+    "wrong": 0,
+    "unverified_accepted": 0,
+    "recovery_outcomes": {
+      "missed": 47,
+      "no_anchor": 223,
+      "correct": 26,
+      "switched": 1
+    },
+    "track_rows": 8669,
+    "tracker_seconds": 0.9454522999999426
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "profile": "RecoveryRisk-0.37",
+  "threshold": 0.37,
+  "development_gap_low": {
+    "RecoveryRisk-0.28": {
+      "no_anchor": 28,
+      "missed": 59,
+      "correct": 52,
+      "switched": 1
+    },
+    "RecoveryRisk-0.37": {
+      "no_anchor": 29,
+      "missed": 53,
+      "correct": 55,
+      "switched": 3
+    },
+    "RecoveryRisk-0.46": {
+      "no_anchor": 29,
+      "missed": 51,
+      "correct": 53,
+      "switched": 7
+    },
+    "RecoveryRisk-0.55": {
+      "no_anchor": 29,
+      "missed": 51,
+      "correct": 53,
+      "switched": 7
+    }
+  },
+  "sweep_sources": {
+    "runs\\tracker-risk-m17-dev\\events.json": "1a4a2f7d57e97359622fc6a6febbd7e74669eda5ca52bb3ead02071c7fbb68ce",
+    "runs\\tracker-risk-dance-dev\\events.json": "f4f2c8d165ad1a11452b0af5d127fefd010bf00b68235d3b0bd197ae304c2a34"
+  },
+  "association_sha256": "61bb149ab0a481cb439b7d1e220d16752f465a31040f09c1ad0115dde2171072",
+  "event_definition_sha256": "fc703c5c55ed7b5a9fd4717f186338d06349ac591125d1f0e5325c3665c709b5",
+  "heldout_sequences": [
+    "MOT17-11-FRCNN",
+    "MOT17-13-FRCNN"
+  ]
+}

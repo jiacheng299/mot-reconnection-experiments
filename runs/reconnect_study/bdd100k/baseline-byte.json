@@ -1,0 +1,1557 @@
+{
+  "sequences": [
+    {
+      "name": "b232c7c9-d251d9ee",
+      "source_id": "b232c7c9-d251d9ee",
+      "frames": 202,
+      "split": "test",
+      "gaps": 29,
+      "correct": 5,
+      "accepted": 5,
+      "wrong": 4,
+      "unverified_accepted": 0,
+      "ignored_accepted": 1,
+      "recovery_outcomes": {
+        "no_anchor": 20,
+        "missed": 3,
+        "switched": 1,
+        "correct": 5
+      },
+      "track_rows": 293,
+      "tracker_seconds": 0.12075649999951565,
+      "actions": [
+        {
+          "frame": 117,
+          "previous_frame": 112,
+          "track_id": 53,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 4.0,
+            "track_age_frames": 13.0,
+            "detector_score": 0.75737667,
+            "previous_score": 0.79768181,
+            "iou": 0.7269524398698247,
+            "center_distance": 0.03140231671906585,
+            "log_area_ratio": 0.31889422329996303,
+            "assignment_cost": 0.44491055236707877,
+            "row_margin": 0.21193256819640138,
+            "column_margin": 1.0,
+            "row_alternatives": 1.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 131,
+          "previous_frame": 129,
+          "track_id": 64,
+          "accepted": true,
+          "correct": true,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 1.0,
+            "track_age_frames": 24.0,
+            "detector_score": 0.74864388,
+            "previous_score": 0.51531267,
+            "iou": 0.916192482690896,
+            "center_distance": 0.023382404474727735,
+            "log_area_ratio": 0.0016590960166823355,
+            "assignment_cost": 0.31231194707231946,
+            "row_margin": 1.0,
+            "column_margin": 0.19166034017856215,
+            "row_alternatives": 0.0,
+            "column_alternatives": 1.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 133,
+          "previous_frame": 130,
+          "track_id": 74,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 12.0,
+            "detector_score": 0.53781962,
+            "previous_score": 0.67910671,
+            "iou": 0.6080598705681091,
+            "center_distance": 0.09899430058702756,
+            "log_area_ratio": 0.18321887007676807,
+            "assignment_cost": 0.6669428235605488,
+            "row_margin": 1.0,
+            "column_margin": 0.12702199009181292,
+            "row_alternatives": 0.0,
+            "column_alternatives": 1.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 134,
+          "previous_frame": 131,
+          "track_id": 75,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 13.0,
+            "detector_score": 0.82228088,
+            "previous_score": 0.75664759,
+            "iou": 0.6383473562227308,
+            "center_distance": 0.06493787905952433,
+            "log_area_ratio": 0.30067762081508237,
+            "assignment_cost": 0.46843132900471673,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 171,
+          "previous_frame": 168,
+          "track_id": 91,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": false,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 20.0,
+            "detector_score": 0.58188558,
+            "previous_score": 0.66756344,
+            "iou": 0.74860466110149,
+            "center_distance": 0.039268545523015855,
+            "log_area_ratio": 0.017987343005089685,
+            "assignment_cost": 0.5618511443899046,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": false
+        },
+        {
+          "frame": 179,
+          "previous_frame": 177,
+          "track_id": 90,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 1.0,
+            "track_age_frames": 29.0,
+            "detector_score": 0.73132682,
+            "previous_score": 0.72135639,
+            "iou": 0.39374430957949,
+            "center_distance": 0.09742890156228656,
+            "log_area_ratio": 0.932053540808336,
+            "assignment_cost": 0.7067260587660944,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        }
+      ],
+      "gap_records": [
+        {
+          "person": 129064,
+          "before": 28,
+          "after": 30,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129103,
+          "before": 66,
+          "after": 68,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129120,
+          "before": 84,
+          "after": 86,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129126,
+          "before": 96,
+          "after": 98,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129128,
+          "before": 96,
+          "after": 98,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129128,
+          "before": 101,
+          "after": 103,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129141,
+          "before": 110,
+          "after": 112,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129141,
+          "before": 117,
+          "after": 119,
+          "outcome": "missed"
+        },
+        {
+          "person": 129141,
+          "before": 129,
+          "after": 132,
+          "outcome": "switched"
+        },
+        {
+          "person": 129137,
+          "before": 129,
+          "after": 133,
+          "outcome": "correct"
+        },
+        {
+          "person": 129147,
+          "before": 134,
+          "after": 136,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129134,
+          "before": 134,
+          "after": 137,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129132,
+          "before": 136,
+          "after": 138,
+          "outcome": "correct"
+        },
+        {
+          "person": 129134,
+          "before": 137,
+          "after": 141,
+          "outcome": "missed"
+        },
+        {
+          "person": 129137,
+          "before": 141,
+          "after": 144,
+          "outcome": "correct"
+        },
+        {
+          "person": 129137,
+          "before": 163,
+          "after": 165,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129152,
+          "before": 163,
+          "after": 166,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129137,
+          "before": 165,
+          "after": 167,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129152,
+          "before": 166,
+          "after": 168,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129141,
+          "before": 167,
+          "after": 169,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129153,
+          "before": 167,
+          "after": 169,
+          "outcome": "correct"
+        },
+        {
+          "person": 129152,
+          "before": 170,
+          "after": 172,
+          "outcome": "correct"
+        },
+        {
+          "person": 129153,
+          "before": 171,
+          "after": 173,
+          "outcome": "missed"
+        },
+        {
+          "person": 129141,
+          "before": 169,
+          "after": 174,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129141,
+          "before": 174,
+          "after": 178,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129152,
+          "before": 176,
+          "after": 178,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129156,
+          "before": 183,
+          "after": 185,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129141,
+          "before": 184,
+          "after": 186,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 129156,
+          "before": 185,
+          "after": 190,
+          "outcome": "no_anchor"
+        }
+      ],
+      "tracker": "bytetrack"
+    },
+    {
+      "name": "b242f6b2-eaa39345",
+      "source_id": "b242f6b2-eaa39345",
+      "frames": 202,
+      "split": "test",
+      "gaps": 29,
+      "correct": 0,
+      "accepted": 0,
+      "wrong": 0,
+      "unverified_accepted": 0,
+      "ignored_accepted": 0,
+      "recovery_outcomes": {
+        "no_anchor": 28,
+        "switched": 1
+      },
+      "track_rows": 77,
+      "tracker_seconds": 0.04292220000024827,
+      "actions": [],
+      "gap_records": [
+        {
+          "person": 121111,
+          "before": 14,
+          "after": 17,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121102,
+          "before": 17,
+          "after": 19,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121111,
+          "before": 17,
+          "after": 20,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121102,
+          "before": 24,
+          "after": 26,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121101,
+          "before": 26,
+          "after": 28,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121101,
+          "before": 28,
+          "after": 30,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121115,
+          "before": 42,
+          "after": 45,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121119,
+          "before": 44,
+          "after": 46,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121117,
+          "before": 45,
+          "after": 47,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121119,
+          "before": 46,
+          "after": 48,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121115,
+          "before": 45,
+          "after": 49,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121118,
+          "before": 45,
+          "after": 49,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121115,
+          "before": 49,
+          "after": 52,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121118,
+          "before": 49,
+          "after": 55,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121115,
+          "before": 54,
+          "after": 56,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121115,
+          "before": 57,
+          "after": 59,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121124,
+          "before": 60,
+          "after": 62,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121119,
+          "before": 58,
+          "after": 64,
+          "outcome": "switched"
+        },
+        {
+          "person": 121127,
+          "before": 75,
+          "after": 77,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121145,
+          "before": 109,
+          "after": 111,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121168,
+          "before": 177,
+          "after": 179,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121168,
+          "before": 186,
+          "after": 188,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121170,
+          "before": 185,
+          "after": 188,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121170,
+          "before": 188,
+          "after": 192,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121173,
+          "before": 192,
+          "after": 195,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121168,
+          "before": 195,
+          "after": 198,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121173,
+          "before": 195,
+          "after": 198,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121173,
+          "before": 198,
+          "after": 200,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 121173,
+          "before": 200,
+          "after": 202,
+          "outcome": "no_anchor"
+        }
+      ],
+      "tracker": "bytetrack"
+    },
+    {
+      "name": "b255cd6c-2f889586",
+      "source_id": "b255cd6c-2f889586",
+      "frames": 203,
+      "split": "test",
+      "gaps": 22,
+      "correct": 0,
+      "accepted": 2,
+      "wrong": 1,
+      "unverified_accepted": 0,
+      "ignored_accepted": 0,
+      "recovery_outcomes": {
+        "no_anchor": 22
+      },
+      "track_rows": 8,
+      "tracker_seconds": 0.023355000000265136,
+      "actions": [
+        {
+          "frame": 145,
+          "previous_frame": 143,
+          "track_id": 21,
+          "accepted": true,
+          "correct": true,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 1.0,
+            "track_age_frames": 2.0,
+            "detector_score": 0.75961876,
+            "previous_score": 0.558604,
+            "iou": 0.31012026016975097,
+            "center_distance": 0.21847755686391465,
+            "log_area_ratio": 0.21300071640202645,
+            "assignment_cost": 0.7486175523943004,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 190,
+          "previous_frame": 184,
+          "track_id": 67,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 5.0,
+            "track_age_frames": 2.0,
+            "detector_score": 0.62682343,
+            "previous_score": 0.72341967,
+            "iou": 0.38836787430255965,
+            "center_distance": 0.20553013957337907,
+            "log_area_ratio": 0.03902170089205942,
+            "assignment_cost": 0.7486233999204983,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        }
+      ],
+      "gap_records": [
+        {
+          "person": 122428,
+          "before": 27,
+          "after": 31,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122428,
+          "before": 33,
+          "after": 39,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122447,
+          "before": 97,
+          "after": 99,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122450,
+          "before": 99,
+          "after": 103,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122451,
+          "before": 112,
+          "after": 115,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122450,
+          "before": 112,
+          "after": 116,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122451,
+          "before": 116,
+          "after": 119,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122450,
+          "before": 116,
+          "after": 120,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122451,
+          "before": 120,
+          "after": 122,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122450,
+          "before": 121,
+          "after": 124,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122453,
+          "before": 123,
+          "after": 125,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122458,
+          "before": 125,
+          "after": 127,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122455,
+          "before": 126,
+          "after": 128,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122460,
+          "before": 126,
+          "after": 130,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122459,
+          "before": 134,
+          "after": 136,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122467,
+          "before": 135,
+          "after": 137,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122486,
+          "before": 165,
+          "after": 167,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122491,
+          "before": 171,
+          "after": 173,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122491,
+          "before": 174,
+          "after": 178,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122489,
+          "before": 177,
+          "after": 179,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122498,
+          "before": 177,
+          "after": 179,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 122498,
+          "before": 179,
+          "after": 185,
+          "outcome": "no_anchor"
+        }
+      ],
+      "tracker": "bytetrack"
+    },
+    {
+      "name": "b1e0c01d-dd9e6e2f",
+      "source_id": "b1e0c01d-dd9e6e2f",
+      "frames": 202,
+      "split": "test",
+      "gaps": 27,
+      "correct": 0,
+      "accepted": 17,
+      "wrong": 11,
+      "unverified_accepted": 0,
+      "ignored_accepted": 5,
+      "recovery_outcomes": {
+        "no_anchor": 26,
+        "switched": 1
+      },
+      "track_rows": 301,
+      "tracker_seconds": 0.09523270000045159,
+      "actions": [
+        {
+          "frame": 7,
+          "previous_frame": 2,
+          "track_id": 1,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 4.0,
+            "track_age_frames": 2.0,
+            "detector_score": 0.57778072,
+            "previous_score": 0.2732259,
+            "iou": 0.535625539311359,
+            "center_distance": 0.1964626847646709,
+            "log_area_ratio": 0.0423811083314906,
+            "assignment_cost": 0.6839740503101803,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 40,
+          "previous_frame": 37,
+          "track_id": 56,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 2.0,
+            "detector_score": 0.55257702,
+            "previous_score": 0.75423717,
+            "iou": 0.413448458907243,
+            "center_distance": 0.12827905074616333,
+            "log_area_ratio": 0.2978967579900775,
+            "assignment_cost": 0.7624095560008003,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 41,
+          "previous_frame": 37,
+          "track_id": 55,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 3.0,
+            "track_age_frames": 2.0,
+            "detector_score": 0.80479145,
+            "previous_score": 0.64259148,
+            "iou": 0.45349868341528077,
+            "center_distance": 0.252618282604303,
+            "log_area_ratio": 0.2767845690700087,
+            "assignment_cost": 0.6273035955174584,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 44,
+          "previous_frame": 40,
+          "track_id": 63,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 3.0,
+            "track_age_frames": 2.0,
+            "detector_score": 0.69253945,
+            "previous_score": 0.8015728,
+            "iou": 0.5927781227270938,
+            "center_distance": 0.08095029538343293,
+            "log_area_ratio": 0.4418642168314876,
+            "assignment_cost": 0.5827933365117699,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 46,
+          "previous_frame": 43,
+          "track_id": 74,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 3.0,
+            "detector_score": 0.82754135,
+            "previous_score": 0.67680502,
+            "iou": 0.48424504146819847,
+            "center_distance": 0.04959506216506557,
+            "log_area_ratio": 0.7251642163588179,
+            "assignment_cost": 0.5932746428113661,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 47,
+          "previous_frame": 40,
+          "track_id": 56,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 6.0,
+            "track_age_frames": 5.0,
+            "detector_score": 0.76215649,
+            "previous_score": 0.55257702,
+            "iou": 0.5831370283563536,
+            "center_distance": 0.18821148584355973,
+            "log_area_ratio": 0.20222734274933912,
+            "assignment_cost": 0.5504935982248201,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 47,
+          "previous_frame": 45,
+          "track_id": 81,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 1.0,
+            "track_age_frames": 3.0,
+            "detector_score": 0.71654296,
+            "previous_score": 0.64084625,
+            "iou": 0.27718361053780466,
+            "center_distance": 0.22518333504444962,
+            "log_area_ratio": 0.3036108694814993,
+            "assignment_cost": 0.7944613530385707,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": false
+        },
+        {
+          "frame": 48,
+          "previous_frame": 44,
+          "track_id": 63,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 3.0,
+            "track_age_frames": 6.0,
+            "detector_score": 0.77912855,
+            "previous_score": 0.69253945,
+            "iou": 0.7414353412533934,
+            "center_distance": 0.013913327395305165,
+            "log_area_ratio": 0.29916732113427774,
+            "assignment_cost": 0.4179183575369816,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": false
+        },
+        {
+          "frame": 48,
+          "previous_frame": 45,
+          "track_id": 84,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 2.0,
+            "detector_score": 0.81129742,
+            "previous_score": 0.77966452,
+            "iou": 0.4522901928630986,
+            "center_distance": 0.1519784821999645,
+            "log_area_ratio": 0.15021659873628218,
+            "assignment_cost": 0.6254938563140272,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": false
+        },
+        {
+          "frame": 50,
+          "previous_frame": 47,
+          "track_id": 81,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": false,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 5.0,
+            "detector_score": 0.54435825,
+            "previous_score": 0.71654296,
+            "iou": 0.4916218616862891,
+            "center_distance": 0.10133523687773528,
+            "log_area_ratio": 0.3483524940899701,
+            "assignment_cost": 0.7275323992262004,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": false
+        },
+        {
+          "frame": 51,
+          "previous_frame": 48,
+          "track_id": 84,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": false,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 5.0,
+            "detector_score": 0.79006004,
+            "previous_score": 0.81129742,
+            "iou": 0.2500101195088999,
+            "center_distance": 0.37102333586663455,
+            "log_area_ratio": 0.388595095695073,
+            "assignment_cost": 0.7948671761313806,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": false
+        },
+        {
+          "frame": 105,
+          "previous_frame": 98,
+          "track_id": 103,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 6.0,
+            "track_age_frames": 3.0,
+            "detector_score": 0.81847525,
+            "previous_score": 0.65996885,
+            "iou": 0.2605749398221541,
+            "center_distance": 0.3524768794683122,
+            "log_area_ratio": 1.011702770490558,
+            "assignment_cost": 0.7780303266792754,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 105,
+          "previous_frame": 103,
+          "track_id": 123,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 1.0,
+            "track_age_frames": 2.0,
+            "detector_score": 0.84756351,
+            "previous_score": 0.8657999,
+            "iou": 0.289972726098936,
+            "center_distance": 0.4683138081193308,
+            "log_area_ratio": 0.2281772940398092,
+            "assignment_cost": 0.7504695097111924,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 106,
+          "previous_frame": 99,
+          "track_id": 107,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 6.0,
+            "track_age_frames": 3.0,
+            "detector_score": 0.80981922,
+            "previous_score": 0.62365246,
+            "iou": 0.38787571377847585,
+            "center_distance": 0.3282194848435773,
+            "log_area_ratio": 0.8279965993358511,
+            "assignment_cost": 0.6799130250355173,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 106,
+          "previous_frame": 99,
+          "track_id": 112,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 6.0,
+            "track_age_frames": 2.0,
+            "detector_score": 0.81331301,
+            "previous_score": 0.75793648,
+            "iou": 0.5620819802102718,
+            "center_distance": 0.23222387092111277,
+            "log_area_ratio": 0.13637348934500515,
+            "assignment_cost": 0.5392795362054568,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 108,
+          "previous_frame": 105,
+          "track_id": 123,
+          "accepted": true,
+          "correct": false,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 4.0,
+            "detector_score": 0.85696578,
+            "previous_score": 0.84756351,
+            "iou": 0.2755172633396855,
+            "center_distance": 0.42947470445247843,
+            "log_area_ratio": 0.06033889822907841,
+            "assignment_cost": 0.7605251860807489,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 160,
+          "previous_frame": 155,
+          "track_id": 135,
+          "accepted": true,
+          "correct": true,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 4.0,
+            "track_age_frames": 48.0,
+            "detector_score": 0.80996013,
+            "previous_score": 0.73036551,
+            "iou": 0.8065239685293241,
+            "center_distance": 0.04686517883643438,
+            "log_area_ratio": 0.06878543868191164,
+            "assignment_cost": 0.3427233052823342,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 162,
+          "previous_frame": 160,
+          "track_id": 149,
+          "accepted": true,
+          "correct": true,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 1.0,
+            "track_age_frames": 19.0,
+            "detector_score": 0.71312928,
+            "previous_score": 0.83677673,
+            "iou": 0.5251312112391436,
+            "center_distance": 0.199027419581676,
+            "log_area_ratio": 0.2669894670952638,
+            "assignment_cost": 0.621747606427784,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 165,
+          "previous_frame": 162,
+          "track_id": 152,
+          "accepted": true,
+          "correct": true,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 14.0,
+            "detector_score": 0.64476585,
+            "previous_score": 0.74910235,
+            "iou": 0.4145552844717894,
+            "center_distance": 0.4274422881827916,
+            "log_area_ratio": 0.686116249669368,
+            "assignment_cost": 0.7278334393039613,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 166,
+          "previous_frame": 163,
+          "track_id": 149,
+          "accepted": true,
+          "correct": true,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 22.0,
+            "detector_score": 0.78989267,
+            "previous_score": 0.75801802,
+            "iou": 0.28074770804849525,
+            "center_distance": 0.19248902131864695,
+            "log_area_ratio": 0.030750038777413252,
+            "assignment_cost": 0.7679984154989338,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 182,
+          "previous_frame": 179,
+          "track_id": 152,
+          "accepted": true,
+          "correct": true,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 2.0,
+            "track_age_frames": 31.0,
+            "detector_score": 0.73389769,
+            "previous_score": 0.74765396,
+            "iou": 0.46668020414524275,
+            "center_distance": 0.10919982217792847,
+            "log_area_ratio": 0.20897769738801095,
+            "assignment_cost": 0.6478788398627855,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        },
+        {
+          "frame": 193,
+          "previous_frame": 188,
+          "track_id": 162,
+          "accepted": true,
+          "correct": true,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 4.0,
+            "track_age_frames": 2.0,
+            "detector_score": 0.60994387,
+            "previous_score": 0.51121902,
+            "iou": 0.4357531216702513,
+            "center_distance": 0.1403292196841228,
+            "log_area_ratio": 0.13216894682356792,
+            "assignment_cost": 0.7243639889436346,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        }
+      ],
+      "gap_records": [
+        {
+          "person": 126693,
+          "before": 3,
+          "after": 7,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126693,
+          "before": 7,
+          "after": 9,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126693,
+          "before": 9,
+          "after": 11,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126699,
+          "before": 12,
+          "after": 14,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126699,
+          "before": 16,
+          "after": 19,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126699,
+          "before": 19,
+          "after": 21,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126708,
+          "before": 20,
+          "after": 22,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126710,
+          "before": 26,
+          "after": 28,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126710,
+          "before": 28,
+          "after": 30,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126730,
+          "before": 66,
+          "after": 68,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126739,
+          "before": 97,
+          "after": 99,
+          "outcome": "switched"
+        },
+        {
+          "person": 126743,
+          "before": 99,
+          "after": 101,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126758,
+          "before": 104,
+          "after": 106,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126762,
+          "before": 113,
+          "after": 115,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126759,
+          "before": 129,
+          "after": 135,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126759,
+          "before": 135,
+          "after": 137,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126766,
+          "before": 135,
+          "after": 140,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126759,
+          "before": 138,
+          "after": 141,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126759,
+          "before": 143,
+          "after": 145,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126759,
+          "before": 155,
+          "after": 157,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126748,
+          "before": 159,
+          "after": 161,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126758,
+          "before": 161,
+          "after": 166,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126758,
+          "before": 167,
+          "after": 169,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126758,
+          "before": 169,
+          "after": 171,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126759,
+          "before": 169,
+          "after": 171,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126769,
+          "before": 176,
+          "after": 178,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 126781,
+          "before": 196,
+          "after": 199,
+          "outcome": "no_anchor"
+        }
+      ],
+      "tracker": "bytetrack"
+    },
+    {
+      "name": "b206a78b-99f405ab",
+      "source_id": "b206a78b-99f405ab",
+      "frames": 202,
+      "split": "test",
+      "gaps": 14,
+      "correct": 0,
+      "accepted": 1,
+      "wrong": 0,
+      "unverified_accepted": 0,
+      "ignored_accepted": 0,
+      "recovery_outcomes": {
+        "no_anchor": 14
+      },
+      "track_rows": 24,
+      "tracker_seconds": 0.023233199999594945,
+      "actions": [
+        {
+          "frame": 117,
+          "previous_frame": 113,
+          "track_id": 15,
+          "accepted": true,
+          "correct": true,
+          "verifiable_anchor": true,
+          "features": {
+            "gap_frames": 3.0,
+            "track_age_frames": 4.0,
+            "detector_score": 0.82211304,
+            "previous_score": 0.41322613,
+            "iou": 0.8010193115236297,
+            "center_distance": 0.042214069564643554,
+            "log_area_ratio": 0.09835457325136547,
+            "assignment_cost": 0.3375159316705254,
+            "row_margin": 1.0,
+            "column_margin": 1.0,
+            "row_alternatives": 0.0,
+            "column_alternatives": 0.0
+          },
+          "evaluable": true
+        }
+      ],
+      "gap_records": [
+        {
+          "person": 124395,
+          "before": 97,
+          "after": 100,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124395,
+          "before": 100,
+          "after": 102,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124395,
+          "before": 102,
+          "after": 104,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124400,
+          "before": 106,
+          "after": 109,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124400,
+          "before": 109,
+          "after": 113,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124420,
+          "before": 155,
+          "after": 158,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124420,
+          "before": 158,
+          "after": 160,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124420,
+          "before": 169,
+          "after": 172,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124420,
+          "before": 172,
+          "after": 174,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124420,
+          "before": 174,
+          "after": 177,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124420,
+          "before": 177,
+          "after": 179,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124420,
+          "before": 180,
+          "after": 182,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124420,
+          "before": 185,
+          "after": 187,
+          "outcome": "no_anchor"
+        },
+        {
+          "person": 124422,
+          "before": 194,
+          "after": 196,
+          "outcome": "no_anchor"
+        }
+      ],
+      "tracker": "bytetrack"
+    }
+  ]
+}

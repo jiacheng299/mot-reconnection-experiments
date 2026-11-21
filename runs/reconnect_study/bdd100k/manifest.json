@@ -1,0 +1,167 @@
+{
+  "dataset": "BDD100K MOT",
+  "ground_truth_source": "https://omnomnom.vision.rwth-aachen.de/data/TrackEval/data.zip",
+  "images_source": "http://dl.yf.io/bdd100k/mot20/images20-track-val-1.zip",
+  "selection": "first five SHA256 sorting bdd100k-pilot-v1:<name> among source videos with >=20 labelled frames including two noncrowd pedestrians",
+  "source_groups_verified": false,
+  "source_id_scope": "Official video IDs; original recording and site overlap are unresolved.",
+  "protocol": "Exploratory, enriched independent-domain pilot; no cross-domain certificate.",
+  "box_format": "One-based frame index and pixel x, y; unmodified box widths and heights.",
+  "detector": "YOLOX-X COCO",
+  "detector_checkpoint": "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_x.pth",
+  "weights_sha256": "5652330b6ae860043f091b8f550a60c10e1129f416edfdb65c259be6caf355cf",
+  "detector_commit": "6ddff4824372906469a7fae2dc3206c7aa4bbaee",
+  "input_size_hw": [
+    640,
+    640
+  ],
+  "precision": "float16",
+  "person_score_floor": 0.01,
+  "nms_iou": 0.65,
+  "gpu": "NVIDIA GeForce RTX 3060 Ti",
+  "torch": "2.7.1+cu126",
+  "torchvision": "0.22.1+cu126",
+  "expected_sequence_count": 5,
+  "sequences": [
+    {
+      "name": "b232c7c9-d251d9ee",
+      "source_id": "b232c7c9-d251d9ee",
+      "split": "test",
+      "official_split": "val",
+      "frames": 202,
+      "fps": 5,
+      "gt": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\data\\reconnect_study\\bdd100k\\normalized\\b232c7c9-d251d9ee\\gt.txt",
+      "detections": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\data\\reconnect_study\\bdd100k\\normalized\\b232c7c9-d251d9ee\\detections.txt",
+      "gt_sha256": "9774dffda5c4edbf7834695c270b0fe20e1d67de0bfafed07fdfa9211f51828d",
+      "detections_sha256": "374f95ad8cba4269138a8ee952815e03e54df240887076969a7fde133cf9d550",
+      "official_annotation_sha256": "9c6dfce7f7a19296cc7c95d2c465abd6a56c41dac1136208a89154d71464b041",
+      "public_images": {
+        "name": "b232c7c9-d251d9ee",
+        "range_start": 136919200,
+        "range_end": 162702053,
+        "range_sha256": "55281ab71afe4ebb6f4f5fb17cda988b459cce5d1ffa85b1c8a300cdce17fa15",
+        "frame_sha256": "ce0f71580789221358d268d7dc5ab91b85616ed768bcd5d79d97abea4b95b5c7",
+        "frames": 202
+      },
+      "ignored_classes": [
+        8,
+        13
+      ],
+      "gt_rows": 768,
+      "detection_rows": 1816,
+      "cache_wall_seconds": 9.174424299999828
+    },
+    {
+      "name": "b242f6b2-eaa39345",
+      "source_id": "b242f6b2-eaa39345",
+      "split": "test",
+      "official_split": "val",
+      "frames": 202,
+      "fps": 5,
+      "gt": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\data\\reconnect_study\\bdd100k\\normalized\\b242f6b2-eaa39345\\gt.txt",
+      "detections": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\data\\reconnect_study\\bdd100k\\normalized\\b242f6b2-eaa39345\\detections.txt",
+      "gt_sha256": "8518676a65d205393987561a5661f5adef9dee607a7ea0390dcb218348fccc74",
+      "detections_sha256": "d68ce71cf17c5bff1ddf189e54f3f8763c2f8b9ad11ed11432db45651b7fa25c",
+      "official_annotation_sha256": "3acaee528ce01b3c620a611208e22d06257e2c520ffa025a51d731b3a416aa0d",
+      "public_images": {
+        "name": "b242f6b2-eaa39345",
+        "range_start": 2687337348,
+        "range_end": 2706286446,
+        "range_sha256": "c002fcefab0e58f19aa4bb4284c19e48cc4e70da92b29fa27270131cdb72118c",
+        "frame_sha256": "5d8e2359227c31b68ca7fa7b348918d51a48553a3c9ebbc85aa053460b3b84ff",
+        "frames": 202
+      },
+      "ignored_classes": [
+        8,
+        13
+      ],
+      "gt_rows": 466,
+      "detection_rows": 977,
+      "cache_wall_seconds": 8.632311099999697
+    },
+    {
+      "name": "b255cd6c-2f889586",
+      "source_id": "b255cd6c-2f889586",
+      "split": "test",
+      "official_split": "val",
+      "frames": 203,
+      "fps": 5,
+      "gt": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\data\\reconnect_study\\bdd100k\\normalized\\b255cd6c-2f889586\\gt.txt",
+      "detections": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\data\\reconnect_study\\bdd100k\\normalized\\b255cd6c-2f889586\\detections.txt",
+      "gt_sha256": "80ea5623c8b94677a3d15a219789ad7bb7b2583ac3d4de69b1a07ae81d6244cc",
+      "detections_sha256": "9f29983c96ca3f757f679e04957f1ca71933c82fbdd0e8bb3d35f42c1c688529",
+      "official_annotation_sha256": "5caecadf0fd42cb1d5949675fa5d0a93e51bf4b5ea6530aeaf462918287d0515",
+      "public_images": {
+        "name": "b255cd6c-2f889586",
+        "range_start": 4525649983,
+        "range_end": 4564019872,
+        "range_sha256": "b64ae5d82b1a1468081d2d6d1dcbc9b60813c8f32f5e75ca251a4bfa719910a5",
+        "frame_sha256": "33c588956c3a6a5fb9f15700c1c7473a195d02eca5d3d302a69cf65f4760c5e9",
+        "frames": 203
+      },
+      "ignored_classes": [
+        8,
+        13
+      ],
+      "gt_rows": 654,
+      "detection_rows": 911,
+      "cache_wall_seconds": 8.646319700000276
+    },
+    {
+      "name": "b1e0c01d-dd9e6e2f",
+      "source_id": "b1e0c01d-dd9e6e2f",
+      "split": "test",
+      "official_split": "val",
+      "frames": 202,
+      "fps": 5,
+      "gt": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\data\\reconnect_study\\bdd100k\\normalized\\b1e0c01d-dd9e6e2f\\gt.txt",
+      "detections": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\data\\reconnect_study\\bdd100k\\normalized\\b1e0c01d-dd9e6e2f\\detections.txt",
+      "gt_sha256": "dc8da6f668235433edb45af5226f8081ce336587049a9b43eb46fc58570a7274",
+      "detections_sha256": "102c425e546140d13fc67cac7b976534fec51db1763759538b58f8b622a871c8",
+      "official_annotation_sha256": "f15c1144b9f7337f2fe2c2bada685578f2291b24d56b9cb9f180882061fa5d6e",
+      "public_images": {
+        "name": "b1e0c01d-dd9e6e2f",
+        "range_start": 1668246019,
+        "range_end": 1700970235,
+        "range_sha256": "1b26fcd6b41beca444af24084991c32bb70f7786d86c039844774d5fac7e608e",
+        "frame_sha256": "6ce1c07cd5101cfb1aecaa95de0b48c3329bedb6cf6e3d9963ae518737dee765",
+        "frames": 202
+      },
+      "ignored_classes": [
+        8,
+        13
+      ],
+      "gt_rows": 1205,
+      "detection_rows": 2013,
+      "cache_wall_seconds": 8.60657190000029
+    },
+    {
+      "name": "b206a78b-99f405ab",
+      "source_id": "b206a78b-99f405ab",
+      "split": "test",
+      "official_split": "val",
+      "frames": 202,
+      "fps": 5,
+      "gt": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\data\\reconnect_study\\bdd100k\\normalized\\b206a78b-99f405ab\\gt.txt",
+      "detections": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\data\\reconnect_study\\bdd100k\\normalized\\b206a78b-99f405ab\\detections.txt",
+      "gt_sha256": "eee1dc4d0ba96f610d76799b28d61ad04b716b556f7642fe70190fadc46c5b7a",
+      "detections_sha256": "6bf4329af2e3ba19e3ae99e75b2dbbbe8c73b5cb35347a3a929a1d2ff4119939",
+      "official_annotation_sha256": "3070fade6cfc24eaaa5f3f55e93334cba9724f5f86e659204e26134cae0eb817",
+      "public_images": {
+        "name": "b206a78b-99f405ab",
+        "range_start": 4958317221,
+        "range_end": 4978181591,
+        "range_sha256": "a45bfca4c1cb604616fef7b55f1eab58943610904c2d8677be5e6c8e603fd830",
+        "frame_sha256": "0b71b88f753e08f44e682460ece4c577dbc59f1f1eb7efc968b0cd359a8723a2",
+        "frames": 202
+      },
+      "ignored_classes": [
+        8,
+        13
+      ],
+      "gt_rows": 182,
+      "detection_rows": 444,
+      "cache_wall_seconds": 8.513358500000322
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "official_dance_status": "deferred_user_approved",
+  "missing_baselines": {
+    "CAMELTrack": {
+      "reason": "发布检查点缺可核验的训练序列清单。本协议的开发集公平性未通过。",
+      "source": "https://github.com/TrackingLaboratory/CAMELTrack#-reproducing-the-paper-results-two-stage-training"
+    },
+    "HyperMOT": {
+      "reason": "作者公开仓库未提供关联所需训练检查点。",
+      "source": "https://github.com/SkyeSong38/HyperMOT/releases"
+    }
+  },
+  "domains": {
+    "MOT17": {
+      "ByteTrack": {
+        "frames": 1650,
+        "detections": 91245,
+        "sequence_count": 2,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT17-final\\manifests\\ByteTrack.json",
+        "metrics": {
+          "HOTA": 45.592,
+          "DetA": 41.158,
+          "AssA": 51.173,
+          "MOTA": 40.991,
+          "CLR_FN": 9242.0,
+          "CLR_FP": 3040.0,
+          "IDSW": 156.0,
+          "IDF1": 53.986
+        },
+        "trackeval_sha256": "9720ecc74a4de51fc8c6109ef2c6c817184767a5a729710ce1a081015ddb5457"
+      },
+      "OC-SORT": {
+        "frames": 1650,
+        "detections": 91245,
+        "sequence_count": 2,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT17-final\\manifests\\OC-SORT.json",
+        "metrics": {
+          "HOTA": 43.089,
+          "DetA": 37.774,
+          "AssA": 49.455,
+          "MOTA": 42.613,
+          "CLR_FN": 11128.0,
+          "CLR_FP": 857.0,
+          "IDSW": 111.0,
+          "IDF1": 50.795
+        },
+        "trackeval_sha256": "f58c724de5599892bc49edab293ad069b984ba930a01ff2cb0edda86f3413ecd"
+      },
+      "BoT-SORT": {
+        "frames": 1650,
+        "detections": 91245,
+        "sequence_count": 2,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT17-final\\manifests\\BoT-SORT.json",
+        "metrics": {
+          "HOTA": 47.939,
+          "DetA": 41.779,
+          "AssA": 55.443,
+          "MOTA": 44.966,
+          "CLR_FN": 9487.0,
+          "CLR_FP": 2012.0,
+          "IDSW": 101.0,
+          "IDF1": 58.066
+        },
+        "trackeval_sha256": "c0f0d3b1ea4ae07ceb51a2dfe5748c9dcc5d24b3307f37f21220b20169bc5471"
+      },
+      "TrackTrack": {
+        "frames": 1650,
+        "detections": 91245,
+        "sequence_count": 2,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT17-final\\manifests\\TrackTrack.json",
+        "metrics": {
+          "HOTA": 45.954,
+          "DetA": 40.94,
+          "AssA": 52.122,
+          "MOTA": 40.232,
+          "CLR_FN": 9296.0,
+          "CLR_FP": 3221.0,
+          "IDSW": 81.0,
+          "IDF1": 54.394
+        },
+        "trackeval_sha256": "3a132e32d986657499320c5dfa42aaed2c18dcf549e4312aa2f0ccb1496ce00a"
+      },
+      "CGHTrack-s0": {
+        "frames": 1650,
+        "detections": 91245,
+        "sequence_count": 2,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT17-final\\manifests\\CGHTrack-s0.json",
+        "competition": {
+          "size_histogram": {
+            "1": 21829,
+            "2": 2039,
+            "3": 616,
+            "4": 370,
+            "5": 217,
+            "6": 122,
+            "7": 63,
+            "8": 36,
+            "9": 20,
+            "10": 13,
+            "11": 3,
+            "12": 1
+          },
+          "groups": 25329,
+          "large_groups_ge9": 37,
+          "fallback_groups": 0,
+          "fallback_rate": 0.0
+        },
+        "metrics": {
+          "HOTA": 35.027,
+          "DetA": 34.11,
+          "AssA": 36.497,
+          "MOTA": 30.197,
+          "CLR_FN": 11541.0,
+          "CLR_FP": 2547.0,
+          "IDSW": 625.0,
+          "IDF1": 38.888
+        },
+        "trackeval_sha256": "55045a4643a134e091e1b74802a847d27094cea18a66cf832b4c65efa21be7a8"
+      },
+      "CGHTrack-s1": {
+        "frames": 1650,
+        "detections": 91245,
+        "sequence_count": 2,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT17-final\\manifests\\CGHTrack-s1.json",
+        "competition": {
+          "size_histogram": {
+            "1": 18859,
+            "2": 1302,
+            "3": 340,
+            "4": 170,
+            "5": 116,
+            "6": 49,
+            "7": 29,
+            "8": 9,
+            "9": 9,
+            "10": 1
+          },
+          "groups": 20884,
+          "large_groups_ge9": 10,
+          "fallback_groups": 0,
+          "fallback_rate": 0.0
+        },
+        "metrics": {
+          "HOTA": 40.13,
+          "DetA": 36.851,
+          "AssA": 44.075,
+          "MOTA": 37.276,
+          "CLR_FN": 10813.0,
+          "CLR_FP": 2197.0,
+          "IDSW": 211.0,
+          "IDF1": 46.5
+        },
+        "trackeval_sha256": "d425dc388292cebd79e3e2378212dedf3b71a72c428ba8c843fd04295752183e"
+      },
+      "CGHTrack-s2": {
+        "frames": 1650,
+        "detections": 91245,
+        "sequence_count": 2,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT17-final\\manifests\\CGHTrack-s2.json",
+        "competition": {
+          "size_histogram": {
+            "1": 21087,
+            "2": 1465,
+            "3": 411,
+            "4": 217,
+            "5": 126,
+            "6": 58,
+            "7": 13,
+            "8": 3,
+            "9": 7,
+            "10": 5,
+            "11": 3,
+            "12": 1
+          },
+          "groups": 23396,
+          "large_groups_ge9": 16,
+          "fallback_groups": 0,
+          "fallback_rate": 0.0
+        },
+        "metrics": {
+          "HOTA": 39.166,
+          "DetA": 36.172,
+          "AssA": 42.828,
+          "MOTA": 33.907,
+          "CLR_FN": 10795.0,
+          "CLR_FP": 2864.0,
+          "IDSW": 272.0,
+          "IDF1": 44.394
+        },
+        "trackeval_sha256": "078c2c575befe56bb8c5265ea38008039c46ab2943b3ff2ddd6359dcfcfaf5d6"
+      }
+    },
+    "MOT20": {
+      "ByteTrack": {
+        "frames": 8931,
+        "detections": 2600145,
+        "sequence_count": 4,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT20-final\\manifests\\ByteTrack.json",
+        "metrics": {
+          "HOTA": 41.34,
+          "DetA": 51.779,
+          "AssA": 33.448,
+          "MOTA": 66.908,
+          "CLR_FN": 202939.0,
+          "CLR_FP": 159062.0,
+          "IDSW": 13468.0,
+          "IDF1": 52.97
+        },
+        "trackeval_sha256": "fa7de650547f4a7155e5685ed02794a6ddb07cd5dea2e7c9b03a6c26b83c4496"
+      },
+      "OC-SORT": {
+        "frames": 8931,
+        "detections": 2600145,
+        "sequence_count": 4,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT20-final\\manifests\\OC-SORT.json",
+        "metrics": {
+          "HOTA": 40.321,
+          "DetA": 49.251,
+          "AssA": 33.409,
+          "MOTA": 67.083,
+          "CLR_FN": 322958.0,
+          "CLR_FP": 39517.0,
+          "IDSW": 11009.0,
+          "IDF1": 53.336
+        },
+        "trackeval_sha256": "a359e30df8f1646cd543856004c17ec50ffbcff92d68f9a0f997cad8b4c561c2"
+      },
+      "BoT-SORT": {
+        "frames": 8931,
+        "detections": 2600145,
+        "sequence_count": 4,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT20-final\\manifests\\BoT-SORT.json",
+        "metrics": {
+          "HOTA": 44.131,
+          "DetA": 52.801,
+          "AssA": 37.315,
+          "MOTA": 70.666,
+          "CLR_FN": 221813.0,
+          "CLR_FP": 100741.0,
+          "IDSW": 10278.0,
+          "IDF1": 58.546
+        },
+        "trackeval_sha256": "600446f2760cf06e1ffe3d5ef5d5082d05107ac8920b1d07b5eff2a8ed75ad71"
+      },
+      "TrackTrack": {
+        "frames": 8931,
+        "detections": 2600145,
+        "sequence_count": 4,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT20-final\\manifests\\TrackTrack.json",
+        "metrics": {
+          "HOTA": 40.635,
+          "DetA": 50.863,
+          "AssA": 32.91,
+          "MOTA": 65.152,
+          "CLR_FN": 193129.0,
+          "CLR_FP": 189070.0,
+          "IDSW": 13191.0,
+          "IDF1": 54.105
+        },
+        "trackeval_sha256": "b2173de9fcce267ca388b246ab46f3550e83be3bf80427c5b0e6fbb451bdb1b7"
+      },
+      "CGHTrack-s0": {
+        "frames": 8931,
+        "detections": 2600145,
+        "sequence_count": 4,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT20-final\\manifests\\CGHTrack-s0.json",
+        "competition": {
+          "size_histogram": {
+            "1": 542384,
+            "2": 174953,
+            "3": 78816,
+            "4": 46672,
+            "5": 32116,
+            "6": 26164,
+            "7": 14327,
+            "8": 9310,
+            "9": 6704,
+            "10": 4332,
+            "11": 2940,
+            "12": 2190,
+            "13": 1610,
+            "14": 1109,
+            "15": 808,
+            "16": 623,
+            "17": 477,
+            "18": 360,
+            "19": 249,
+            "20": 188,
+            "21": 160,
+            "22": 116,
+            "23": 101,
+            "24": 68,
+            "25": 60,
+            "26": 46,
+            "27": 25,
+            "28": 23,
+            "29": 23,
+            "30": 17,
+            "31": 11,
+            "32": 6,
+            "33": 4,
+            "34": 9,
+            "35": 3,
+            "36": 2,
+            "37": 2,
+            "38": 4,
+            "39": 3,
+            "40": 1,
+            "41": 1,
+            "42": 2,
+            "48": 1
+          },
+          "groups": 947020,
+          "large_groups_ge9": 22278,
+          "fallback_groups": 0,
+          "fallback_rate": 0.0
+        },
+        "metrics": {
+          "HOTA": 23.524,
+          "DetA": 31.808,
+          "AssA": 17.72,
+          "MOTA": 35.942,
+          "CLR_FN": 627888.0,
+          "CLR_FP": 35456.0,
+          "IDSW": 63468.0,
+          "IDF1": 29.836
+        },
+        "trackeval_sha256": "5600e0834e0c130bb52e68700194811847f2c97f8cf38d59f6097d05950d137e"
+      },
+      "CGHTrack-s1": {
+        "frames": 8931,
+        "detections": 2600145,
+        "sequence_count": 4,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT20-final\\manifests\\CGHTrack-s1.json",
+        "competition": {
+          "size_histogram": {
+            "1": 674504,
+            "2": 96564,
+            "3": 41714,
+            "4": 38213,
+            "5": 22746,
+            "6": 13807,
+            "7": 7808,
+            "8": 4815,
+            "9": 3172,
+            "10": 1942,
+            "11": 1296,
+            "12": 922,
+            "13": 634,
+            "14": 484,
+            "15": 299,
+            "16": 197,
+            "17": 123,
+            "18": 89,
+            "19": 71,
+            "20": 46,
+            "21": 39,
+            "22": 27,
+            "23": 17,
+            "24": 16,
+            "25": 4,
+            "26": 9,
+            "27": 7,
+            "28": 4,
+            "30": 1,
+            "31": 2,
+            "32": 3,
+            "35": 1
+          },
+          "groups": 909576,
+          "large_groups_ge9": 9405,
+          "fallback_groups": 0,
+          "fallback_rate": 0.0
+        },
+        "metrics": {
+          "HOTA": 32.107,
+          "DetA": 38.707,
+          "AssA": 26.967,
+          "MOTA": 50.87,
+          "CLR_FN": 508450.0,
+          "CLR_FP": 39839.0,
+          "IDSW": 9142.0,
+          "IDF1": 43.078
+        },
+        "trackeval_sha256": "fbb1bda9d14741d2a4a8682d7b9a1e0b98d97679c6bd1109c25b616e8dd2b62d"
+      },
+      "CGHTrack-s2": {
+        "frames": 8931,
+        "detections": 2600145,
+        "sequence_count": 4,
+        "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-MOT20-final\\manifests\\CGHTrack-s2.json",
+        "competition": {
+          "size_histogram": {
+            "1": 668636,
+            "2": 107375,
+            "3": 50705,
+            "4": 38637,
+            "5": 22876,
+            "6": 13147,
+            "7": 8064,
+            "8": 4834,
+            "9": 3132,
+            "10": 2062,
+            "11": 1373,
+            "12": 1027,
+            "13": 637,
+            "14": 417,
+            "15": 290,
+            "16": 233,
+            "17": 169,
+            "18": 99,
+            "19": 67,
+            "20": 43,
+            "21": 26,
+            "22": 29,
+            "23": 14,
+            "24": 9,
+            "25": 10,
+            "26": 6,
+            "27": 3,
+            "28": 6,
+            "29": 5,
+            "30": 2,
+            "31": 4,
+            "32": 3,
+            "33": 1,
+            "37": 1
+          },
+          "groups": 923942,
+          "large_groups_ge9": 9668,
+          "fallback_groups": 0,
+          "fallback_rate": 0.0
+        },
+        "metrics": {
+          "HOTA": 29.48,
+          "DetA": 37.564,
+          "AssA": 23.504,
+          "MOTA": 48.224,
+          "CLR_FN": 522766.0,
+          "CLR_FP": 53446.0,
+          "IDSW": 11243.0,
+          "IDF1": 38.326
+        },
+        "trackeval_sha256": "8e2c7f4faecfea4bfb1b976116b13f8e4fb8ef9fdb207d4e49206e9441cc6862"
+      }
+    }
+  },
+  "cases": {
+    "candidate_count": 679,
+    "picked": {
+      "improvement": 3,
+      "failure": 3
+    },
+    "peer": "TrackTrack",
+    "index": "C:\\Users\\25193\\Documents\\ChatGPT\\毕业论文实验部分\\runs\\p6-E8-cases\\index.json"
+  },
+  "freeze_sha256": "667a6b9840728f34ecdd61ea20d26a2fbcd786a0781ebc190f18cdcbbfe8c7be",
+  "dance_development": null
+}

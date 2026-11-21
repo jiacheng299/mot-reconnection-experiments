@@ -1,0 +1,78 @@
+{
+  "sequence": "MOT17-05-FRCNN",
+  "frames": 837,
+  "detection_cache_sha256": "f711e31a5dbb5e2f9915181f002a78b6ff96b8fc3bda04c78a997b62b3b31178",
+  "training_gt_sha256": "ed74c54176b21b38cb690eda79a4755cf16e4c4a9ca2f019b0ba8904636174f5",
+  "feature_names": [
+    "match_fraction",
+    "mean_iou",
+    "mean_confidence",
+    "mean_iou_times_confidence"
+  ],
+  "objective": "immediate_team_reward",
+  "gamma": 0.0,
+  "weights": [
+    -0.6850253760033562,
+    0.4173090188344977,
+    0.16254732733670385,
+    0.8522029704954024
+  ],
+  "supervised_groups": 10322,
+  "reward_samples": 17114,
+  "labelled_tracks": 187,
+  "regularization": 0.01,
+  "reward_counts": {
+    "-1.0": 4920,
+    "-0.75": 25,
+    "-0.6666666666666666": 215,
+    "-0.6": 9,
+    "-0.5": 961,
+    "-0.4": 7,
+    "-0.3333333333333333": 218,
+    "-0.25": 43,
+    "-0.2": 5,
+    "0.0": 7113,
+    "0.25": 8,
+    "0.3333333333333333": 57,
+    "0.4": 1,
+    "0.5": 384,
+    "0.6666666666666666": 33,
+    "0.75": 1,
+    "1.0": 3114
+  },
+  "initial_rmse": 0.7061376475864255,
+  "final_rmse": 0.6495531494206717,
+  "example": {
+    "frame": 5,
+    "tracks": [
+      3,
+      4
+    ],
+    "actions": [
+      [
+        4,
+        null
+      ],
+      [
+        null,
+        4
+      ],
+      [
+        null,
+        null
+      ]
+    ],
+    "track_identity_anchors": [
+      150,
+      14
+    ],
+    "detection_identities": {
+      "4": 14
+    },
+    "quality_scores": [
+      -2,
+      1,
+      -1
+    ]
+  }
+}

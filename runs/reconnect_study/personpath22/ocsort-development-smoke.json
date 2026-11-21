@@ -1,0 +1,80 @@
+{
+  "manifest_sha256": "e5bdbbd22e67b7858623c560dcd19af46d60b8674b61f98a00364aa8ba8f9481",
+  "split": "development",
+  "sequence_count": 1,
+  "source_count": 1,
+  "tracker": "OC-SORT",
+  "vendor_commit": "8462e7e729a93ccd3bd995c0a79a890336cb3a0b",
+  "tracker_options": {
+    "det_thresh": 0.6,
+    "max_age": 30,
+    "min_hits": 3,
+    "iou_threshold": 0.3,
+    "delta_t": 3,
+    "asso_func": "iou",
+    "inertia": 0.2,
+    "use_byte": false
+  },
+  "variant": "Vendor private-detection update on a shared cached detector output, without appearance, camera motion compensation, low-score BYTE association or output box filtering.",
+  "parameter_units": {
+    "max_age": "input frames",
+    "min_hits": "consecutive observations",
+    "delta_t": "input frames"
+  },
+  "filterpy_version": "1.4.5",
+  "commitment_risk_available": false,
+  "recovery": {
+    "sequences": {
+      "uid_vid_00199": {
+        "source_id": "publisher-asset:uid_vid_00199",
+        "frames": 101,
+        "track_rows": 812,
+        "tracker_seconds": 0.6797112000003835,
+        "gaps": 39,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 28,
+          "missed": 11
+        }
+      }
+    },
+    "aggregate": {
+      "gaps": 39,
+      "correct": 0,
+      "correct_per_gap": 0.0,
+      "outcomes": {
+        "no_anchor": 28,
+        "missed": 11
+      }
+    }
+  },
+  "overall": {
+    "protocol": "personpath22-native-keyframe",
+    "preprocessing": "Project PersonPath22 native 5 Hz annotated keyframes. TrackEval PersonPath22 distractor classes and crowd-ignore boxes. Dense benchmark scores use a separate frame grid.",
+    "trackeval_version": "1.3.0",
+    "unit": {
+      "HOTA": "percent",
+      "AssA": "percent",
+      "IDF1": "percent",
+      "IDSW": "count"
+    },
+    "sequences": {
+      "uid_vid_00199": {
+        "HOTA": 40.262693630812166,
+        "AssA": 37.160051233209565,
+        "IDF1": 54.948956946293826,
+        "IDSW": 49
+      }
+    },
+    "idsw_by_source": {
+      "publisher-asset:uid_vid_00199": 49
+    },
+    "aggregate": {
+      "HOTA": 40.262693630812166,
+      "AssA": 37.160051233209565,
+      "IDF1": 54.948956946293826,
+      "IDSW": 49
+    }
+  }
+}

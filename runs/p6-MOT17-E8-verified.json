@@ -1,0 +1,190 @@
+{
+  "results": {
+    "ByteTrack": {
+      "frames": 1650,
+      "detections": 91245,
+      "sequence_count": 2,
+      "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\p6-MOT17-final\\manifests\\ByteTrack.json",
+      "metrics": {
+        "HOTA": 45.592,
+        "DetA": 41.158,
+        "AssA": 51.173,
+        "MOTA": 40.991,
+        "CLR_FN": 9242.0,
+        "CLR_FP": 3040.0,
+        "IDSW": 156.0,
+        "IDF1": 53.986
+      },
+      "trackeval_sha256": "9720ecc74a4de51fc8c6109ef2c6c817184767a5a729710ce1a081015ddb5457"
+    },
+    "OC-SORT": {
+      "frames": 1650,
+      "detections": 91245,
+      "sequence_count": 2,
+      "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\p6-MOT17-final\\manifests\\OC-SORT.json",
+      "metrics": {
+        "HOTA": 43.089,
+        "DetA": 37.774,
+        "AssA": 49.455,
+        "MOTA": 42.613,
+        "CLR_FN": 11128.0,
+        "CLR_FP": 857.0,
+        "IDSW": 111.0,
+        "IDF1": 50.795
+      },
+      "trackeval_sha256": "f58c724de5599892bc49edab293ad069b984ba930a01ff2cb0edda86f3413ecd"
+    },
+    "BoT-SORT": {
+      "frames": 1650,
+      "detections": 91245,
+      "sequence_count": 2,
+      "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\p6-MOT17-final\\manifests\\BoT-SORT.json",
+      "metrics": {
+        "HOTA": 47.939,
+        "DetA": 41.779,
+        "AssA": 55.443,
+        "MOTA": 44.966,
+        "CLR_FN": 9487.0,
+        "CLR_FP": 2012.0,
+        "IDSW": 101.0,
+        "IDF1": 58.066
+      },
+      "trackeval_sha256": "c0f0d3b1ea4ae07ceb51a2dfe5748c9dcc5d24b3307f37f21220b20169bc5471"
+    },
+    "TrackTrack": {
+      "frames": 1650,
+      "detections": 91245,
+      "sequence_count": 2,
+      "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\p6-MOT17-final\\manifests\\TrackTrack.json",
+      "metrics": {
+        "HOTA": 45.954,
+        "DetA": 40.94,
+        "AssA": 52.122,
+        "MOTA": 40.232,
+        "CLR_FN": 9296.0,
+        "CLR_FP": 3221.0,
+        "IDSW": 81.0,
+        "IDF1": 54.394
+      },
+      "trackeval_sha256": "3a132e32d986657499320c5dfa42aaed2c18dcf549e4312aa2f0ccb1496ce00a"
+    },
+    "CGHTrack-s0": {
+      "frames": 1650,
+      "detections": 91245,
+      "sequence_count": 2,
+      "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\p6-MOT17-final\\manifests\\CGHTrack-s0.json",
+      "competition": {
+        "size_histogram": {
+          "1": 21829,
+          "2": 2039,
+          "3": 616,
+          "4": 370,
+          "5": 217,
+          "6": 122,
+          "7": 63,
+          "8": 36,
+          "9": 20,
+          "10": 13,
+          "11": 3,
+          "12": 1
+        },
+        "groups": 25329,
+        "large_groups_ge9": 37,
+        "fallback_groups": 0,
+        "fallback_rate": 0.0
+      },
+      "metrics": {
+        "HOTA": 35.027,
+        "DetA": 34.11,
+        "AssA": 36.497,
+        "MOTA": 30.197,
+        "CLR_FN": 11541.0,
+        "CLR_FP": 2547.0,
+        "IDSW": 625.0,
+        "IDF1": 38.888
+      },
+      "trackeval_sha256": "55045a4643a134e091e1b74802a847d27094cea18a66cf832b4c65efa21be7a8"
+    },
+    "CGHTrack-s1": {
+      "frames": 1650,
+      "detections": 91245,
+      "sequence_count": 2,
+      "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\p6-MOT17-final\\manifests\\CGHTrack-s1.json",
+      "competition": {
+        "size_histogram": {
+          "1": 18859,
+          "2": 1302,
+          "3": 340,
+          "4": 170,
+          "5": 116,
+          "6": 49,
+          "7": 29,
+          "8": 9,
+          "9": 9,
+          "10": 1
+        },
+        "groups": 20884,
+        "large_groups_ge9": 10,
+        "fallback_groups": 0,
+        "fallback_rate": 0.0
+      },
+      "metrics": {
+        "HOTA": 40.13,
+        "DetA": 36.851,
+        "AssA": 44.075,
+        "MOTA": 37.276,
+        "CLR_FN": 10813.0,
+        "CLR_FP": 2197.0,
+        "IDSW": 211.0,
+        "IDF1": 46.5
+      },
+      "trackeval_sha256": "d425dc388292cebd79e3e2378212dedf3b71a72c428ba8c843fd04295752183e"
+    },
+    "CGHTrack-s2": {
+      "frames": 1650,
+      "detections": 91245,
+      "sequence_count": 2,
+      "manifest": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\p6-MOT17-final\\manifests\\CGHTrack-s2.json",
+      "competition": {
+        "size_histogram": {
+          "1": 21087,
+          "2": 1465,
+          "3": 411,
+          "4": 217,
+          "5": 126,
+          "6": 58,
+          "7": 13,
+          "8": 3,
+          "9": 7,
+          "10": 5,
+          "11": 3,
+          "12": 1
+        },
+        "groups": 23396,
+        "large_groups_ge9": 16,
+        "fallback_groups": 0,
+        "fallback_rate": 0.0
+      },
+      "metrics": {
+        "HOTA": 39.166,
+        "DetA": 36.172,
+        "AssA": 42.828,
+        "MOTA": 33.907,
+        "CLR_FN": 10795.0,
+        "CLR_FP": 2864.0,
+        "IDSW": 272.0,
+        "IDF1": 44.394
+      },
+      "trackeval_sha256": "078c2c575befe56bb8c5265ea38008039c46ab2943b3ff2ddd6359dcfcfaf5d6"
+    }
+  },
+  "cases": {
+    "candidate_count": 679,
+    "picked": {
+      "improvement": 3,
+      "failure": 3
+    },
+    "peer": "TrackTrack",
+    "index": "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\runs\\p6-E8-cases\\index.json"
+  }
+}

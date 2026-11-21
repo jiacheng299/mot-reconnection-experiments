@@ -1,0 +1,1557 @@
+{
+  "manifest_sha256": "e5bdbbd22e67b7858623c560dcd19af46d60b8674b61f98a00364aa8ba8f9481",
+  "split": "test",
+  "sequence_count": 74,
+  "source_count": 74,
+  "tracker": "OC-SORT",
+  "vendor_commit": "8462e7e729a93ccd3bd995c0a79a890336cb3a0b",
+  "tracker_options": {
+    "det_thresh": 0.6,
+    "max_age": 30,
+    "min_hits": 3,
+    "iou_threshold": 0.3,
+    "delta_t": 3,
+    "asso_func": "iou",
+    "inertia": 0.2,
+    "use_byte": false
+  },
+  "variant": "Vendor private-detection update on a shared cached detector output, without appearance, camera motion compensation, low-score BYTE association or output box filtering.",
+  "parameter_units": {
+    "max_age": "input frames",
+    "min_hits": "consecutive observations",
+    "delta_t": "input frames"
+  },
+  "filterpy_version": "1.4.5",
+  "commitment_risk_available": false,
+  "recovery": {
+    "sequences": {
+      "uid_vid_00008": {
+        "source_id": "publisher-asset:uid_vid_00008",
+        "frames": 167,
+        "track_rows": 970,
+        "tracker_seconds": 0.7138582999996288,
+        "gaps": 11,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 11
+        }
+      },
+      "uid_vid_00009": {
+        "source_id": "publisher-asset:uid_vid_00009",
+        "frames": 69,
+        "track_rows": 415,
+        "tracker_seconds": 0.06743149999965681,
+        "gaps": 29,
+        "correct": 1,
+        "correct_per_gap": 0.034482758620689655,
+        "outcomes": {
+          "no_anchor": 26,
+          "correct": 1,
+          "missed": 2
+        }
+      },
+      "uid_vid_00011": {
+        "source_id": "publisher-asset:uid_vid_00011",
+        "frames": 113,
+        "track_rows": 1133,
+        "tracker_seconds": 0.12969089999933203,
+        "gaps": 11,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "missed": 1,
+          "no_anchor": 10
+        }
+      },
+      "uid_vid_00013": {
+        "source_id": "publisher-asset:uid_vid_00013",
+        "frames": 126,
+        "track_rows": 3894,
+        "tracker_seconds": 0.4813787000002776,
+        "gaps": 281,
+        "correct": 30,
+        "correct_per_gap": 0.10676156583629894,
+        "outcomes": {
+          "no_anchor": 213,
+          "missed": 35,
+          "correct": 30,
+          "switched": 3
+        }
+      },
+      "uid_vid_00018": {
+        "source_id": "publisher-asset:uid_vid_00018",
+        "frames": 86,
+        "track_rows": 1240,
+        "tracker_seconds": 0.11453410000012809,
+        "gaps": 9,
+        "correct": 1,
+        "correct_per_gap": 0.1111111111111111,
+        "outcomes": {
+          "no_anchor": 5,
+          "missed": 3,
+          "correct": 1
+        }
+      },
+      "uid_vid_00019": {
+        "source_id": "publisher-asset:uid_vid_00019",
+        "frames": 74,
+        "track_rows": 2315,
+        "tracker_seconds": 0.4172096000002057,
+        "gaps": 276,
+        "correct": 16,
+        "correct_per_gap": 0.057971014492753624,
+        "outcomes": {
+          "no_anchor": 242,
+          "missed": 17,
+          "switched": 1,
+          "correct": 16
+        }
+      },
+      "uid_vid_00020": {
+        "source_id": "publisher-asset:uid_vid_00020",
+        "frames": 61,
+        "track_rows": 665,
+        "tracker_seconds": 0.16766429999916,
+        "gaps": 115,
+        "correct": 3,
+        "correct_per_gap": 0.02608695652173913,
+        "outcomes": {
+          "no_anchor": 100,
+          "correct": 3,
+          "missed": 12
+        }
+      },
+      "uid_vid_00024": {
+        "source_id": "publisher-asset:uid_vid_00024",
+        "frames": 119,
+        "track_rows": 6873,
+        "tracker_seconds": 0.7716503000001467,
+        "gaps": 271,
+        "correct": 43,
+        "correct_per_gap": 0.15867158671586715,
+        "outcomes": {
+          "correct": 43,
+          "no_anchor": 180,
+          "missed": 40,
+          "switched": 8
+        }
+      },
+      "uid_vid_00028": {
+        "source_id": "publisher-asset:uid_vid_00028",
+        "frames": 124,
+        "track_rows": 2179,
+        "tracker_seconds": 0.4625476000001072,
+        "gaps": 63,
+        "correct": 6,
+        "correct_per_gap": 0.09523809523809523,
+        "outcomes": {
+          "switched": 2,
+          "no_anchor": 38,
+          "missed": 17,
+          "correct": 6
+        }
+      },
+      "uid_vid_00030": {
+        "source_id": "publisher-asset:uid_vid_00030",
+        "frames": 116,
+        "track_rows": 901,
+        "tracker_seconds": 0.15894729999945412,
+        "gaps": 20,
+        "correct": 3,
+        "correct_per_gap": 0.15,
+        "outcomes": {
+          "missed": 8,
+          "no_anchor": 9,
+          "correct": 3
+        }
+      },
+      "uid_vid_00031": {
+        "source_id": "publisher-asset:uid_vid_00031",
+        "frames": 58,
+        "track_rows": 1272,
+        "tracker_seconds": 0.10449489999973594,
+        "gaps": 20,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "missed": 2,
+          "no_anchor": 18
+        }
+      },
+      "uid_vid_00035": {
+        "source_id": "publisher-asset:uid_vid_00035",
+        "frames": 141,
+        "track_rows": 2424,
+        "tracker_seconds": 0.2307823000001008,
+        "gaps": 9,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 9
+        }
+      },
+      "uid_vid_00036": {
+        "source_id": "publisher-asset:uid_vid_00036",
+        "frames": 53,
+        "track_rows": 1064,
+        "tracker_seconds": 0.10859249999975873,
+        "gaps": 4,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "missed": 1,
+          "no_anchor": 3
+        }
+      },
+      "uid_vid_00038": {
+        "source_id": "publisher-asset:uid_vid_00038",
+        "frames": 121,
+        "track_rows": 700,
+        "tracker_seconds": 0.19702260000030947,
+        "gaps": 44,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "missed": 5,
+          "no_anchor": 39
+        }
+      },
+      "uid_vid_00043": {
+        "source_id": "publisher-asset:uid_vid_00043",
+        "frames": 86,
+        "track_rows": 1312,
+        "tracker_seconds": 0.23055030000068655,
+        "gaps": 39,
+        "correct": 3,
+        "correct_per_gap": 0.07692307692307693,
+        "outcomes": {
+          "missed": 11,
+          "no_anchor": 25,
+          "correct": 3
+        }
+      },
+      "uid_vid_00045": {
+        "source_id": "publisher-asset:uid_vid_00045",
+        "frames": 91,
+        "track_rows": 641,
+        "tracker_seconds": 0.10452749999967637,
+        "gaps": 15,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 12,
+          "missed": 3
+        }
+      },
+      "uid_vid_00046": {
+        "source_id": "publisher-asset:uid_vid_00046",
+        "frames": 60,
+        "track_rows": 639,
+        "tracker_seconds": 0.07723559999976715,
+        "gaps": 10,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 10
+        }
+      },
+      "uid_vid_00048": {
+        "source_id": "publisher-asset:uid_vid_00048",
+        "frames": 166,
+        "track_rows": 2296,
+        "tracker_seconds": 0.5013754999999946,
+        "gaps": 35,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 29,
+          "missed": 6
+        }
+      },
+      "uid_vid_00051": {
+        "source_id": "publisher-asset:uid_vid_00051",
+        "frames": 96,
+        "track_rows": 1773,
+        "tracker_seconds": 0.3008767000001171,
+        "gaps": 43,
+        "correct": 6,
+        "correct_per_gap": 0.13953488372093023,
+        "outcomes": {
+          "no_anchor": 30,
+          "missed": 7,
+          "correct": 6
+        }
+      },
+      "uid_vid_00056": {
+        "source_id": "publisher-asset:uid_vid_00056",
+        "frames": 112,
+        "track_rows": 965,
+        "tracker_seconds": 0.1353675000000294,
+        "gaps": 30,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 27,
+          "missed": 3
+        }
+      },
+      "uid_vid_00057": {
+        "source_id": "publisher-asset:uid_vid_00057",
+        "frames": 114,
+        "track_rows": 1155,
+        "tracker_seconds": 0.15868520000003628,
+        "gaps": 5,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 5
+        }
+      },
+      "uid_vid_00063": {
+        "source_id": "publisher-asset:uid_vid_00063",
+        "frames": 76,
+        "track_rows": 237,
+        "tracker_seconds": 0.06892049999987648,
+        "gaps": 4,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 4
+        }
+      },
+      "uid_vid_00064": {
+        "source_id": "publisher-asset:uid_vid_00064",
+        "frames": 105,
+        "track_rows": 733,
+        "tracker_seconds": 0.11475870000049326,
+        "gaps": 10,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 10
+        }
+      },
+      "uid_vid_00066": {
+        "source_id": "publisher-asset:uid_vid_00066",
+        "frames": 91,
+        "track_rows": 598,
+        "tracker_seconds": 0.15686019999975542,
+        "gaps": 12,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 11,
+          "missed": 1
+        }
+      },
+      "uid_vid_00067": {
+        "source_id": "publisher-asset:uid_vid_00067",
+        "frames": 61,
+        "track_rows": 143,
+        "tracker_seconds": 0.03642779999972845,
+        "gaps": 0,
+        "correct": 0,
+        "correct_per_gap": null,
+        "outcomes": {}
+      },
+      "uid_vid_00068": {
+        "source_id": "publisher-asset:uid_vid_00068",
+        "frames": 61,
+        "track_rows": 1065,
+        "tracker_seconds": 0.22808709999935672,
+        "gaps": 34,
+        "correct": 2,
+        "correct_per_gap": 0.058823529411764705,
+        "outcomes": {
+          "missed": 3,
+          "no_anchor": 29,
+          "correct": 2
+        }
+      },
+      "uid_vid_00069": {
+        "source_id": "publisher-asset:uid_vid_00069",
+        "frames": 51,
+        "track_rows": 845,
+        "tracker_seconds": 0.12110029999985272,
+        "gaps": 16,
+        "correct": 1,
+        "correct_per_gap": 0.0625,
+        "outcomes": {
+          "no_anchor": 14,
+          "correct": 1,
+          "missed": 1
+        }
+      },
+      "uid_vid_00071": {
+        "source_id": "publisher-asset:uid_vid_00071",
+        "frames": 96,
+        "track_rows": 170,
+        "tracker_seconds": 0.051638099999763654,
+        "gaps": 4,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 4
+        }
+      },
+      "uid_vid_00076": {
+        "source_id": "publisher-asset:uid_vid_00076",
+        "frames": 142,
+        "track_rows": 870,
+        "tracker_seconds": 0.15176770000016404,
+        "gaps": 15,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 15
+        }
+      },
+      "uid_vid_00078": {
+        "source_id": "publisher-asset:uid_vid_00078",
+        "frames": 94,
+        "track_rows": 1006,
+        "tracker_seconds": 0.1429625999999189,
+        "gaps": 2,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "missed": 1,
+          "no_anchor": 1
+        }
+      },
+      "uid_vid_00079": {
+        "source_id": "publisher-asset:uid_vid_00079",
+        "frames": 51,
+        "track_rows": 286,
+        "tracker_seconds": 0.05447790000016539,
+        "gaps": 2,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 2
+        }
+      },
+      "uid_vid_00080": {
+        "source_id": "publisher-asset:uid_vid_00080",
+        "frames": 95,
+        "track_rows": 2745,
+        "tracker_seconds": 0.32671080000000075,
+        "gaps": 40,
+        "correct": 7,
+        "correct_per_gap": 0.175,
+        "outcomes": {
+          "missed": 10,
+          "no_anchor": 23,
+          "correct": 7
+        }
+      },
+      "uid_vid_00082": {
+        "source_id": "publisher-asset:uid_vid_00082",
+        "frames": 94,
+        "track_rows": 331,
+        "tracker_seconds": 0.10480290000032255,
+        "gaps": 61,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 59,
+          "missed": 2
+        }
+      },
+      "uid_vid_00085": {
+        "source_id": "publisher-asset:uid_vid_00085",
+        "frames": 121,
+        "track_rows": 193,
+        "tracker_seconds": 0.08634080000047106,
+        "gaps": 7,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 7
+        }
+      },
+      "uid_vid_00086": {
+        "source_id": "publisher-asset:uid_vid_00086",
+        "frames": 150,
+        "track_rows": 1932,
+        "tracker_seconds": 0.5841888000004474,
+        "gaps": 214,
+        "correct": 11,
+        "correct_per_gap": 0.0514018691588785,
+        "outcomes": {
+          "missed": 40,
+          "no_anchor": 156,
+          "switched": 7,
+          "correct": 11
+        }
+      },
+      "uid_vid_00087": {
+        "source_id": "publisher-asset:uid_vid_00087",
+        "frames": 51,
+        "track_rows": 144,
+        "tracker_seconds": 0.03237199999966833,
+        "gaps": 0,
+        "correct": 0,
+        "correct_per_gap": null,
+        "outcomes": {}
+      },
+      "uid_vid_00090": {
+        "source_id": "publisher-asset:uid_vid_00090",
+        "frames": 103,
+        "track_rows": 1116,
+        "tracker_seconds": 0.2708308000001125,
+        "gaps": 15,
+        "correct": 1,
+        "correct_per_gap": 0.06666666666666667,
+        "outcomes": {
+          "no_anchor": 13,
+          "missed": 1,
+          "correct": 1
+        }
+      },
+      "uid_vid_00092": {
+        "source_id": "publisher-asset:uid_vid_00092",
+        "frames": 150,
+        "track_rows": 400,
+        "tracker_seconds": 0.09287399999993795,
+        "gaps": 7,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 7
+        }
+      },
+      "uid_vid_00096": {
+        "source_id": "publisher-asset:uid_vid_00096",
+        "frames": 58,
+        "track_rows": 1823,
+        "tracker_seconds": 0.2369274000002406,
+        "gaps": 90,
+        "correct": 8,
+        "correct_per_gap": 0.08888888888888889,
+        "outcomes": {
+          "no_anchor": 64,
+          "correct": 8,
+          "missed": 14,
+          "switched": 4
+        }
+      },
+      "uid_vid_00098": {
+        "source_id": "publisher-asset:uid_vid_00098",
+        "frames": 256,
+        "track_rows": 2233,
+        "tracker_seconds": 0.46124499999950785,
+        "gaps": 46,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 39,
+          "missed": 6,
+          "switched": 1
+        }
+      },
+      "uid_vid_00099": {
+        "source_id": "publisher-asset:uid_vid_00099",
+        "frames": 104,
+        "track_rows": 478,
+        "tracker_seconds": 0.11450460000014573,
+        "gaps": 22,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "missed": 3,
+          "no_anchor": 19
+        }
+      },
+      "uid_vid_00100": {
+        "source_id": "publisher-asset:uid_vid_00100",
+        "frames": 61,
+        "track_rows": 172,
+        "tracker_seconds": 0.0524531000000934,
+        "gaps": 49,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 49
+        }
+      },
+      "uid_vid_00153": {
+        "source_id": "publisher-asset:uid_vid_00153",
+        "frames": 106,
+        "track_rows": 1072,
+        "tracker_seconds": 0.25531450000016775,
+        "gaps": 58,
+        "correct": 1,
+        "correct_per_gap": 0.017241379310344827,
+        "outcomes": {
+          "no_anchor": 55,
+          "correct": 1,
+          "missed": 2
+        }
+      },
+      "uid_vid_00158": {
+        "source_id": "publisher-asset:uid_vid_00158",
+        "frames": 153,
+        "track_rows": 552,
+        "tracker_seconds": 0.15275670000028185,
+        "gaps": 11,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 10,
+          "missed": 1
+        }
+      },
+      "uid_vid_00161": {
+        "source_id": "publisher-asset:uid_vid_00161",
+        "frames": 842,
+        "track_rows": 12328,
+        "tracker_seconds": 1.8601878999998007,
+        "gaps": 64,
+        "correct": 4,
+        "correct_per_gap": 0.0625,
+        "outcomes": {
+          "missed": 9,
+          "no_anchor": 51,
+          "correct": 4
+        }
+      },
+      "uid_vid_00163": {
+        "source_id": "publisher-asset:uid_vid_00163",
+        "frames": 142,
+        "track_rows": 2583,
+        "tracker_seconds": 0.5365176999994219,
+        "gaps": 55,
+        "correct": 2,
+        "correct_per_gap": 0.03636363636363636,
+        "outcomes": {
+          "no_anchor": 40,
+          "missed": 13,
+          "correct": 2
+        }
+      },
+      "uid_vid_00166": {
+        "source_id": "publisher-asset:uid_vid_00166",
+        "frames": 118,
+        "track_rows": 1402,
+        "tracker_seconds": 0.2458003000001554,
+        "gaps": 39,
+        "correct": 1,
+        "correct_per_gap": 0.02564102564102564,
+        "outcomes": {
+          "missed": 4,
+          "no_anchor": 34,
+          "correct": 1
+        }
+      },
+      "uid_vid_00167": {
+        "source_id": "publisher-asset:uid_vid_00167",
+        "frames": 87,
+        "track_rows": 1071,
+        "tracker_seconds": 0.16623110000000452,
+        "gaps": 17,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 15,
+          "missed": 2
+        }
+      },
+      "uid_vid_00169": {
+        "source_id": "publisher-asset:uid_vid_00169",
+        "frames": 199,
+        "track_rows": 1147,
+        "tracker_seconds": 0.21434940000017377,
+        "gaps": 31,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 31
+        }
+      },
+      "uid_vid_00170": {
+        "source_id": "publisher-asset:uid_vid_00170",
+        "frames": 183,
+        "track_rows": 2156,
+        "tracker_seconds": 0.6154725999995208,
+        "gaps": 120,
+        "correct": 1,
+        "correct_per_gap": 0.008333333333333333,
+        "outcomes": {
+          "missed": 20,
+          "no_anchor": 97,
+          "correct": 1,
+          "switched": 2
+        }
+      },
+      "uid_vid_00172": {
+        "source_id": "publisher-asset:uid_vid_00172",
+        "frames": 96,
+        "track_rows": 837,
+        "tracker_seconds": 0.17217540000001463,
+        "gaps": 15,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 13,
+          "missed": 2
+        }
+      },
+      "uid_vid_00173": {
+        "source_id": "publisher-asset:uid_vid_00173",
+        "frames": 95,
+        "track_rows": 947,
+        "tracker_seconds": 0.22227080000084243,
+        "gaps": 15,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 9,
+          "missed": 6
+        }
+      },
+      "uid_vid_00174": {
+        "source_id": "publisher-asset:uid_vid_00174",
+        "frames": 129,
+        "track_rows": 1152,
+        "tracker_seconds": 0.20985170000039943,
+        "gaps": 9,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 9
+        }
+      },
+      "uid_vid_00175": {
+        "source_id": "publisher-asset:uid_vid_00175",
+        "frames": 114,
+        "track_rows": 973,
+        "tracker_seconds": 0.1952168999996502,
+        "gaps": 10,
+        "correct": 1,
+        "correct_per_gap": 0.1,
+        "outcomes": {
+          "missed": 2,
+          "no_anchor": 7,
+          "correct": 1
+        }
+      },
+      "uid_vid_00178": {
+        "source_id": "publisher-asset:uid_vid_00178",
+        "frames": 90,
+        "track_rows": 442,
+        "tracker_seconds": 0.1225893000000724,
+        "gaps": 6,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 6
+        }
+      },
+      "uid_vid_00179": {
+        "source_id": "publisher-asset:uid_vid_00179",
+        "frames": 163,
+        "track_rows": 1255,
+        "tracker_seconds": 0.28160229999957664,
+        "gaps": 42,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "missed": 9,
+          "no_anchor": 33
+        }
+      },
+      "uid_vid_00183": {
+        "source_id": "publisher-asset:uid_vid_00183",
+        "frames": 87,
+        "track_rows": 1014,
+        "tracker_seconds": 0.1379045000003316,
+        "gaps": 17,
+        "correct": 1,
+        "correct_per_gap": 0.058823529411764705,
+        "outcomes": {
+          "no_anchor": 14,
+          "missed": 2,
+          "correct": 1
+        }
+      },
+      "uid_vid_00189": {
+        "source_id": "publisher-asset:uid_vid_00189",
+        "frames": 88,
+        "track_rows": 901,
+        "tracker_seconds": 0.14756469999974797,
+        "gaps": 15,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 13,
+          "switched": 1,
+          "missed": 1
+        }
+      },
+      "uid_vid_00190": {
+        "source_id": "publisher-asset:uid_vid_00190",
+        "frames": 116,
+        "track_rows": 2101,
+        "tracker_seconds": 0.25150510000003123,
+        "gaps": 58,
+        "correct": 7,
+        "correct_per_gap": 0.1206896551724138,
+        "outcomes": {
+          "no_anchor": 42,
+          "correct": 7,
+          "missed": 8,
+          "switched": 1
+        }
+      },
+      "uid_vid_00191": {
+        "source_id": "publisher-asset:uid_vid_00191",
+        "frames": 50,
+        "track_rows": 239,
+        "tracker_seconds": 0.12556339999991906,
+        "gaps": 15,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 14,
+          "missed": 1
+        }
+      },
+      "uid_vid_00193": {
+        "source_id": "publisher-asset:uid_vid_00193",
+        "frames": 86,
+        "track_rows": 648,
+        "tracker_seconds": 0.17284070000005158,
+        "gaps": 9,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 6,
+          "missed": 3
+        }
+      },
+      "uid_vid_00198": {
+        "source_id": "publisher-asset:uid_vid_00198",
+        "frames": 62,
+        "track_rows": 721,
+        "tracker_seconds": 0.1313745999996172,
+        "gaps": 15,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 13,
+          "missed": 2
+        }
+      },
+      "uid_vid_00200": {
+        "source_id": "publisher-asset:uid_vid_00200",
+        "frames": 115,
+        "track_rows": 454,
+        "tracker_seconds": 0.09050680000018474,
+        "gaps": 1,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 1
+        }
+      },
+      "uid_vid_00201": {
+        "source_id": "publisher-asset:uid_vid_00201",
+        "frames": 56,
+        "track_rows": 672,
+        "tracker_seconds": 0.11171039999953791,
+        "gaps": 41,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 38,
+          "missed": 3
+        }
+      },
+      "uid_vid_00205": {
+        "source_id": "publisher-asset:uid_vid_00205",
+        "frames": 88,
+        "track_rows": 1206,
+        "tracker_seconds": 0.4479043000001184,
+        "gaps": 27,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "switched": 3,
+          "no_anchor": 19,
+          "missed": 5
+        }
+      },
+      "uid_vid_00207": {
+        "source_id": "publisher-asset:uid_vid_00207",
+        "frames": 60,
+        "track_rows": 802,
+        "tracker_seconds": 0.10122809999938909,
+        "gaps": 21,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 21
+        }
+      },
+      "uid_vid_00212": {
+        "source_id": "publisher-asset:uid_vid_00212",
+        "frames": 171,
+        "track_rows": 2698,
+        "tracker_seconds": 0.3313373999999385,
+        "gaps": 73,
+        "correct": 4,
+        "correct_per_gap": 0.0547945205479452,
+        "outcomes": {
+          "correct": 4,
+          "missed": 9,
+          "no_anchor": 60
+        }
+      },
+      "uid_vid_00218": {
+        "source_id": "publisher-asset:uid_vid_00218",
+        "frames": 75,
+        "track_rows": 905,
+        "tracker_seconds": 0.16261479999957373,
+        "gaps": 13,
+        "correct": 1,
+        "correct_per_gap": 0.07692307692307693,
+        "outcomes": {
+          "no_anchor": 12,
+          "correct": 1
+        }
+      },
+      "uid_vid_00219": {
+        "source_id": "publisher-asset:uid_vid_00219",
+        "frames": 338,
+        "track_rows": 2235,
+        "tracker_seconds": 0.600564100000156,
+        "gaps": 111,
+        "correct": 1,
+        "correct_per_gap": 0.009009009009009009,
+        "outcomes": {
+          "no_anchor": 108,
+          "missed": 2,
+          "correct": 1
+        }
+      },
+      "uid_vid_00221": {
+        "source_id": "publisher-asset:uid_vid_00221",
+        "frames": 731,
+        "track_rows": 4730,
+        "tracker_seconds": 0.7847432999997181,
+        "gaps": 130,
+        "correct": 2,
+        "correct_per_gap": 0.015384615384615385,
+        "outcomes": {
+          "no_anchor": 127,
+          "missed": 1,
+          "correct": 2
+        }
+      },
+      "uid_vid_00222": {
+        "source_id": "publisher-asset:uid_vid_00222",
+        "frames": 71,
+        "track_rows": 1101,
+        "tracker_seconds": 0.13724290000027395,
+        "gaps": 3,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 3
+        }
+      },
+      "uid_vid_00226": {
+        "source_id": "publisher-asset:uid_vid_00226",
+        "frames": 124,
+        "track_rows": 788,
+        "tracker_seconds": 0.10794669999995676,
+        "gaps": 4,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 4
+        }
+      },
+      "uid_vid_00228": {
+        "source_id": "publisher-asset:uid_vid_00228",
+        "frames": 156,
+        "track_rows": 2029,
+        "tracker_seconds": 0.34602470000027097,
+        "gaps": 71,
+        "correct": 6,
+        "correct_per_gap": 0.08450704225352113,
+        "outcomes": {
+          "no_anchor": 55,
+          "missed": 8,
+          "correct": 6,
+          "switched": 2
+        }
+      },
+      "uid_vid_00230": {
+        "source_id": "publisher-asset:uid_vid_00230",
+        "frames": 105,
+        "track_rows": 1448,
+        "tracker_seconds": 0.24500439999974333,
+        "gaps": 49,
+        "correct": 0,
+        "correct_per_gap": 0.0,
+        "outcomes": {
+          "no_anchor": 46,
+          "missed": 3
+        }
+      }
+    },
+    "aggregate": {
+      "gaps": 3155,
+      "correct": 174,
+      "correct_per_gap": 0.05515055467511886,
+      "outcomes": {
+        "no_anchor": 2573,
+        "correct": 174,
+        "missed": 373,
+        "switched": 35
+      }
+    }
+  },
+  "overall": {
+    "protocol": "personpath22-native-keyframe",
+    "preprocessing": "Project PersonPath22 native 5 Hz annotated keyframes. TrackEval PersonPath22 distractor classes and crowd-ignore boxes. Dense benchmark scores use a separate frame grid.",
+    "trackeval_version": "1.3.0",
+    "unit": {
+      "HOTA": "percent",
+      "AssA": "percent",
+      "IDF1": "percent",
+      "IDSW": "count"
+    },
+    "sequences": {
+      "uid_vid_00008": {
+        "HOTA": 24.38836108043507,
+        "AssA": 17.588286884090103,
+        "IDF1": 34.29310902620511,
+        "IDSW": 104
+      },
+      "uid_vid_00009": {
+        "HOTA": 43.87420890283267,
+        "AssA": 64.762474683886,
+        "IDF1": 52.66711681296421,
+        "IDSW": 6
+      },
+      "uid_vid_00011": {
+        "HOTA": 57.73930336202452,
+        "AssA": 58.108892207093135,
+        "IDF1": 76.57142857142857,
+        "IDSW": 16
+      },
+      "uid_vid_00013": {
+        "HOTA": 38.360008623891765,
+        "AssA": 41.50524005510573,
+        "IDF1": 49.6567694979737,
+        "IDSW": 127
+      },
+      "uid_vid_00018": {
+        "HOTA": 64.16890277481797,
+        "AssA": 69.04655893363342,
+        "IDF1": 86.88069758224336,
+        "IDSW": 10
+      },
+      "uid_vid_00019": {
+        "HOTA": 40.156270191880076,
+        "AssA": 57.306197209690794,
+        "IDF1": 49.892933618843685,
+        "IDSW": 48
+      },
+      "uid_vid_00020": {
+        "HOTA": 26.973440054727917,
+        "AssA": 30.329534150350156,
+        "IDF1": 40.89657884388517,
+        "IDSW": 22
+      },
+      "uid_vid_00024": {
+        "HOTA": 46.22239517001898,
+        "AssA": 41.83400013939087,
+        "IDF1": 59.28087788932991,
+        "IDSW": 237
+      },
+      "uid_vid_00028": {
+        "HOTA": 29.595581430915065,
+        "AssA": 22.217402424861906,
+        "IDF1": 36.56728190566335,
+        "IDSW": 221
+      },
+      "uid_vid_00030": {
+        "HOTA": 48.534691265861724,
+        "AssA": 50.224405871107635,
+        "IDF1": 69.0909090909091,
+        "IDSW": 24
+      },
+      "uid_vid_00031": {
+        "HOTA": 55.58352020000156,
+        "AssA": 63.20334845536636,
+        "IDF1": 71.18748082233815,
+        "IDSW": 12
+      },
+      "uid_vid_00035": {
+        "HOTA": 67.49900129660709,
+        "AssA": 70.9275909155556,
+        "IDF1": 81.13207547169812,
+        "IDSW": 8
+      },
+      "uid_vid_00036": {
+        "HOTA": 63.33484187881211,
+        "AssA": 63.98336888248013,
+        "IDF1": 77.2391125718981,
+        "IDSW": 19
+      },
+      "uid_vid_00038": {
+        "HOTA": 26.650034507507442,
+        "AssA": 26.54800437281149,
+        "IDF1": 34.0028024287716,
+        "IDSW": 29
+      },
+      "uid_vid_00043": {
+        "HOTA": 31.95219692880624,
+        "AssA": 31.623005951954646,
+        "IDF1": 43.07504575960952,
+        "IDSW": 61
+      },
+      "uid_vid_00045": {
+        "HOTA": 35.52779410745268,
+        "AssA": 32.75183296534079,
+        "IDF1": 47.63390535621425,
+        "IDSW": 25
+      },
+      "uid_vid_00046": {
+        "HOTA": 56.862863599585786,
+        "AssA": 65.49510128071107,
+        "IDF1": 75.93846153846154,
+        "IDSW": 2
+      },
+      "uid_vid_00048": {
+        "HOTA": 35.98820406128328,
+        "AssA": 31.220415158144764,
+        "IDF1": 44.978916133062626,
+        "IDSW": 135
+      },
+      "uid_vid_00051": {
+        "HOTA": 39.29860096383501,
+        "AssA": 36.44304140754412,
+        "IDF1": 52.50467678237373,
+        "IDSW": 83
+      },
+      "uid_vid_00056": {
+        "HOTA": 50.35108407838011,
+        "AssA": 53.16595358796433,
+        "IDF1": 67.22246599385696,
+        "IDSW": 11
+      },
+      "uid_vid_00057": {
+        "HOTA": 55.61141445508062,
+        "AssA": 53.1550345925179,
+        "IDF1": 72.80606717226435,
+        "IDSW": 15
+      },
+      "uid_vid_00063": {
+        "HOTA": 45.18079313586625,
+        "AssA": 49.97486285542202,
+        "IDF1": 55.49295774647888,
+        "IDSW": 5
+      },
+      "uid_vid_00064": {
+        "HOTA": 54.01373708561906,
+        "AssA": 57.06265360215221,
+        "IDF1": 68.997668997669,
+        "IDSW": 11
+      },
+      "uid_vid_00066": {
+        "HOTA": 40.229746997792404,
+        "AssA": 32.25595047772723,
+        "IDF1": 48.50136239782017,
+        "IDSW": 24
+      },
+      "uid_vid_00067": {
+        "HOTA": 67.8869641303798,
+        "AssA": 70.94678577702615,
+        "IDF1": 90.22082018927445,
+        "IDSW": 0
+      },
+      "uid_vid_00068": {
+        "HOTA": 41.110732042191096,
+        "AssA": 42.84797366766192,
+        "IDF1": 53.53502137454784,
+        "IDSW": 70
+      },
+      "uid_vid_00069": {
+        "HOTA": 46.75445927780209,
+        "AssA": 46.94991296689512,
+        "IDF1": 61.06414719045251,
+        "IDSW": 32
+      },
+      "uid_vid_00071": {
+        "HOTA": 44.89126396438133,
+        "AssA": 47.3667430959457,
+        "IDF1": 62.17821782178218,
+        "IDSW": 1
+      },
+      "uid_vid_00076": {
+        "HOTA": 31.45927337926629,
+        "AssA": 29.5829078030098,
+        "IDF1": 43.39757316202713,
+        "IDSW": 27
+      },
+      "uid_vid_00078": {
+        "HOTA": 63.23146378071547,
+        "AssA": 62.81544424754576,
+        "IDF1": 80.3947958725886,
+        "IDSW": 13
+      },
+      "uid_vid_00079": {
+        "HOTA": 45.991828561972454,
+        "AssA": 54.29627068424866,
+        "IDF1": 55.6998556998557,
+        "IDSW": 9
+      },
+      "uid_vid_00080": {
+        "HOTA": 55.35294785783338,
+        "AssA": 57.350659958363494,
+        "IDF1": 71.09533468559837,
+        "IDSW": 19
+      },
+      "uid_vid_00082": {
+        "HOTA": 31.30459359919935,
+        "AssA": 61.2419789137095,
+        "IDF1": 30.403309203722856,
+        "IDSW": 8
+      },
+      "uid_vid_00085": {
+        "HOTA": 38.52214794992632,
+        "AssA": 46.927750926272644,
+        "IDF1": 49.782923299565844,
+        "IDSW": 6
+      },
+      "uid_vid_00086": {
+        "HOTA": 26.326598021579535,
+        "AssA": 23.502204058624386,
+        "IDF1": 35.169951885767496,
+        "IDSW": 330
+      },
+      "uid_vid_00087": {
+        "HOTA": 77.64726839842311,
+        "AssA": 78.31335910697054,
+        "IDF1": 93.47826086956522,
+        "IDSW": 0
+      },
+      "uid_vid_00090": {
+        "HOTA": 32.938982898425955,
+        "AssA": 33.39507722199017,
+        "IDF1": 42.72801972062449,
+        "IDSW": 76
+      },
+      "uid_vid_00092": {
+        "HOTA": 51.59898829188755,
+        "AssA": 58.28973091288866,
+        "IDF1": 63.52313167259786,
+        "IDSW": 3
+      },
+      "uid_vid_00096": {
+        "HOTA": 48.07485643526951,
+        "AssA": 57.89785212576456,
+        "IDF1": 61.62369486469209,
+        "IDSW": 50
+      },
+      "uid_vid_00098": {
+        "HOTA": 29.16580845660099,
+        "AssA": 30.198991658258002,
+        "IDF1": 33.89653370492945,
+        "IDSW": 53
+      },
+      "uid_vid_00099": {
+        "HOTA": 37.779477080959026,
+        "AssA": 36.78841440928043,
+        "IDF1": 51.20226308345121,
+        "IDSW": 29
+      },
+      "uid_vid_00100": {
+        "HOTA": 24.801476216177253,
+        "AssA": 41.14530703690222,
+        "IDF1": 30.198915009041592,
+        "IDSW": 2
+      },
+      "uid_vid_00153": {
+        "HOTA": 27.958095938804835,
+        "AssA": 25.07673786761437,
+        "IDF1": 36.16963064295486,
+        "IDSW": 71
+      },
+      "uid_vid_00158": {
+        "HOTA": 50.71099264102084,
+        "AssA": 50.836595711646495,
+        "IDF1": 65.48956661316213,
+        "IDSW": 5
+      },
+      "uid_vid_00161": {
+        "HOTA": 39.672409456793,
+        "AssA": 27.357375424399383,
+        "IDF1": 44.65395480225989,
+        "IDSW": 387
+      },
+      "uid_vid_00163": {
+        "HOTA": 28.059037612659427,
+        "AssA": 21.392566556210195,
+        "IDF1": 35.278356653766004,
+        "IDSW": 237
+      },
+      "uid_vid_00166": {
+        "HOTA": 39.69855859531554,
+        "AssA": 39.04852726515117,
+        "IDF1": 51.67206040992449,
+        "IDSW": 38
+      },
+      "uid_vid_00167": {
+        "HOTA": 46.7470964383567,
+        "AssA": 42.94621417974174,
+        "IDF1": 59.435690729204836,
+        "IDSW": 25
+      },
+      "uid_vid_00169": {
+        "HOTA": 51.61096139440788,
+        "AssA": 54.47029525678854,
+        "IDF1": 66.64478003939594,
+        "IDSW": 16
+      },
+      "uid_vid_00170": {
+        "HOTA": 28.201407742782735,
+        "AssA": 26.542722237808487,
+        "IDF1": 35.83389149363697,
+        "IDSW": 155
+      },
+      "uid_vid_00172": {
+        "HOTA": 44.34535931365401,
+        "AssA": 40.813343290601495,
+        "IDF1": 55.207798871216006,
+        "IDSW": 25
+      },
+      "uid_vid_00173": {
+        "HOTA": 40.403097608383085,
+        "AssA": 36.76679175615817,
+        "IDF1": 53.149001536098304,
+        "IDSW": 31
+      },
+      "uid_vid_00174": {
+        "HOTA": 48.53481113310029,
+        "AssA": 46.63350140044052,
+        "IDF1": 60.17815902342461,
+        "IDSW": 26
+      },
+      "uid_vid_00175": {
+        "HOTA": 42.09306612727117,
+        "AssA": 35.69665992622086,
+        "IDF1": 54.716095729704364,
+        "IDSW": 29
+      },
+      "uid_vid_00178": {
+        "HOTA": 34.14248748374244,
+        "AssA": 31.62633738321812,
+        "IDF1": 43.162393162393165,
+        "IDSW": 28
+      },
+      "uid_vid_00179": {
+        "HOTA": 33.706496071543555,
+        "AssA": 32.52542799712669,
+        "IDF1": 43.6558094312105,
+        "IDSW": 78
+      },
+      "uid_vid_00183": {
+        "HOTA": 51.568976447274785,
+        "AssA": 53.090628378788,
+        "IDF1": 69.957805907173,
+        "IDSW": 8
+      },
+      "uid_vid_00189": {
+        "HOTA": 45.06076704720029,
+        "AssA": 41.28248100179405,
+        "IDF1": 58.239277652370205,
+        "IDSW": 37
+      },
+      "uid_vid_00190": {
+        "HOTA": 50.57891921982511,
+        "AssA": 48.86369933543326,
+        "IDF1": 63.73543780533634,
+        "IDSW": 36
+      },
+      "uid_vid_00191": {
+        "HOTA": 9.813260101164571,
+        "AssA": 16.229803832518456,
+        "IDF1": 11.378002528445007,
+        "IDSW": 6
+      },
+      "uid_vid_00193": {
+        "HOTA": 42.642259847362716,
+        "AssA": 40.59084652213972,
+        "IDF1": 59.11664779161948,
+        "IDSW": 30
+      },
+      "uid_vid_00198": {
+        "HOTA": 44.369929213738445,
+        "AssA": 41.509942252827436,
+        "IDF1": 52.29219143576827,
+        "IDSW": 21
+      },
+      "uid_vid_00200": {
+        "HOTA": 62.24036342093323,
+        "AssA": 65.57125933519758,
+        "IDF1": 81.92090395480226,
+        "IDSW": 2
+      },
+      "uid_vid_00201": {
+        "HOTA": 39.8332196581782,
+        "AssA": 41.6545737236313,
+        "IDF1": 52.78048780487805,
+        "IDSW": 23
+      },
+      "uid_vid_00205": {
+        "HOTA": 31.247639523788795,
+        "AssA": 29.102939045620683,
+        "IDF1": 40.33946251768034,
+        "IDSW": 116
+      },
+      "uid_vid_00207": {
+        "HOTA": 55.43015766142222,
+        "AssA": 60.948419240942606,
+        "IDF1": 66.73161227471992,
+        "IDSW": 8
+      },
+      "uid_vid_00212": {
+        "HOTA": 46.85025856627664,
+        "AssA": 40.63466491738921,
+        "IDF1": 56.645473811686344,
+        "IDSW": 69
+      },
+      "uid_vid_00218": {
+        "HOTA": 42.353862624971406,
+        "AssA": 36.204816766835144,
+        "IDF1": 54.71435206688342,
+        "IDSW": 50
+      },
+      "uid_vid_00219": {
+        "HOTA": 34.2433994121992,
+        "AssA": 37.59150453567058,
+        "IDF1": 47.60506514956872,
+        "IDSW": 13
+      },
+      "uid_vid_00221": {
+        "HOTA": 35.99062431481953,
+        "AssA": 35.59859648844189,
+        "IDF1": 47.3488637987709,
+        "IDSW": 62
+      },
+      "uid_vid_00222": {
+        "HOTA": 51.20003618440671,
+        "AssA": 54.11076822616443,
+        "IDF1": 63.417846559104376,
+        "IDSW": 16
+      },
+      "uid_vid_00226": {
+        "HOTA": 61.4280896590635,
+        "AssA": 61.22615798840291,
+        "IDF1": 80.69620253164557,
+        "IDSW": 4
+      },
+      "uid_vid_00228": {
+        "HOTA": 35.75403260100208,
+        "AssA": 31.785255525803848,
+        "IDF1": 45.62531731257404,
+        "IDSW": 92
+      },
+      "uid_vid_00230": {
+        "HOTA": 38.84104214846113,
+        "AssA": 37.29040766047693,
+        "IDF1": 49.131985731272295,
+        "IDSW": 63
+      }
+    },
+    "idsw_by_source": {
+      "publisher-asset:uid_vid_00008": 104,
+      "publisher-asset:uid_vid_00009": 6,
+      "publisher-asset:uid_vid_00011": 16,
+      "publisher-asset:uid_vid_00013": 127,
+      "publisher-asset:uid_vid_00018": 10,
+      "publisher-asset:uid_vid_00019": 48,
+      "publisher-asset:uid_vid_00020": 22,
+      "publisher-asset:uid_vid_00024": 237,
+      "publisher-asset:uid_vid_00028": 221,
+      "publisher-asset:uid_vid_00030": 24,
+      "publisher-asset:uid_vid_00031": 12,
+      "publisher-asset:uid_vid_00035": 8,
+      "publisher-asset:uid_vid_00036": 19,
+      "publisher-asset:uid_vid_00038": 29,
+      "publisher-asset:uid_vid_00043": 61,
+      "publisher-asset:uid_vid_00045": 25,
+      "publisher-asset:uid_vid_00046": 2,
+      "publisher-asset:uid_vid_00048": 135,
+      "publisher-asset:uid_vid_00051": 83,
+      "publisher-asset:uid_vid_00056": 11,
+      "publisher-asset:uid_vid_00057": 15,
+      "publisher-asset:uid_vid_00063": 5,
+      "publisher-asset:uid_vid_00064": 11,
+      "publisher-asset:uid_vid_00066": 24,
+      "publisher-asset:uid_vid_00067": 0,
+      "publisher-asset:uid_vid_00068": 70,
+      "publisher-asset:uid_vid_00069": 32,
+      "publisher-asset:uid_vid_00071": 1,
+      "publisher-asset:uid_vid_00076": 27,
+      "publisher-asset:uid_vid_00078": 13,
+      "publisher-asset:uid_vid_00079": 9,
+      "publisher-asset:uid_vid_00080": 19,
+      "publisher-asset:uid_vid_00082": 8,
+      "publisher-asset:uid_vid_00085": 6,
+      "publisher-asset:uid_vid_00086": 330,
+      "publisher-asset:uid_vid_00087": 0,
+      "publisher-asset:uid_vid_00090": 76,
+      "publisher-asset:uid_vid_00092": 3,
+      "publisher-asset:uid_vid_00096": 50,
+      "publisher-asset:uid_vid_00098": 53,
+      "publisher-asset:uid_vid_00099": 29,
+      "publisher-asset:uid_vid_00100": 2,
+      "publisher-asset:uid_vid_00153": 71,
+      "publisher-asset:uid_vid_00158": 5,
+      "publisher-asset:uid_vid_00161": 387,
+      "publisher-asset:uid_vid_00163": 237,
+      "publisher-asset:uid_vid_00166": 38,
+      "publisher-asset:uid_vid_00167": 25,
+      "publisher-asset:uid_vid_00169": 16,
+      "publisher-asset:uid_vid_00170": 155,
+      "publisher-asset:uid_vid_00172": 25,
+      "publisher-asset:uid_vid_00173": 31,
+      "publisher-asset:uid_vid_00174": 26,
+      "publisher-asset:uid_vid_00175": 29,
+      "publisher-asset:uid_vid_00178": 28,
+      "publisher-asset:uid_vid_00179": 78,
+      "publisher-asset:uid_vid_00183": 8,
+      "publisher-asset:uid_vid_00189": 37,
+      "publisher-asset:uid_vid_00190": 36,
+      "publisher-asset:uid_vid_00191": 6,
+      "publisher-asset:uid_vid_00193": 30,
+      "publisher-asset:uid_vid_00198": 21,
+      "publisher-asset:uid_vid_00200": 2,
+      "publisher-asset:uid_vid_00201": 23,
+      "publisher-asset:uid_vid_00205": 116,
+      "publisher-asset:uid_vid_00207": 8,
+      "publisher-asset:uid_vid_00212": 69,
+      "publisher-asset:uid_vid_00218": 50,
+      "publisher-asset:uid_vid_00219": 13,
+      "publisher-asset:uid_vid_00221": 62,
+      "publisher-asset:uid_vid_00222": 16,
+      "publisher-asset:uid_vid_00226": 4,
+      "publisher-asset:uid_vid_00228": 92,
+      "publisher-asset:uid_vid_00230": 63
+    },
+    "aggregate": {
+      "HOTA": 41.8253185443477,
+      "AssA": 41.21809482079984,
+      "IDF1": 52.148678508910386,
+      "IDSW": 3790
+    }
+  }
+}

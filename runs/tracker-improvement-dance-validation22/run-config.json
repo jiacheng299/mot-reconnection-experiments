@@ -1,0 +1,40 @@
+{
+  "domain": "DanceTrack",
+  "evaluation": "development",
+  "sequences_requested": [
+    "dancetrack0004",
+    "dancetrack0005",
+    "dancetrack0007",
+    "dancetrack0010",
+    "dancetrack0014",
+    "dancetrack0018",
+    "dancetrack0019",
+    "dancetrack0025",
+    "dancetrack0026",
+    "dancetrack0030",
+    "dancetrack0034",
+    "dancetrack0035",
+    "dancetrack0043",
+    "dancetrack0058",
+    "dancetrack0063",
+    "dancetrack0065",
+    "dancetrack0073",
+    "dancetrack0077",
+    "dancetrack0079",
+    "dancetrack0081",
+    "dancetrack0090",
+    "dancetrack0094"
+  ],
+  "profiles": {
+    "BoT-SORT": null,
+    "LowAppearance": "appearance",
+    "RecoveryOnly": "recovery-only",
+    "RecentRecovery": "recovery"
+  },
+  "runner_sha256": "b88850b905d23dfc399d03a46d55cb3c530480e7bdc54db439b5fcca6b8d76cf",
+  "association_sha256": "47cf0661ef92489a0f464dbb11cb76d45cdeeb8ccc028487d2dad7aa24318943",
+  "appearance_sha256": "989f336d0530fd15f413f9d6ced0e93882808f93520d6a9d4e406eaf62798092",
+  "p5_freeze_sha256": "667a6b9840728f34ecdd61ea20d26a2fbcd786a0781ebc190f18cdcbbfe8c7be",
+  "upstream": "251985436d6712aaf682aaaf5f71edb4987224bd",
+  "online_only": true
+}

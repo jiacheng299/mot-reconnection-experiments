@@ -1,0 +1,9 @@
+/.venv/
+/vendor/
+/data/
+/release-staging/
+__pycache__/
+*.pyc
+/runs/**/detections/
+/runs/**/traces-*/
+/runs/**/qa-*

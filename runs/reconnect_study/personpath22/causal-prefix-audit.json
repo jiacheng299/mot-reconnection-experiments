@@ -1,0 +1,33 @@
+{
+  "sequence": "uid_vid_00023",
+  "configuration": "structured_0",
+  "comparison": "full input vs prefix-only input",
+  "results": {
+    "bytetrack": {
+      "prefix_frames": 58,
+      "full_frames": 116,
+      "track_records_equal": 882,
+      "decision_records_equal": 48,
+      "concurrent_ms_per_frame_diagnostic": [
+        2.0100870689679264,
+        2.055868103447022,
+        2.054033620691465,
+        1.825039655175025,
+        1.9976215517246978
+      ]
+    },
+    "botsort-motion-only": {
+      "prefix_frames": 58,
+      "full_frames": 116,
+      "track_records_equal": 796,
+      "decision_records_equal": 34,
+      "concurrent_ms_per_frame_diagnostic": [
+        1.905916379310556,
+        1.9603525862090339,
+        1.8664543103396085,
+        1.8573577586204042,
+        1.8469758620712724
+      ]
+    }
+  }
+}
