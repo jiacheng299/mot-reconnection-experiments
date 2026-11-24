@@ -9,6 +9,7 @@
 | 给接手智能体的操作约定 | [AGENTS.md](AGENTS.md) |
 | 任务、方法、真实结果和适用范围 | [中文实验记录](reconnect_study/experiment_record.md) |
 | 英文论文稿 | [方法](reconnect_study/method.tex) · [实验](reconnect_study/experiments.tex) · [PDF](runs/reconnect_study/publication/publication_preview.pdf) |
+| 第二轮补实验 | [一分钟汇报](docs/round2-brief.zh-CN.md) · [数据与复现入口](docs/round2.md) |
 | 获取数据与准备本机环境 | [数据下载指引](docs/datasets.md) · [复跑步骤](reconnect_study/reproduction.md) |
 | 查原始统计结果 | [ByteTrack 测试](runs/reconnect_study/personpath22/test-byte.json) · [BoT-SORT 测试](runs/reconnect_study/personpath22/test-bot.json) · [风险证据](runs/reconnect_study/personpath22/finite-certificate-result.json) · [复现审计](runs/reconnect_study/reproducibility-audit.json) |
 

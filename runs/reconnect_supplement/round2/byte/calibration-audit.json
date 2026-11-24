@@ -1,0 +1,44 @@
+{
+  "B6_original": {
+    "physical_source_replays": 1326,
+    "validated_shared_replays": 117
+  },
+  "B6_dense": {
+    "physical_source_replays": 3233,
+    "validated_shared_replays": 273
+  },
+  "B6_policy_count": 11,
+  "B12_original": {
+    "physical_source_replays": 1335,
+    "validated_shared_replays": 110
+  },
+  "B12_dense": {
+    "physical_source_replays": 4347,
+    "validated_shared_replays": 273
+  },
+  "B12_policy_count": 8,
+  "B24_original": {
+    "physical_source_replays": 1336,
+    "validated_shared_replays": 109
+  },
+  "B24_dense": {
+    "physical_source_replays": 5307,
+    "validated_shared_replays": 273
+  },
+  "B24_policy_count": 11,
+  "B12_paired_archived_rows_verified": 1456,
+  "vendor": {
+    "byte": {
+      "commit": "d1bf0191adff59bc8fcfeaa0b33d3d1642552a99",
+      "local_changes": []
+    },
+    "bot": {
+      "commit": "251985436d6712aaf682aaaf5f71edb4987224bd",
+      "local_changes": []
+    }
+  },
+  "exploratory_external_exclusion": {
+    "videos": 55,
+    "reason": "The manifest does not verify separate original recordings or sites for external mappings."
+  }
+}

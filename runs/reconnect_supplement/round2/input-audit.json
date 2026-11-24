@@ -1,0 +1,31 @@
+{
+  "timestamp_utc": "2026-11-23T03:47:05.935326+00:00",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "per_split": {
+    "calibration": 91,
+    "development": 16,
+    "test": 74,
+    "exploratory_external": 55
+  },
+  "sha256": {
+    "runs/reconnect_study/personpath22/manifest.json": "e5bdbbd22e67b7858623c560dcd19af46d60b8674b61f98a00364aa8ba8f9481",
+    "runs/reconnect_study/personpath22/byte-config.json": "df1374d05870a03699fc37575b5cbb5fec6b7c70046d62c41419b9cef2eb7699",
+    "runs/reconnect_study/personpath22/bot-config.json": "37b060a66e9e21b3cc8133df35b18b3d00e3cf990465e7af462d80164606a140",
+    "runs/reconnect_study/personpath22/calibration-byte-rows.json": "88df2110fa242e336cce5533286dfb01421d36a9f9b8c19e1c12b36c0ce50092",
+    "runs/reconnect_study/personpath22/calibration-bot-rows.json": "b0b13ed6724c398adc4cdb98e4ba770f284a94fa886c16717033624e372128c6",
+    "runs/reconnect_study/personpath22/development-byte.json": "7b92f97df39e6289cf16f3c42bc497a812b35040ac712091a82ec27b9c2335c5",
+    "runs/reconnect_study/personpath22/development-bot.json": "136eb5ac74d32c62bb586f3e1d9d0e01284bcf66eea7714c01a9632fcf61d13f",
+    "reconnect_study/policy.py": "83d4ffb4b990dd5c8dfc24d57acd3356c21278855a0dd6c68e684109620e23a7",
+    "reconnect_study/replay.py": "f456fae27ce96a6c12d9b4dabaec47e8f8c769c7be0b02159c0924082ab153a0",
+    "reconnect_study/tracker.py": "2dff48f99f810f5b884f46d9c562a4b28af875306b0cc2a3d8280560bf5f21f6",
+    "reconnect_study/study.py": "b2b09bae72df15a8bcbe12ebdbd2d394cd31d8036d4978da01c35092166b2241",
+    "reconnect_study/events.py": "4f347ee15c9fce79f6b22fe0a416272e7d86beefe8d42992e9516278d647cefa",
+    "reconnect_study/data_io.py": "b04844d7dfe1ad4e53a10a950690fdf4d5689bff99d798cad31ce88e16b917fa",
+    "reconnect_study/effect_sizes.py": "a9151671f01d535b639f3c1013924075e72985b9d9f2a2bb46577abb21a9f85e",
+    "reconnect_study/overall.py": "d61d971abd28326ad0c9a2abced399ef0f70d77702b665e0937289afd8251bf9",
+    "reconnect_study/scoring.py": "982453b659093495bcb791cf820f5134799a06da622c131c3082a229922dedd3",
+    "runs/reconnect_supplement/round2-design.md": "7df20131fb6fe12f3be0d938fa3c3cfaf1a20c5f1e54769a23e22ebda2078be9"
+  },
+  "verified_sequence_files": 472
+}

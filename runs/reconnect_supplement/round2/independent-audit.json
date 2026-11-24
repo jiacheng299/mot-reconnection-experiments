@@ -1,0 +1,56 @@
+{
+  "bot/B12": {
+    "calibration_policies": 191,
+    "calibration_sources": 91,
+    "test_policies": 11,
+    "test_sources": 74,
+    "test_trace_hashes_verified": 814,
+    "effect_intervals_recomputed": 12
+  },
+  "bot/B24": {
+    "calibration_policies": 191,
+    "calibration_sources": 91,
+    "test_policies": 11,
+    "test_sources": 74,
+    "test_trace_hashes_verified": 814,
+    "effect_intervals_recomputed": 12
+  },
+  "bot/B6": {
+    "calibration_policies": 191,
+    "calibration_sources": 91,
+    "test_policies": 11,
+    "test_sources": 74,
+    "test_trace_hashes_verified": 814,
+    "effect_intervals_recomputed": 12
+  },
+  "byte/B12": {
+    "calibration_policies": 191,
+    "calibration_sources": 91,
+    "test_policies": 8,
+    "test_sources": 74,
+    "test_trace_hashes_verified": 592,
+    "effect_intervals_recomputed": 8,
+    "complete_trackeval_recalculations": [
+      "structured_42",
+      "assignment_45",
+      "linear_40",
+      "unconstrained_tracker"
+    ]
+  },
+  "byte/B24": {
+    "calibration_policies": 191,
+    "calibration_sources": 91,
+    "test_policies": 11,
+    "test_sources": 74,
+    "test_trace_hashes_verified": 814,
+    "effect_intervals_recomputed": 12
+  },
+  "byte/B6": {
+    "calibration_policies": 191,
+    "calibration_sources": 91,
+    "test_policies": 11,
+    "test_sources": 74,
+    "test_trace_hashes_verified": 814,
+    "effect_intervals_recomputed": 12
+  }
+}

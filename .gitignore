@@ -6,4 +6,5 @@ __pycache__/
 *.pyc
 /runs/**/detections/
 /runs/**/traces-*/
+/runs/reconnect_supplement/round2/*/B*/traces/
 /runs/**/qa-*

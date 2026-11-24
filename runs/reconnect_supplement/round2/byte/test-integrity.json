@@ -1,0 +1,23 @@
+{
+  "B6": {
+    "videos_per_policy": 74,
+    "policy_count": 11,
+    "verified_trace_digests": 814,
+    "test_sha256": "18fe757c7eba67576598be15c07d904ba03718bc77a4c48164258fb6f3d65727",
+    "report_sha256": "960792b46d74a8a417515df182db482b7f966251a3730c8bf3d7278b37796f1b"
+  },
+  "B12": {
+    "videos_per_policy": 74,
+    "policy_count": 8,
+    "verified_trace_digests": 592,
+    "test_sha256": "860b4521a058a248700af343bf82dedb63e2c19e036c84738aca16f5d0ab73a7",
+    "report_sha256": "e005e73bbfe3f68e5ba0cc7fb7086e912e313f78517f5e5358f721166b6f2228"
+  },
+  "B24": {
+    "videos_per_policy": 74,
+    "policy_count": 11,
+    "verified_trace_digests": 814,
+    "test_sha256": "a4e170d3ec349795ea972b7ace906121ce170059b55a9c551a395163453337a5",
+    "report_sha256": "64794269b60c52de5a89fbb400e36b885734861cb03e1d5c506a151e32711604"
+  }
+}

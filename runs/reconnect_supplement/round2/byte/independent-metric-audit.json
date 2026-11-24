@@ -1,0 +1,51 @@
+{
+  "source_count": 74,
+  "by_cap": {
+    "B6": {
+      "intervals_verified": 12,
+      "HOTA_policies": {
+        "unconstrained_tracker": 46.64373216307796,
+        "cap_only": 44.35507150918473,
+        "assignment_2": 44.36758531488969,
+        "assignment_57": 44.41064180018393,
+        "assignment_61": 44.384576046876624,
+        "linear_47": 44.58637443468415,
+        "linear_52": 44.573705101886205,
+        "linear_56": 44.527483893886746,
+        "structured_44": 44.58657542085447,
+        "structured_50": 44.5363595296939,
+        "structured_56": 44.525825991140664
+      }
+    },
+    "B12": {
+      "intervals_verified": 8,
+      "HOTA_policies": {
+        "unconstrained_tracker": 46.64373216307796,
+        "cap_only": 44.68946414874069,
+        "assignment_45": 44.83571149607804,
+        "assignment_55": 44.70557669101037,
+        "linear_40": 44.93825255374098,
+        "linear_49": 44.83190517935077,
+        "structured_42": 44.981255339072874,
+        "structured_48": 44.85512610257242
+      }
+    },
+    "B24": {
+      "intervals_verified": 12,
+      "HOTA_policies": {
+        "unconstrained_tracker": 46.64373216307796,
+        "cap_only": 45.1279849331228,
+        "assignment_34": 45.35494940767102,
+        "assignment_48": 45.0958583536746,
+        "assignment_59": 44.83709732993377,
+        "linear_30": 45.45063680284582,
+        "linear_46": 45.23281714376752,
+        "linear_52": 45.041926757682525,
+        "structured_31": 45.51516394328702,
+        "structured_44": 45.295150171021845,
+        "structured_53": 44.953926660774975
+      }
+    }
+  },
+  "distinct_trace_evaluations": 1135
+}
