@@ -24,7 +24,7 @@ cd paper\en; pdflatex -interaction=nonstopmode main.tex; bibtex main; pdflatex -
 main.tex            标题、跨栏摘要、关键字
 01-introduction     决策框架、两种部署情境、已有两条路线、四条主张、边界
 02-related-work     关联与重连 · 外观重识别 · 选择与风险控制 · 基准与计分
-03-method           门控定义、特征表（表 1）、地位示意（图 1）、
+03-method           门控定义、特征表（表 1）、整体框架图（图 1）、
                     坐标分组解释、选点规则
 04-experiments      数据 · 对照 · 主结果（表 2）· 接受量对齐 ·
                     跨上限扫描（表 3）· 门控作用位置 · 增益来源（表 4）·
@@ -33,7 +33,7 @@ main.tex            标题、跨栏摘要、关键字
 06-conclusion       收束
 ```
 
-五张表、两张图。
+五张表、两张图：图 1 为整体框架（在线判决回路 + 离线冻结流程），图 2 为失败比例—恢复缺口权衡。
 
 ## 三轮扩写的来源
 

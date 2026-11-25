@@ -1,0 +1,51 @@
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[
+  box/.style={draw, rounded corners=2pt, align=center, font=\scriptsize,
+              inner sep=3pt, minimum height=7.2mm, minimum width=23mm},
+  arr/.style={-latex, semithick},
+  lbl/.style={font=\tiny, inner sep=1.5pt},
+  panel/.style={font=\footnotesize\bfseries}
+]
+
+\node[panel] at (2.40, 0.72) {在线：每条提案一次判决};
+\node[panel] at (10.10, 0.72) {离线：任何测试来源之前冻结};
+\draw[dashed, gray!55] (6.35, 0.45) -- (6.35, -5.85);
+
+\node[box] (det)    at (2.40,  0.00) {冻结检测器\\FCOS，CrowdHuman};
+\node[box] (casc)   at (2.40, -1.05) {关联级联};
+\node[box] (prop)   at (2.40, -2.10) {候选重连};
+\node[box, fill=blue!8]  (feat) at (2.40, -3.15) {特征 $\phi(x)$\\23 个坐标};
+\node[box, fill=blue!16] (gate) at (2.40, -4.20) {门控\\$g(x)\geq\tau$};
+\node[box] (commit) at (0.85, -5.40) {提交身份};
+\node[box] (pool)   at (3.95, -5.40) {未匹配池};
+
+\draw[arr] (det) -- (casc);
+\draw[arr] (casc) -- (prop);
+\draw[arr] (prop) -- (feat);
+\draw[arr] (feat) -- (gate);
+\draw[arr] (gate.south) -- ++(0,-0.18) -| node[lbl, above, pos=0.22] {接受} (commit.north);
+\draw[arr] (gate.south) -- ++(0,-0.18) -| node[lbl, above, pos=0.22] {拒绝} (pool.north);
+
+\draw[arr] (commit.north) -- ++(0,0.30) |- (casc.west);
+\draw[arr] (pool.north)   -- ++(0,0.30) |- (casc.east);
+
+\node[box] (dev)   at (10.10,  0.00) {16 个开发来源};
+\node[box] (fit)   at (10.10, -1.05) {拟合 $w$\\200 次 Adam};
+\node[box] (cal)   at (10.10, -2.10) {91 个校准来源};
+\node[box] (sweep) at (10.10, -3.15) {阈值扫描\\$0.35$--$0.97$};
+\node[box] (lock)  at (10.10, -4.20) {冻结策略\\记录哈希};
+\node[box, fill=gray!10] (test) at (10.10, -5.40) {74 个测试来源\\一次闭环运行};
+
+\draw[arr] (dev) -- (fit);
+\draw[arr] (fit) -- (cal);
+\draw[arr] (cal) -- (sweep);
+\draw[arr] (sweep) -- (lock);
+\draw[arr] (lock) -- node[lbl, right, pos=0.5] {此后才解封} (test);
+
+\draw[arr, dashed] (10.10,-6.20) -- node[lbl, above] {冻结后的 $\tau$ 与 $w$} (2.40,-6.20);
+
+\end{tikzpicture}
+\caption{方法的整体流程。左侧回路在运行时对每一条候选重连执行一次：关联级联提出一次回归，门控用第 3 节的 23 个坐标给它打分，判决要么提交身份，要么把检测退回未匹配池，由下一步关联再次面对。右列是在允许回路作用于任何测试来源之前必须确定的部分：权重在开发来源上拟合，阈值在校准来源上选出，随后策略冻结并记录哈希。两侧读的是同一套特征定义，冻结的阈值才有意义。}
+\label{fig:framework-zh}
+\end{figure*}

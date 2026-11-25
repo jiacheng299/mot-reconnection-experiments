@@ -50,28 +50,7 @@ $\log(1+\exp(g_{\rm incorrect}-g_{\rm correct}))$。阈值决定一次重连是�
 
 每个坐标都在提交分配之前就可以取得。评分不看未来帧、不看其它来源、也不看任何标注；训练标签是在跟踪器产出提案之后才附加上去的，运行时从不进入门控。
 
-\begin{figure}[t]
-\centering
-\begin{tikzpicture}[
-  node distance=5mm and 8mm,
-  box/.style={draw, rounded corners=2pt, align=center, font=\scriptsize,
-              inner sep=3.5pt, minimum height=6.5mm},
-  arr/.style={-latex, semithick}
-]
-\node[box] (det) {检测器};
-\node[box, right=of det] (asc) {关联级联};
-\node[box, right=of asc, fill=blue!10] (gate) {门控\\$g(x)\!\geq\!\tau$};
-\node[box, above left=7mm and -2mm of gate] (com) {提交};
-\node[box, below left=7mm and -2mm of gate] (rej) {未匹配池};
-\draw[arr] (det) -- (asc);
-\draw[arr] (asc) -- node[above, font=\tiny] {提案} (gate);
-\draw[arr] (gate) -- node[above, font=\tiny] {接受} (com);
-\draw[arr] (gate) -- node[below, font=\tiny] {拒绝} (rej);
-\draw[arr] (rej.west) -- ++(-3mm,0) |- ([yshift=-3mm]asc.south);
-\end{tikzpicture}
-\caption{门控的位置。跟踪器在自己的关联级联中提出一次重连；门控只对这一条提案打分，要么提交，要么把检测退回未匹配池。被退回的检测会重新进入下一步关联，因此这个决定改变了后续帧所面对的状​态。}
-\label{fig:gate-zh}
-\end{figure}
+\input{fig-framework.tex}
 
 \subsection{如何读这些坐标}
 
