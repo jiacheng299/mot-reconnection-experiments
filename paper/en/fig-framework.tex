@@ -1,64 +1,84 @@
 \begin{figure*}[t]
 \centering
 \begin{tikzpicture}[
-  box/.style={draw, rounded corners=2pt, align=center, font=\scriptsize,
-              inner sep=3pt, minimum height=7.2mm, minimum width=23mm},
+  mod/.style={draw, rounded corners=3pt, align=center, font=\scriptsize,
+              inner sep=4pt, minimum height=9mm},
+  grp/.style={draw, rounded corners=2pt, align=center, font=\tiny,
+              inner sep=3pt, minimum height=12mm, minimum width=16mm, fill=blue!7},
+  stg/.style={draw, rounded corners=2pt, align=center, font=\scriptsize,
+              inner sep=3pt, minimum height=8mm, minimum width=16mm, fill=blue!12},
+  rep/.style={font=\tiny, align=center, inner sep=1pt, text=black!65},
   arr/.style={-latex, semithick},
-  lbl/.style={font=\tiny, inner sep=1.5pt},
-  panel/.style={font=\footnotesize\bfseries}
+  darr/.style={-latex, semithick, dashed, gray!65!black}
 ]
 
-% ---------- panel titles ----------
-\node[panel] at (2.40, 0.72) {Online: one decision per proposal};
-\node[panel] at (10.10, 0.72) {Offline: frozen before any test source};
-\draw[dashed, gray!55] (6.35, 0.45) -- (6.35, -5.85);
+% ================= two information sources =================
+\node[mod] (det) at (1.6,  1.60) {Detector\\[1pt]\tiny frozen FCOS};
+\node[mod] (trk) at (1.6, -1.60) {Track states\\[1pt]\tiny $x,v,P$, age};
 
-% ---------- left: the online loop ----------
-\node[box] (det)    at (2.40,  0.00) {Frozen detector\\FCOS, CrowdHuman};
-\node[box] (casc)   at (2.40, -1.05) {Association\\cascade};
-\node[box] (prop)   at (2.40, -2.10) {Candidate\\reactivation};
-\node[box, fill=blue!8]  (feat) at (2.40, -3.15) {Features $\phi(x)$\\23 coordinates};
-\node[box, fill=blue!16] (gate) at (2.40, -4.20) {Gate\\$g(x)\geq\tau$};
-\node[box] (commit) at (0.85, -5.40) {Commit\\identity};
-\node[box] (pool)   at (3.95, -5.40) {Unmatched\\pool};
+% ================= pairing =================
+\node[mod] (pair) at (5.0, 0) {Cost matrix $C\in\mathbb{R}^{M\times N}$\\[2pt]
+  \tiny margins $m_r,m_c$ \quad counts $n_r,n_c$};
 
-\draw[arr] (det) -- (casc);
-\draw[arr] (casc) -- (prop);
-\draw[arr] (prop) -- (feat);
-\draw[arr] (feat) -- (gate);
-\draw[arr] (gate.south) -- ++(0,-0.18) -| node[lbl, above, pos=0.22] {accept} (commit.north);
-\draw[arr] (gate.south) -- ++(0,-0.18) -| node[lbl, above, pos=0.22] {refuse} (pool.north);
+\draw[arr] (det.east) -| node[rep, above, pos=0.30] {boxes $b$, scores $s$, $N$ detections}
+                        (pair.north);
+\draw[arr] (trk.east) -| node[rep, below, pos=0.30] {$M$ lost tracks}
+                        (pair.south);
 
-% both outcomes return to the cascade at the next step
-\draw[arr] (commit.north) -- ++(0,0.30) |- (casc.west);
-\draw[arr] (pool.north)   -- ++(0,0.30) |- (casc.east);
+% ================= the gate =================
+\draw[draw, rounded corners=4pt, fill=blue!2]
+      (7.00,-1.30) rectangle (13.10,1.62);
+\node[font=\scriptsize\bfseries] at (10.05, 1.36) {Reactivation gate};
 
-% ---------- right: the offline protocol ----------
-\node[box] (dev)   at (10.10,  0.00) {16 development\\sources};
-\node[box] (fit)   at (10.10, -1.05) {Fit $w$\\200 Adam steps};
-\node[box] (cal)   at (10.10, -2.10) {91 calibration\\sources};
-\node[box] (sweep) at (10.10, -3.15) {Sweep threshold\\$0.35$--$0.97$};
-\node[box] (lock)  at (10.10, -4.20) {Freeze policy,\\hash inputs};
-\node[box, fill=gray!10] (test) at (10.10, -5.40) {74 test sources,\\one closed-loop run};
+\node[grp] (g1) at (8.05, 0.62) {proposal\\[1pt]12 coords};
+\node[grp] (g2) at (10.05, 0.62) {competition\\[1pt]3 coords};
+\node[grp] (g3) at (12.05, 0.62) {interaction\\[1pt]8 products};
 
-\draw[arr] (dev) -- (fit);
-\draw[arr] (fit) -- (cal);
-\draw[arr] (cal) -- (sweep);
-\draw[arr] (sweep) -- (lock);
-\draw[arr] (lock) -- node[lbl, right, pos=0.5] {then unsealed} (test);
+\node[stg] (s1) at (8.05,-0.62) {$\phi(x)\in\mathbb{R}^{23}$};
+\node[stg] (s2) at (10.05,-0.62) {$g=w^{\top}\!\phi$};
+\node[stg] (s3) at (12.05,-0.62) {$\mathbf{1}[g\geq\tau]$};
 
-% ---------- what the offline column hands to the online one ----------
-\draw[arr, dashed] (10.10,-6.20) -- node[lbl, above] {frozen $\tau$ and $w$} (2.40,-6.20);
+\draw[arr] (s1) -- (s2);
+\draw[arr] (s2) -- (s3);
+\draw[arr, gray!55] (g1.south) -- (s1.north);
+\draw[arr, gray!55] (g2.south) -- (s2.north);
+\draw[arr, gray!55] (g3.south) -- (s3.north);
+
+\draw[arr] (pair.east) -- (7.00,0);
+
+% ================= outcomes =================
+\node[mod, fill=gray!7] (commit) at (15.15, 0.95) {commit\\[1pt]\tiny update track};
+\node[mod, fill=gray!7] (pool)   at (15.15,-0.95) {unmatched\\[1pt]\tiny offered again};
+
+\draw[arr] (13.10, 0.55) -- node[rep, above, pos=0.42] {accept} (14.10, 0.95);
+\draw[arr] (13.10,-0.55) -- node[rep, below, pos=0.42] {refuse} (14.10,-0.95);
+
+% ================= offline fitting =================
+\draw[draw, dashed, gray!60, rounded corners=3pt, fill=gray!4]
+      (4.30,-3.60) rectangle (12.40,-2.55);
+\node[font=\tiny\bfseries, anchor=west] at (4.45,-2.74)
+  {Offline, frozen before any test source};
+\node[font=\tiny, align=center] at (8.35,-3.20)
+  {16 development sources $\to$ fit $w$ \quad$\cdot$\quad
+   91 calibration sources $\to$ sweep $\tau$\\[2pt]
+   freeze the policy and hash its inputs before the gate reads a test source};
+
+\draw[darr] (10.05,-2.55) -- (10.05,-1.30);
+\node[rep, anchor=west] at (10.18,-1.92) {$\tau$, $w$};
 
 \end{tikzpicture}
-\caption{The method end to end. The left loop runs once per candidate
-reactivation at run time: the association cascade proposes a return, the
-gate scores it from the 23 coordinates of Section~3, and the outcome either
-commits the identity or returns the detection to the unmatched pool, where
-the next association step meets it again. The right column is what has to be
-settled before the loop may run on a test source: weights are fit on
-development sources, the threshold is chosen on calibration sources, and
-then the policy is frozen and hashed. Both sides read the same feature
-definition, which is what makes a frozen threshold mean anything.}
+\caption{Architecture of the proposed gate. Two information sources enter on the
+left: detections from the frozen detector and the state of every track that is
+currently lost. Their pairing produces the cost matrix $C$, from which a single
+candidate reactivation is read as one entry together with its row and column
+margins and the sizes of the competing sets. The gate decomposes that candidate
+into 23 coordinates in three groups --- twelve describing the proposal in
+isolation, three describing its competition, and eight products that let one
+piece of evidence change the weight of another --- and reduces them, in two
+stages, to a scalar compared against a threshold $\tau$. Acceptance commits the
+identity and updates the track; refusal returns the detection to the unmatched
+pool, where the next association step sees it. The dashed strip is not part of
+the run-time path: it is the fitting and calibration that must complete, and be
+frozen, before the gate may look at a test source.}
 \label{fig:framework}
 \end{figure*}

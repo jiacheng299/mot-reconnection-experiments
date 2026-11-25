@@ -1,51 +1,67 @@
 \begin{figure*}[t]
 \centering
 \begin{tikzpicture}[
-  box/.style={draw, rounded corners=2pt, align=center, font=\scriptsize,
-              inner sep=3pt, minimum height=7.2mm, minimum width=23mm},
+  mod/.style={draw, rounded corners=3pt, align=center, font=\scriptsize,
+              inner sep=4pt, minimum height=9mm},
+  grp/.style={draw, rounded corners=2pt, align=center, font=\tiny,
+              inner sep=3pt, minimum height=12mm, minimum width=16mm, fill=blue!7},
+  stg/.style={draw, rounded corners=2pt, align=center, font=\scriptsize,
+              inner sep=3pt, minimum height=8mm, minimum width=16mm, fill=blue!12},
+  rep/.style={font=\tiny, align=center, inner sep=1pt, text=black!65},
   arr/.style={-latex, semithick},
-  lbl/.style={font=\tiny, inner sep=1.5pt},
-  panel/.style={font=\footnotesize\bfseries}
+  darr/.style={-latex, semithick, dashed, gray!65!black}
 ]
 
-\node[panel] at (2.40, 0.72) {在线：每条提案一次判决};
-\node[panel] at (10.10, 0.72) {离线：任何测试来源之前冻结};
-\draw[dashed, gray!55] (6.35, 0.45) -- (6.35, -5.85);
+\node[mod] (det) at (1.6,  1.60) {检测器\\[1pt]\tiny 冻结的 FCOS};
+\node[mod] (trk) at (1.6, -1.60) {轨迹状态\\[1pt]\tiny $x,v,P$，时长};
 
-\node[box] (det)    at (2.40,  0.00) {冻结检测器\\FCOS，CrowdHuman};
-\node[box] (casc)   at (2.40, -1.05) {关联级联};
-\node[box] (prop)   at (2.40, -2.10) {候选重连};
-\node[box, fill=blue!8]  (feat) at (2.40, -3.15) {特征 $\phi(x)$\\23 个坐标};
-\node[box, fill=blue!16] (gate) at (2.40, -4.20) {门控\\$g(x)\geq\tau$};
-\node[box] (commit) at (0.85, -5.40) {提交身份};
-\node[box] (pool)   at (3.95, -5.40) {未匹配池};
+\node[mod] (pair) at (5.0, 0) {代价矩阵 $C\in\mathbb{R}^{M\times N}$\\[2pt]
+  \tiny 裕量 $m_r,m_c$ \quad 候选数 $n_r,n_c$};
 
-\draw[arr] (det) -- (casc);
-\draw[arr] (casc) -- (prop);
-\draw[arr] (prop) -- (feat);
-\draw[arr] (feat) -- (gate);
-\draw[arr] (gate.south) -- ++(0,-0.18) -| node[lbl, above, pos=0.22] {接受} (commit.north);
-\draw[arr] (gate.south) -- ++(0,-0.18) -| node[lbl, above, pos=0.22] {拒绝} (pool.north);
+\draw[arr] (det.east) -| node[rep, above, pos=0.30] {框 $b$、分数 $s$，共 $N$ 个检测}
+                        (pair.north);
+\draw[arr] (trk.east) -| node[rep, below, pos=0.30] {$M$ 条丢失轨迹}
+                        (pair.south);
 
-\draw[arr] (commit.north) -- ++(0,0.30) |- (casc.west);
-\draw[arr] (pool.north)   -- ++(0,0.30) |- (casc.east);
+\draw[draw, rounded corners=4pt, fill=blue!2]
+      (7.00,-1.30) rectangle (13.10,1.62);
+\node[font=\scriptsize\bfseries] at (10.05, 1.36) {重连门控};
 
-\node[box] (dev)   at (10.10,  0.00) {16 个开发来源};
-\node[box] (fit)   at (10.10, -1.05) {拟合 $w$\\200 次 Adam};
-\node[box] (cal)   at (10.10, -2.10) {91 个校准来源};
-\node[box] (sweep) at (10.10, -3.15) {阈值扫描\\$0.35$--$0.97$};
-\node[box] (lock)  at (10.10, -4.20) {冻结策略\\记录哈希};
-\node[box, fill=gray!10] (test) at (10.10, -5.40) {74 个测试来源\\一次闭环运行};
+\node[grp] (g1) at (8.05, 0.62) {提案本身\\[1pt]12 维};
+\node[grp] (g2) at (10.05, 0.62) {竞争关系\\[1pt]3 维};
+\node[grp] (g3) at (12.05, 0.62) {交互乘积\\[1pt]8 项};
 
-\draw[arr] (dev) -- (fit);
-\draw[arr] (fit) -- (cal);
-\draw[arr] (cal) -- (sweep);
-\draw[arr] (sweep) -- (lock);
-\draw[arr] (lock) -- node[lbl, right, pos=0.5] {此后才解封} (test);
+\node[stg] (s1) at (8.05,-0.62) {$\phi(x)\in\mathbb{R}^{23}$};
+\node[stg] (s2) at (10.05,-0.62) {$g=w^{\top}\!\phi$};
+\node[stg] (s3) at (12.05,-0.62) {$\mathbf{1}[g\geq\tau]$};
 
-\draw[arr, dashed] (10.10,-6.20) -- node[lbl, above] {冻结后的 $\tau$ 与 $w$} (2.40,-6.20);
+\draw[arr] (s1) -- (s2);
+\draw[arr] (s2) -- (s3);
+\draw[arr, gray!55] (g1.south) -- (s1.north);
+\draw[arr, gray!55] (g2.south) -- (s2.north);
+\draw[arr, gray!55] (g3.south) -- (s3.north);
+
+\draw[arr] (pair.east) -- (7.00,0);
+
+\node[mod, fill=gray!7] (commit) at (15.15, 0.95) {提交身份\\[1pt]\tiny 更新轨迹};
+\node[mod, fill=gray!7] (pool)   at (15.15,-0.95) {未匹配池\\[1pt]\tiny 下一步再议};
+
+\draw[arr] (13.10, 0.55) -- node[rep, above, pos=0.42] {接受} (14.10, 0.95);
+\draw[arr] (13.10,-0.55) -- node[rep, below, pos=0.42] {拒绝} (14.10,-0.95);
+
+\draw[draw, dashed, gray!60, rounded corners=3pt, fill=gray!4]
+      (4.30,-3.60) rectangle (12.40,-2.55);
+\node[font=\tiny\bfseries, anchor=west] at (4.45,-2.74)
+  {离线：任何测试来源之前冻结};
+\node[font=\tiny, align=center] at (8.35,-3.20)
+  {16 个开发来源 $\to$ 拟合 $w$ \quad$\cdot$\quad
+   91 个校准来源 $\to$ 扫描 $\tau$\\[2pt]
+   在门控读取任何测试来源之前冻结策略并记录输入哈希};
+
+\draw[darr] (10.05,-2.55) -- (10.05,-1.30);
+\node[rep, anchor=west] at (10.18,-1.92) {$\tau$、$w$};
 
 \end{tikzpicture}
-\caption{方法的整体流程。左侧回路在运行时对每一条候选重连执行一次：关联级联提出一次回归，门控用第 3 节的 23 个坐标给它打分，判决要么提交身份，要么把检测退回未匹配池，由下一步关联再次面对。右列是在允许回路作用于任何测试来源之前必须确定的部分：权重在开发来源上拟合，阈值在校准来源上选出，随后策略冻结并记录哈希。两侧读的是同一套特征定义，冻结的阈值才有意义。}
+\caption{本文门控的框架。左侧进入两路信息：冻结检测器给出的检测，以及当前所有丢失轨迹的状态。二者配对得到代价矩阵 $C$，其中一条候选重连就是矩阵里的一个元素，连同它在同行、同列的裕量与竞争集合大小一起读出。门控把这个候选分解为三组共 23 个坐标——12 个描述提案本身，3 个描述它的竞争关系，8 个乘积项让一项证据去改变另一项的权重——再经两个阶段归约为一个与阈值 $\tau$ 比较的标量。接受则提交身份并更新轨迹；拒绝则把检测退回未匹配池，由下一步关联重新面对。虚线框不在运行时路径上：它是必须在门控被允许查看任何测试来源之前完成并冻结的拟合与校准。}
 \label{fig:framework-zh}
 \end{figure*}
