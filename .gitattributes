@@ -1,2 +1,5 @@
 /runs/reconnect_supplement/round2/**/*.json -text whitespace=cr-at-eol
 /runs/reconnect_supplement/round2/**/*.csv -text whitespace=cr-at-eol
+/runs/reconnect_supplement/round3/**/*.json -text whitespace=cr-at-eol
+/runs/reconnect_supplement/round3/**/*.csv -text whitespace=cr-at-eol
+/reconnect_study/round3_*.py -text whitespace=cr-at-eol

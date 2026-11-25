@@ -1,0 +1,44 @@
+{
+  "mid": {
+    "target": 5.186813186813187,
+    "tolerance": 0.25934065934065936,
+    "policy": "boost_46",
+    "threshold": 1.323834753874936,
+    "mean_accepted": 5.175824175824176,
+    "deviation": -0.01098901098901095,
+    "matched": true,
+    "file": "runs\\reconnect_supplement\\round3\\boost\\test.json",
+    "calibration_matched": true,
+    "calibration_comparison": {
+      "spread": 0.12087912087912045,
+      "absolute_target_deviations": [
+        0.1098901098901095,
+        0.01098901098901095
+      ],
+      "spread_within_tolerance": true,
+      "target_deviations_within_tolerance": true,
+      "matched": true
+    }
+  },
+  "high": {
+    "target": 6.434065934065934,
+    "tolerance": 0.3217032967032967,
+    "policy": "boost_35",
+    "threshold": 1.2099728566259427,
+    "mean_accepted": 6.428571428571429,
+    "deviation": -0.005494505494505475,
+    "matched": true,
+    "file": "runs\\reconnect_supplement\\round3\\boost\\test.json",
+    "calibration_matched": true,
+    "calibration_comparison": {
+      "spread": 0.0219780219780219,
+      "absolute_target_deviations": [
+        0.027472527472527375,
+        0.005494505494505475
+      ],
+      "spread_within_tolerance": true,
+      "target_deviations_within_tolerance": true,
+      "matched": true
+    }
+  }
+}

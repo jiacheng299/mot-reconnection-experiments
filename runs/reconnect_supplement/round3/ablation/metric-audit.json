@@ -1,0 +1,19 @@
+{
+  "byte": {
+    "paired_intervals_verified": 8,
+    "new_trace_count": 148,
+    "independent_HOTA": {
+      "summary15_40": 44.966170026189175,
+      "summary15_49": 44.83296205782576
+    }
+  },
+  "bot": {
+    "paired_intervals_verified": 12,
+    "new_trace_count": 222,
+    "independent_HOTA": {
+      "summary15_35": 45.110702202340065,
+      "summary15_45": 45.10450142109874,
+      "summary15_54": 44.95860932417345
+    }
+  }
+}

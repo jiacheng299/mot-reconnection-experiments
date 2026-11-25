@@ -25,3 +25,23 @@ python -m unittest discover -s reconnect_study/tests -v
 ```
 
 仓库提供实验代码、模型评分配置、结果摘要与逐视频统计；公开数据仅提供来源、划分和摘要。较大的检测缓存、逐帧轨迹、原始媒体、虚拟环境及临时文件留在原工作区。
+
+## 第三轮补实验
+
+[一页验收说明](runs/reconnect_supplement/round3/round3-handoff.zh-CN.md) · [策略结果](runs/reconnect_supplement/round3/policy-results.csv) · [配对差值](runs/reconnect_supplement/round3/paired-effects.csv) · [主图](runs/reconnect_supplement/round3/main-effects.pdf)
+
+用归档逐视频统计重建表格和主图。此步骤使用仓库内文件。
+
+```powershell
+python -m reconnect_study.round3_summary
+python -m reconnect_study.round3_figure
+```
+
+完整闭环复跑需按[数据指引](docs/datasets.md)准备冻结输入，并按[消融复现步骤](runs/reconnect_supplement/round3/ablation/reproduction.md)和 [BoostTrack 评分复现步骤](runs/reconnect_supplement/round3/boost/reproduction.md)在独立工作副本运行。开发数值核验使用以下固定的作者代码。
+
+```powershell
+git clone https://github.com/vukasin-stanojevic/BoostTrack.git runs/reconnect_supplement/round3/boost/upstream/BoostTrack
+git -C runs/reconnect_supplement/round3/boost/upstream/BoostTrack checkout --detach fb5bfc3a8f067476565e753b3a73df4d757c9d03
+```
+
+完整回放在本地重建逐帧轨迹。HOTA 独立核验读取这些轨迹，配对重采样读取逐视频统计。ByteTrack 使用宿主状态坐标重排，运动版 BoT-SORT 使用一阶协方差近似。第三轮复用此前分析过的 74 个官方测试视频，属于探索性敏感性分析。

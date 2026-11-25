@@ -1,0 +1,16 @@
+{
+  "byte": {
+    "new_policy_traces": 148,
+    "recomputed_paired_effects": 8,
+    "verified_base_source_count": 74,
+    "fixed_gap_denominator": 3155,
+    "training_rows": 444
+  },
+  "bot": {
+    "new_policy_traces": 222,
+    "recomputed_paired_effects": 12,
+    "verified_base_source_count": 74,
+    "fixed_gap_denominator": 3155,
+    "training_rows": 329
+  }
+}

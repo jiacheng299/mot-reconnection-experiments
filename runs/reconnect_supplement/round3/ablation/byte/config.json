@@ -1,0 +1,199 @@
+{
+  "training": {
+    "rows": 444,
+    "positive": 201,
+    "ranking_weight": 0.0,
+    "iterations": 200,
+    "learning_rate": 0.04,
+    "l2": 0.002,
+    "seed": 362,
+    "device": "cuda",
+    "hardware": "NVIDIA GeForce RTX 3060 Ti",
+    "peak_cuda_allocated_bytes": 17078784,
+    "objective": 0.5211023688316345,
+    "verified_feature_prefix_rows": 444,
+    "verified_12_thresholds": [
+      -0.8504500937433502,
+      0.18667049735276087,
+      1.018192810754371,
+      1.8662713365286694,
+      2.3929843357618807
+    ],
+    "verified_23_thresholds": [
+      -0.9088621217427929,
+      0.08641821837593612,
+      1.0435932323679038,
+      2.0183574779931552,
+      2.795087761367484
+    ]
+  },
+  "score": {
+    "offset": -0.2795625627040863,
+    "weights": [
+      -0.11581119894981384,
+      0.2226087749004364,
+      0.2986069619655609,
+      0.442153662443161,
+      0.186710387468338,
+      -0.11614617705345154,
+      -0.4709271788597107,
+      -0.009378050453960896,
+      0.020237045362591743,
+      0.3513997793197632,
+      -0.34734219312667847,
+      -0.24185112118721008,
+      0.17771509289741516,
+      -0.0017219166038557887,
+      0.0014438173966482282
+    ],
+    "center": [
+      1.171588659286499,
+      2.940152168273926,
+      0.6692723035812378,
+      0.5390523672103882,
+      0.6047906875610352,
+      0.0954582616686821,
+      0.2330866903066635,
+      0.5921260118484497,
+      0.6401172876358032,
+      0.5005601048469543,
+      0.3046313524246216,
+      0.4805787205696106,
+      0.40454939007759094,
+      0.33157840371131897,
+      0.5574878454208374
+    ],
+    "scale": [
+      0.44274014234542847,
+      0.8910723924636841,
+      0.09919319301843643,
+      0.20080868899822235,
+      0.16730809211730957,
+      0.061619292944669724,
+      0.17593839764595032,
+      0.1331670880317688,
+      0.4635184705257416,
+      0.47453057765960693,
+      0.40034541487693787,
+      0.48697251081466675,
+      0.4761759638786316,
+      0.4171185791492462,
+      0.4800664484500885
+    ]
+  },
+  "added_features": [
+    "min_margin",
+    "absolute_margin_difference",
+    "max_log_candidate_count"
+  ],
+  "tracker": "bytetrack",
+  "acceptance_cap": 12,
+  "study_manifest_sha256": "e5bdbbd22e67b7858623c560dcd19af46d60b8674b61f98a00364aa8ba8f9481",
+  "inputs": {
+    "manifest": {
+      "path": "runs\\reconnect_study\\personpath22\\manifest.json",
+      "sha256": "e5bdbbd22e67b7858623c560dcd19af46d60b8674b61f98a00364aa8ba8f9481"
+    },
+    "old_config": {
+      "path": "runs\\reconnect_supplement\\round2\\byte\\B12\\config.json",
+      "sha256": "dfc6f635b07af97ac85cac73b2c96b7af67e7fac8e389760ee41c9e8b137d25d"
+    },
+    "old_calibration": {
+      "path": "runs\\reconnect_supplement\\round2\\byte\\B12\\calibration-dense.json",
+      "sha256": "b56695693f2fbc0747cbf79d1369b56c7555440a8708b8ca4e218104e93f4ee5"
+    },
+    "old_inputs": {
+      "path": "runs\\reconnect_supplement\\round2\\byte\\input-splits.json",
+      "sha256": "49e8d07156c38bfe6ce5d05acc32c0f2a9042b920c6ee0402ef842f0f0fea9dd"
+    },
+    "old_lock": {
+      "path": "runs\\reconnect_supplement\\round2\\byte\\B12\\locked.json",
+      "sha256": "a25e8a1370f2899927c33013882565266462b379400ae8cd6ad5332a4bd04c68"
+    },
+    "old_test_integrity": {
+      "path": "runs\\reconnect_supplement\\round2\\byte\\test-integrity.json",
+      "sha256": "e6b5f9b7cc04a636974fc3805754cc1d5366ec1b383b4dbfd5864b3dcf06f6fe"
+    },
+    "development": {
+      "path": "runs\\reconnect_study\\personpath22\\development-byte.json",
+      "sha256": "7b92f97df39e6289cf16f3c42bc497a812b35040ac712091a82ec27b9c2335c5"
+    }
+  },
+  "source_sha256": {
+    "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\reconnect_study\\round3_ablation.py": "13b77d1ce1441710433986a85dcc1242860565306d764f26cdc09d432d1851e7",
+    "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\reconnect_study\\scoring.py": "982453b659093495bcb791cf820f5134799a06da622c131c3082a229922dedd3",
+    "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\reconnect_study\\tracker.py": "2dff48f99f810f5b884f46d9c562a4b28af875306b0cc2a3d8280560bf5f21f6",
+    "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\reconnect_study\\supplement_matched.py": "52d6b9c584e61e975d33c62b2ac74844ef70f3d8f151b372d391d9193d9547e1",
+    "C:\\Users\\25193\\Documents\\ChatGPT\\\u6bd5\u4e1a\u8bba\u6587\u5b9e\u9a8c\u90e8\u5206\\reconnect_study\\study.py": "b2b09bae72df15a8bcbe12ebdbd2d394cd31d8036d4978da01c35092166b2241"
+  },
+  "split_sizes": {
+    "development": 16,
+    "calibration": 91,
+    "test": 74
+  },
+  "thresholds": {
+    "summary15_0": -0.8712002789288589,
+    "summary15_1": 0.1996498191529096,
+    "summary15_2": 1.059178063690394,
+    "summary15_3": 1.8733499548658843,
+    "summary15_4": 2.4340228483343775,
+    "summary15_5": -0.817207336738387,
+    "summary15_6": -0.7837867501204558,
+    "summary15_7": -0.7118478533603382,
+    "summary15_8": -0.6836661974073115,
+    "summary15_9": -0.6218780024654733,
+    "summary15_10": -0.609751196161157,
+    "summary15_11": -0.5835265215568349,
+    "summary15_12": -0.510046317116097,
+    "summary15_13": -0.49258256812076756,
+    "summary15_14": -0.4691953540192986,
+    "summary15_15": -0.43945068375010593,
+    "summary15_16": -0.40849252089480914,
+    "summary15_17": -0.36955895226878127,
+    "summary15_18": -0.33711412732986074,
+    "summary15_19": -0.28479269992798617,
+    "summary15_20": -0.24613490760975076,
+    "summary15_21": -0.2294604076461043,
+    "summary15_22": -0.2105609044036125,
+    "summary15_23": -0.1526195929704755,
+    "summary15_24": -0.07474208470564693,
+    "summary15_25": -0.028727576261439812,
+    "summary15_26": 0.035680831208603284,
+    "summary15_27": 0.06649878672027791,
+    "summary15_28": 0.12478554304846642,
+    "summary15_29": 0.2241625613855264,
+    "summary15_30": 0.24762092998044374,
+    "summary15_31": 0.2594151670594709,
+    "summary15_32": 0.2856536118282162,
+    "summary15_33": 0.3302545492600533,
+    "summary15_34": 0.350387104934945,
+    "summary15_35": 0.3874511002306513,
+    "summary15_36": 0.4415034268263147,
+    "summary15_37": 0.48562866120296155,
+    "summary15_38": 0.5038746505823511,
+    "summary15_39": 0.588997386592051,
+    "summary15_40": 0.6008601828067077,
+    "summary15_41": 0.6494156547702364,
+    "summary15_42": 0.718635091819349,
+    "summary15_43": 0.7669212311976121,
+    "summary15_44": 0.8317531444865959,
+    "summary15_45": 0.8838753817993963,
+    "summary15_46": 0.9348394664249094,
+    "summary15_47": 0.9731115215878396,
+    "summary15_48": 1.0909079166429012,
+    "summary15_49": 1.1436742976320051,
+    "summary15_50": 1.1839677878145505,
+    "summary15_51": 1.2708019063940525,
+    "summary15_52": 1.3846216929834316,
+    "summary15_53": 1.4335069551378739,
+    "summary15_54": 1.4924966281676273,
+    "summary15_55": 1.5154451316785635,
+    "summary15_56": 1.5889548577036967,
+    "summary15_57": 1.6367738484947594,
+    "summary15_58": 1.7258728596686126,
+    "summary15_59": 1.796591618093499,
+    "summary15_60": 1.9669058504070298,
+    "summary15_61": 2.0706217380652503,
+    "summary15_62": 2.1777586688878134
+  }
+}

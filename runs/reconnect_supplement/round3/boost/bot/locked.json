@@ -1,0 +1,71 @@
+{
+  "acceptance_cap": 12,
+  "config_sha256": "3b222979a43851b45118836ab2b4842febd968ede9face69cd51df6f83df1779",
+  "calibration_sha256": "09025e41e96b97d69a3d9c1c085510e9a89882ce6d7e58a2ce3b46b616ec3cd1",
+  "round2_lock_sha256": "56b10504956580049637f2b9b4bced991c440abde60d73aa01121b4de36a7a8f",
+  "selection": {
+    "low": {
+      "target": 3.656593406593407,
+      "tolerance": 0.18282967032967035,
+      "policy": "boost_bot_53",
+      "threshold": 1.407757428009799,
+      "mean_accepted": 3.67032967032967,
+      "deviation": 0.013736263736263243,
+      "matched": true,
+      "calibration_comparison": {
+        "spread": 0.07692307692307665,
+        "absolute_target_deviations": [
+          0.0631868131868134,
+          0.013736263736263243
+        ],
+        "spread_within_tolerance": true,
+        "target_deviations_within_tolerance": true,
+        "matched": true
+      }
+    },
+    "mid": {
+      "target": 4.82967032967033,
+      "tolerance": 0.2414835164835165,
+      "policy": "boost_bot_44",
+      "threshold": 1.3216235702502186,
+      "mean_accepted": 4.802197802197802,
+      "deviation": -0.027472527472528263,
+      "matched": true,
+      "calibration_comparison": {
+        "spread": 0.05494505494505475,
+        "absolute_target_deviations": [
+          0.08241758241758301,
+          0.027472527472528263
+        ],
+        "spread_within_tolerance": true,
+        "target_deviations_within_tolerance": true,
+        "matched": true
+      }
+    },
+    "high": {
+      "target": 6.002747252747253,
+      "tolerance": 0.3001373626373627,
+      "policy": "boost_bot_33",
+      "threshold": 1.2145247541080426,
+      "mean_accepted": 6.021978021978022,
+      "deviation": 0.019230769230769162,
+      "matched": true,
+      "calibration_comparison": {
+        "spread": 0.0,
+        "absolute_target_deviations": [
+          0.019230769230769162,
+          0.019230769230769162
+        ],
+        "spread_within_tolerance": true,
+        "target_deviations_within_tolerance": true,
+        "matched": true
+      }
+    }
+  },
+  "test_policies": [
+    "boost_bot_33",
+    "boost_bot_44",
+    "boost_bot_53"
+  ],
+  "previously_analyzed_test_reused": true
+}

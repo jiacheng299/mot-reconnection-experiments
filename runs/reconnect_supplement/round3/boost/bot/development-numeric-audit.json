@@ -1,0 +1,136 @@
+{
+  "admission": "BoostTrack-v1 host-state adapter; not the full BoostTrack tracker",
+  "upstream_url": "https://github.com/vukasin-stanojevic/BoostTrack",
+  "upstream_commit": "fb5bfc3a8f067476565e753b3a73df4d757c9d03",
+  "author_mode": [
+    "--no_reid",
+    "--btpp_arg_iou_boost",
+    "--btpp_arg_no_sb",
+    "--btpp_arg_no_vt"
+  ],
+  "shape_similarity": "v1 released implementation; height term also divides by max(dw, tw)",
+  "state_adaptation": "BoT-SORT xywh mapped to xyhr by width/height and J Sigma J^T; first-order approximation",
+  "unaltered_host_track_rows_checked": 23995,
+  "manifest_sha256": "e5bdbbd22e67b7858623c560dcd19af46d60b8674b61f98a00364aa8ba8f9481",
+  "baseline_sha256": "136eb5ac74d32c62bb586f3e1d9d0e01284bcf66eea7714c01a9632fcf61d13f",
+  "development_sources": 16,
+  "matrices_checked": 1746,
+  "matrix_elements_checked": 420620,
+  "rank_columns_checked": 26694,
+  "maximum_absolute_error": 0.0,
+  "frozen_actions_checked": 427,
+  "sequences": [
+    {
+      "name": "uid_vid_00002",
+      "frames": 126,
+      "actions": 15,
+      "boost_score_min": 0.4741457937671667,
+      "boost_score_max": 1.5584968901933625
+    },
+    {
+      "name": "uid_vid_00007",
+      "frames": 83,
+      "actions": 11,
+      "boost_score_min": 0.43318817840516605,
+      "boost_score_max": 1.4218192937767702
+    },
+    {
+      "name": "uid_vid_00017",
+      "frames": 84,
+      "actions": 0,
+      "boost_score_min": null,
+      "boost_score_max": null
+    },
+    {
+      "name": "uid_vid_00023",
+      "frames": 116,
+      "actions": 70,
+      "boost_score_min": 0.24466357528010524,
+      "boost_score_max": 1.6164405774823192
+    },
+    {
+      "name": "uid_vid_00025",
+      "frames": 171,
+      "actions": 1,
+      "boost_score_min": 0.8862200780159276,
+      "boost_score_max": 0.8862200780159276
+    },
+    {
+      "name": "uid_vid_00033",
+      "frames": 111,
+      "actions": 19,
+      "boost_score_min": 0.4462498877580302,
+      "boost_score_max": 1.4717103979040456
+    },
+    {
+      "name": "uid_vid_00037",
+      "frames": 54,
+      "actions": 22,
+      "boost_score_min": 0.5040429607114171,
+      "boost_score_max": 1.523128673349047
+    },
+    {
+      "name": "uid_vid_00054",
+      "frames": 150,
+      "actions": 55,
+      "boost_score_min": 0.38828189613012376,
+      "boost_score_max": 1.5417859509579044
+    },
+    {
+      "name": "uid_vid_00055",
+      "frames": 131,
+      "actions": 31,
+      "boost_score_min": 0.513117605164298,
+      "boost_score_max": 1.5265942599131204
+    },
+    {
+      "name": "uid_vid_00059",
+      "frames": 151,
+      "actions": 39,
+      "boost_score_min": 0.39685905573013014,
+      "boost_score_max": 1.6028650480922064
+    },
+    {
+      "name": "uid_vid_00061",
+      "frames": 151,
+      "actions": 7,
+      "boost_score_min": 0.6031653656978954,
+      "boost_score_max": 1.2464368212560575
+    },
+    {
+      "name": "uid_vid_00089",
+      "frames": 89,
+      "actions": 63,
+      "boost_score_min": 0.28068952261028995,
+      "boost_score_max": 1.4844122361299041
+    },
+    {
+      "name": "uid_vid_00194",
+      "frames": 52,
+      "actions": 5,
+      "boost_score_min": 0.4811538776418072,
+      "boost_score_max": 1.5191926112862046
+    },
+    {
+      "name": "uid_vid_00199",
+      "frames": 101,
+      "actions": 30,
+      "boost_score_min": 0.2904855237836547,
+      "boost_score_max": 1.6395468798540953
+    },
+    {
+      "name": "uid_vid_00203",
+      "frames": 105,
+      "actions": 57,
+      "boost_score_min": 0.2759762435309496,
+      "boost_score_max": 1.7854731216829223
+    },
+    {
+      "name": "uid_vid_00208",
+      "frames": 92,
+      "actions": 2,
+      "boost_score_min": 1.1545205499598337,
+      "boost_score_max": 1.4219106479193062
+    }
+  ]
+}

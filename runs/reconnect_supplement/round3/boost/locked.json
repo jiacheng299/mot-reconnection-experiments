@@ -1,0 +1,31 @@
+{
+  "acceptance_cap": 12,
+  "config_sha256": "bfa5ab84fd3ed6fb3d68411deab1de155fc5cc2eed8c610cb5e93daca1e04ada",
+  "calibration_sha256": "749073841077b62e1d6177e3040e82d50e3d53d6e5f08334f3dbbf06c73532b8",
+  "round2_lock_sha256": "a25e8a1370f2899927c33013882565266462b379400ae8cd6ad5332a4bd04c68",
+  "selection": {
+    "mid": {
+      "target": 5.186813186813187,
+      "tolerance": 0.25934065934065936,
+      "policy": "boost_46",
+      "threshold": 1.323834753874936,
+      "mean_accepted": 5.175824175824176,
+      "deviation": -0.01098901098901095,
+      "matched": true
+    },
+    "high": {
+      "target": 6.434065934065934,
+      "tolerance": 0.3217032967032967,
+      "policy": "boost_35",
+      "threshold": 1.2099728566259427,
+      "mean_accepted": 6.428571428571429,
+      "deviation": -0.005494505494505475,
+      "matched": true
+    }
+  },
+  "test_policies": [
+    "boost_35",
+    "boost_46"
+  ],
+  "previously_analyzed_test_reused": true
+}

@@ -1,0 +1,21 @@
+{
+  "byte": {
+    "HOTA": {
+      "boost_35": 44.77624390507572,
+      "boost_46": 44.65927661270614
+    },
+    "trace_count": 148,
+    "intervals_verified": 4,
+    "test_sha256": "b538a51aa162709c369d3a6979a0e408500c450f304367b82d3ce66c772645e6"
+  },
+  "bot": {
+    "HOTA": {
+      "boost_bot_33": 44.940454563049606,
+      "boost_bot_44": 44.72167977471216,
+      "boost_bot_53": 44.63683921583383
+    },
+    "trace_count": 222,
+    "intervals_verified": 6,
+    "test_sha256": "61364c919216cca234dfe8e8458bbf3399869b508c6a258ce4aa6364f213bd5f"
+  }
+}

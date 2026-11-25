@@ -1,0 +1,13 @@
+﻿tracker,cap,work_point,comparison,changed_policy,reference_policy,changed_accepted,reference_accepted,target,tolerance,calibration_matched,test_matched,test_pairwise_matched,test_absolute_target_matched,metric,delta_pp,ci95_low,ci95_high,valid_replicas
+botsort-motion-only,12,low,23_minus_15,structured_55,summary15_54,222,225,3.656593406593407,0.18282967032967035,True,False,True,False,gap_recovery,0.0,-0.12831720187233786,0.12771494057080826,10000
+botsort-motion-only,12,low,23_minus_15,structured_55,summary15_54,222,225,3.656593406593407,0.18282967032967035,True,False,True,False,wrong_per_acceptance,-1.1531531531531525,-3.021377824943601,0.4600956493120318,10000
+botsort-motion-only,12,low,15_minus_12,summary15_54,linear_55,225,201,3.656593406593407,0.18282967032967035,True,False,False,False,gap_recovery,0.0,-0.08941113005742116,0.09439973590864043,10000
+botsort-motion-only,12,low,15_minus_12,summary15_54,linear_55,225,201,3.656593406593407,0.18282967032967035,True,False,False,False,wrong_per_acceptance,1.73134328358209,-1.2201799206040778,4.865091150716963,10000
+botsort-motion-only,12,mid,23_minus_15,structured_46,summary15_45,293,291,4.82967032967033,0.2414835164835165,True,False,True,False,gap_recovery,0.0,-0.2659599739602291,0.3043667134008995,10000
+botsort-motion-only,12,mid,23_minus_15,structured_46,summary15_45,293,291,4.82967032967033,0.2414835164835165,True,False,True,False,wrong_per_acceptance,0.8972238837479329,-1.5590183879272972,3.5421256241987304,10000
+botsort-motion-only,12,mid,15_minus_12,summary15_45,linear_2,291,284,4.82967032967033,0.2414835164835165,True,False,True,False,gap_recovery,0.1901743264659278,0.025118529018861267,0.4085349766800494,10000
+botsort-motion-only,12,mid,15_minus_12,summary15_45,linear_2,291,284,4.82967032967033,0.2414835164835165,True,False,True,False,wrong_per_acceptance,0.2468418759982577,-2.900246007422835,3.275348285130587,10000
+botsort-motion-only,12,high,23_minus_15,structured_34,summary15_35,367,359,6.002747252747253,0.3001373626373627,True,False,True,False,gap_recovery,0.03169572107765417,-0.1693212484007402,0.20551967116852615,10000
+botsort-motion-only,12,high,23_minus_15,structured_34,summary15_35,367,359,6.002747252747253,0.3001373626373627,True,False,True,False,wrong_per_acceptance,-0.4918294080590191,-2.462324102399521,1.4020840208952583,10000
+botsort-motion-only,12,high,15_minus_12,summary15_35,linear_37,359,356,6.002747252747253,0.3001373626373627,True,False,True,False,gap_recovery,0.34865293185420004,0.06409387950270938,0.6367169336436094,10000
+botsort-motion-only,12,high,15_minus_12,summary15_35,linear_37,359,356,6.002747252747253,0.3001373626373627,True,False,True,False,wrong_per_acceptance,-0.1901348940565234,-4.043179141117287,3.800263698703511,10000

@@ -1,0 +1,9 @@
+﻿tracker,cap,work_point,comparison,changed_policy,reference_policy,changed_accepted,reference_accepted,target,tolerance,calibration_matched,test_matched,test_pairwise_matched,test_absolute_target_matched,metric,delta_pp,ci95_low,ci95_high,valid_replicas
+bytetrack,12,mid,23_minus_15,structured_48,summary15_49,327,318,5.186813186813187,0.25934065934065936,True,False,True,False,gap_recovery,-0.03169572107765556,-0.20476330772404758,0.11858176936148698,10000
+bytetrack,12,mid,23_minus_15,structured_48,summary15_49,327,318,5.186813186813187,0.25934065934065936,True,False,True,False,wrong_per_acceptance,1.6040620852807108,-1.4314524173301784,4.4827050609641015,10000
+bytetrack,12,mid,15_minus_12,summary15_49,linear_49,318,317,5.186813186813187,0.25934065934065936,True,False,True,False,gap_recovery,0.03169572107765556,0.0,0.09533286711918318,10000
+bytetrack,12,mid,15_minus_12,summary15_49,linear_49,318,317,5.186813186813187,0.25934065934065936,True,False,True,False,wrong_per_acceptance,-0.06150427553915372,-1.2739316105228689,1.123385493805619,10000
+bytetrack,12,high,23_minus_15,structured_42,summary15_40,381,386,6.434065934065934,0.3217032967032967,True,False,True,False,gap_recovery,0.1901743264659278,0.0,0.5258330223701326,10000
+bytetrack,12,high,23_minus_15,structured_42,summary15_40,381,386,6.434065934065934,0.3217032967032967,True,False,True,False,wrong_per_acceptance,-3.2937592645478855,-5.822545987575803,-0.9228094075403962,10000
+bytetrack,12,high,15_minus_12,summary15_40,linear_40,386,393,6.434065934065934,0.3217032967032967,True,False,True,False,gap_recovery,0.03169572107765556,-0.06451664949151094,0.1600064102564092,10000
+bytetrack,12,high,15_minus_12,summary15_40,linear_40,386,393,6.434065934065934,0.3217032967032967,True,False,True,False,wrong_per_acceptance,0.007910453664516925,-1.2447828921705268,1.265522201108985,10000

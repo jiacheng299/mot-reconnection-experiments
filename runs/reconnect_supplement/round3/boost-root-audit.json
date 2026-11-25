@@ -1,0 +1,184 @@
+{
+  "byte": {
+    "verified_trace_hashes": 148,
+    "calibration_and_config_hashes_pass": true,
+    "recomputed_effects": {
+      "mid": {
+        "structured_and_external": [
+          [
+            69,
+            327,
+            383,
+            3155
+          ],
+          [
+            109,
+            315,
+            377,
+            3155
+          ]
+        ],
+        "effects": {
+          "gap_recovery": {
+            "delta_percentage_points": 0.1901743264659264,
+            "empirical_95_percent_interval": [
+              -0.2970507689066754,
+              0.7047110078890142
+            ],
+            "valid_replicas": 10000
+          },
+          "wrong_per_acceptance": {
+            "delta_percentage_points": -13.50225717198194,
+            "empirical_95_percent_interval": [
+              -18.8847488301309,
+              -8.395047645283181
+            ],
+            "valid_replicas": 10000
+          }
+        }
+      },
+      "high": {
+        "structured_and_external": [
+          [
+            98,
+            381,
+            398,
+            3155
+          ],
+          [
+            152,
+            388,
+            392,
+            3155
+          ]
+        ],
+        "effects": {
+          "gap_recovery": {
+            "delta_percentage_points": 0.1901743264659278,
+            "empirical_95_percent_interval": [
+              -0.26310025228316014,
+              0.6364933460700801
+            ],
+            "valid_replicas": 10000
+          },
+          "wrong_per_acceptance": {
+            "delta_percentage_points": -13.453472955055872,
+            "empirical_95_percent_interval": [
+              -19.05695392772822,
+              -8.05678771635308
+            ],
+            "valid_replicas": 10000
+          }
+        }
+      }
+    }
+  },
+  "bot": {
+    "verified_trace_hashes": 222,
+    "calibration_and_config_hashes_pass": true,
+    "recomputed_effects": {
+      "low": {
+        "structured_and_external": [
+          [
+            30,
+            222,
+            327,
+            3155
+          ],
+          [
+            53,
+            214,
+            335,
+            3155
+          ]
+        ],
+        "effects": {
+          "gap_recovery": {
+            "delta_percentage_points": -0.25356576862123614,
+            "empirical_95_percent_interval": [
+              -0.825927781001166,
+              0.2951146699185841
+            ],
+            "valid_replicas": 10000
+          },
+          "wrong_per_acceptance": {
+            "delta_percentage_points": -11.252841626673401,
+            "empirical_95_percent_interval": [
+              -17.31504550009298,
+              -5.320062640795195
+            ],
+            "valid_replicas": 10000
+          }
+        }
+      },
+      "mid": {
+        "structured_and_external": [
+          [
+            57,
+            293,
+            333,
+            3155
+          ],
+          [
+            83,
+            273,
+            340,
+            3155
+          ]
+        ],
+        "effects": {
+          "gap_recovery": {
+            "delta_percentage_points": -0.22187004754358197,
+            "empirical_95_percent_interval": [
+              -0.7097658481484785,
+              0.2995301490612464
+            ],
+            "valid_replicas": 10000
+          },
+          "wrong_per_acceptance": {
+            "delta_percentage_points": -10.949005488254631,
+            "empirical_95_percent_interval": [
+              -18.090468582009006,
+              -3.8369642184500785
+            ],
+            "valid_replicas": 10000
+          }
+        }
+      },
+      "high": {
+        "structured_and_external": [
+          [
+            81,
+            367,
+            342,
+            3155
+          ],
+          [
+            110,
+            346,
+            342,
+            3155
+          ]
+        ],
+        "effects": {
+          "gap_recovery": {
+            "delta_percentage_points": 0.0,
+            "empirical_95_percent_interval": [
+              -0.42360933688251334,
+              0.4489874512064129
+            ],
+            "valid_replicas": 10000
+          },
+          "wrong_per_acceptance": {
+            "delta_percentage_points": -9.721062827802365,
+            "empirical_95_percent_interval": [
+              -15.998001769724185,
+              -3.655019055359807
+            ],
+            "valid_replicas": 10000
+          }
+        }
+      }
+    }
+  }
+}
