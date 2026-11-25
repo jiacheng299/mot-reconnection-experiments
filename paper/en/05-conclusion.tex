@@ -1,0 +1,23 @@
+\section{Conclusion}
+
+Reconnection is a decision, and it can be decided separately from the
+association rule that produced it. A scalar gate that reads only detector
+confidence, track state and the margins to competing assignments lowers the
+share of failed reactivations from 40.5\% to 25.7\% on the official
+PersonPath22 test subset when admission counts are matched, and by 13.45
+points against the association score of a published tracker ported into the
+same host. The effect is carried by the product terms of the score, and it
+is established at one operating point of five.
+
+The price is visible and we keep it visible: relative to an unconstrained
+ByteTrack the gate removes 1,397 failed reactivations and 136 recovered
+gaps, and HOTA falls by 1.65 points. A system that cannot tolerate a silent
+identity switch can pay that price; one that is scored purely on HOTA
+should not.
+
+Two steps follow directly. The first is the comparison this study does not
+make: an appearance descriptor on the same proposals, which would show how
+much of the remaining failure is geometric ambiguity and how much is simply
+missing evidence. The second is a set of test sources that no earlier round
+of the analysis has touched, which is what would turn the observed
+proportions into something a reader can generalise from.

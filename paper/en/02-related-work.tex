@@ -1,0 +1,57 @@
+\section{Related Work}
+
+\subsection{Association and reactivation in online trackers}
+
+Tracking-by-detection pipelines pair a detector with a data association
+rule. SORT \cite{bewley2016sort} fixed the modern form: a Kalman filter
+predicts each track, and a Hungarian assignment on box overlap consumes
+the detections. DeepSORT \cite{wojke2017deepsort} added an appearance
+metric to the same cascade. ByteTrack \cite{zhang2022bytetrack} broke the
+rule that low-confidence detections are discarded, and it introduced the
+track buffer that makes reactivation routine: a track survives thirty
+frames of absence and any later detection above the association threshold
+is re-attached. BoT-SORT \cite{aharon2022botsort} improved the motion model
+and compensated camera movement; OC-SORT \cite{cao2023ocsort} replaced the
+filter state used in matching with observation-centered estimates.
+
+These systems change what counts as a good match. Reconnection is a
+by-product of that choice: the tracker keeps a lost track alive, and
+whatever clears the threshold is accepted. The buffer length and the
+threshold decide how often this happens, and neither is a statement about
+whether a particular return is the same person. That is the gap we
+address.
+
+\subsection{Appearance-based re-identification}
+
+The standard answer to an ambiguous return is an appearance descriptor.
+DeepSORT \cite{wojke2017deepsort} introduced the idea, and later trackers
+keep a re-identification branch alongside motion, or link tracklets after
+tracking with a learned similarity. Where a trained embedding model and
+enough pixels per crop are available, this signal is strong, and it
+addresses occlusion gaps that geometry cannot resolve.
+
+It also imposes conditions we do not assume. It requires a network, a
+feature gallery or a re-identification budget, and crops of usable
+resolution at both ends of the gap. On sparse annotation grids and on
+small or heavily occluded boxes those conditions often fail together. We
+therefore restrict the study to detection-only evidence and treat
+appearance as the natural extension rather than a missing component. The
+comparison we do make is against an association score from a published
+tracker, BoostTrack \cite{stanjoevic2024boosttrack}, ported into the same
+host so that only the scoring component changes.
+
+\subsection{Selection and risk control}
+
+Gating proposals is a selection problem: a threshold is chosen from data,
+and the chosen threshold's measured risk is optimistic by construction.
+Learn-then-test \cite{angelopoulos2021learn} calibrates this choice over a
+family of policies and returns a valid risk level. Closely related work
+bounds the coverage of candidate transition sets in tracking
+\cite{li2022pac} and propagates detector-box uncertainty through the
+tracking pipeline \cite{su2024motcup}. We use the vocabulary of that line
+of work to describe
+what our selection rule does, and we report the selected policies'
+observed failure proportions without claiming a calibrated bound. What
+distinguishes the present study is not the statistics but the object being
+measured: committed reactivations after closed-loop replay, counted
+separately from the gap recoveries they produce.

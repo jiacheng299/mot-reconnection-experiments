@@ -1,0 +1,54 @@
+\section{Selective track reactivation}
+
+A tracker that loses a person and finds them again has to decide whether
+the return belongs to the old identity. Accept, and the track continues;
+refuse, and the detection re-enters the association pool, changing every
+proposal that follows. We place a scalar gate in front of that commitment.
+The gate reads the detector output and the track state and nothing else:
+no appearance network, no gallery, no future frames. That restriction is
+what lets the method run where only a detector and a geometric tracker
+are available.
+
+Let $x$ record the detector confidence, the predicted box residuals, the
+track age and the observed gap, and the costs of the competing one-to-one
+assignments at the frame where the reactivation is proposed. Write $m_r$
+and $m_c$ for the best admissible competitor cost minus the chosen cost in
+the same row or column of the assignment matrix, and use
+$m=\min(m_r,m_c)$ for the weaker side. Base transformations $z(x)$ are
+formed first, the interaction vector second, and its coordinates are
+standardized before fitting
+\begin{align*}
+g(x) &= b+w^\top \phi(x),\\
+\phi(x) &= [z(x),\,m,\,|m_r-m_c|,\,h d,\,h o,\,h m,\,q m,\ldots].
+\end{align*}
+Here $h$ is the transformed elapsed gap, $d$ and $o$ the normalized center
+difference and box overlap, and $q$ the detection confidence. The product
+terms let the weight of motion agreement and of assignment ambiguity move
+with gap length, which a purely additive score cannot express.
+We fit $g$ with regularized logistic loss on annotated development
+proposals. An ablation adds a within-source ranking loss
+$\log(1+\exp(g_{\rm incorrect}-g_{\rm correct}))$.
+A threshold on $g$ governs reactivation. A refused detection returns to
+the tracker as unmatched, so the next association step sees the state that
+decision produced.
+
+\subsection{Fixing the operating point}
+
+A gate is only meaningful if its threshold is fixed before evaluation.
+Candidates are drawn from development score quantiles and, where the
+quantile grid cannot match methods, from a denser $0.35$--$0.97$ sweep in
+steps of $0.01$. Every candidate is replayed on the calibration sources,
+and the operating point is the one that recovers the most gaps while its
+calibration failure proportion stays under a ceiling. We report a relaxed
+and a strict ceiling: a single number would hide the shape of the
+trade-off. Thresholds and their input hashes are written out before any
+test source is read.
+
+The procedure is a selection, and we treat it as one. A sweep scores up to
+63 thresholds, and taking the best of them on the data that also set the
+ceiling tilts the resulting risk downward. Learn-then-test calibrates this
+kind of choice over a policy family \cite{angelopoulos2021learn}, and
+guarantees exist for candidate-set coverage \cite{li2022pac} and for
+detector uncertainty \cite{su2024motcup}; we do not apply them here. Every
+failure proportion in what follows is an observation on the named split,
+not a bound on unseen sources.

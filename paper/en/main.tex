@@ -1,0 +1,56 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\title{Selective Identity Reconnection in Online\\ Multi-Object Tracking}
+\author{}
+\date{}
+
+\begin{document}
+
+\makeatletter
+\twocolumn[{
+\begin{@twocolumnfalse}
+\maketitle
+\vspace{-1.2em}
+\begin{abstract}
+\noindent An online tracker that recovers a lost person must decide whether
+the return belongs to the old identity, and a wrong decision is silent: the
+wrong person inherits the identifier and every later frame follows. We treat
+reactivation as a decision and place a scalar gate in front of it. The gate
+reads detector confidence, track state, and the margins between the proposed
+assignment and its competitors; it uses no appearance descriptor, so it
+applies where only a detection model and a geometric tracker exist.
+Thresholds are fixed on calibration sources before any test source is read.
+On the official PersonPath22 test subset, with admission counts matched
+across methods, the gate fails in 98 of 381 evaluated reactivations against
+158 of 390 for the native association cost, and fails less often than the
+association score of a published tracker ported into the same host, by 9.72
+to 13.50 percentage points. The gain comes from product terms between gap
+length and motion or ambiguity evidence, and holds at one of five operating
+points. The cost is 136 fewer recovered gaps and 1.65 fewer HOTA points than
+an unconstrained tracker.
+
+\vspace{0.4em}
+\noindent\textbf{Keywords:} multi-object tracking; identity reconnection;
+association gating; track recovery; operating-point selection
+\end{abstract}
+\vspace{1.4em}
+\end{@twocolumnfalse}
+}]
+\makeatother
+
+\input{01-introduction.tex}
+\input{02-related-work.tex}
+\input{03-method.tex}
+\input{04-experiments.tex}
+\input{05-conclusion.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+\end{document}

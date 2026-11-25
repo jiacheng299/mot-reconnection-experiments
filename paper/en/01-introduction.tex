@@ -1,0 +1,57 @@
+\section{Introduction}
+
+A tracker that has lost a person and finds them again must decide whether
+the return belongs to the old identity. ByteTrack
+\cite{zhang2022bytetrack} keeps a lost track alive for thirty frames and
+re-attaches any later detection that clears its association threshold.
+When the decision is right, an identity survives an occlusion and the
+trajectory continues. When it is wrong, nothing announces the error: the
+wrong person inherits the identifier, every later frame is attached to
+that identifier, and every count, dwell time or trajectory built on top of
+it is wrong from that moment on. Reconnection failures are silent, which
+is why they deserve more attention than their share of association events
+would suggest.
+
+Work on the problem takes two forms. One improves the association cost
+itself, through motion models, matching cascades and observation-centric
+updates \cite{zhang2022bytetrack,aharon2022botsort,cao2023ocsort}. The
+other adds appearance, either as a re-identification branch inside the
+tracker or as a linking stage after it. We ask a narrower question that
+neither answers directly. Given the proposals a tracker has already made,
+which ones should be committed?
+
+We treat reactivation as a decision and place a scalar gate in front of
+it. The gate reads the detector confidence, the predicted box residuals,
+the track age, the observed gap, and the margins between the proposed
+assignment and its best competitors in the same row and column. A
+regularized logistic score combines these, and product terms let the
+weight of motion agreement and of assignment ambiguity change with gap
+length. A refused detection returns to the tracker as unmatched, so the
+decision changes the state that later frames see. No appearance network is
+trained and no gallery is stored: the gate decides from geometry.
+
+The paper makes four claims. \textbf{First, the effect survives matched
+admission counts.} Counting failures rewards silence, so we re-select
+thresholds until the native association cost, an additive score and the
+interaction score admit the same number of actions per source. At the cap
+of twelve admissions per source, ByteTrack then fails in 98 of 381
+evaluated reactivations against 158 of 390 for its native cost, and
+verified-correct reactivations rise from 232 to 283. \textbf{Second, the
+comparison is against a published score, not only a hand-set threshold.}
+After porting the BoostTrack association similarity into the same host and
+checking the port element by element, the interaction score fails less
+often in all five operating points we tested, by 9.72 to 13.50 percentage
+points. \textbf{Third, the gain comes from the product terms and not from
+extra summaries of the competing assignments}: a score that drops the
+products and keeps only the three summaries has no contrast interval that
+excludes zero at any of the five operating points, while the full score
+lowers the failure proportion by 3.29 points at the point where the effect
+is established. \textbf{Fourth, the cost is
+explicit.} Relative to an unconstrained ByteTrack the gate removes 1,397
+evaluated failures and 136 natural gaps, and HOTA falls by 1.65 points. We
+report that as the price of the decision rather than argue it away.
+
+One boundary applies throughout. The gate uses no appearance signal, so
+the claim covers detection-only pipelines; and every failure proportion in
+this paper is an observation on the split that names it, not a bound on
+unseen sources.

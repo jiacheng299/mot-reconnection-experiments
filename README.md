@@ -11,9 +11,10 @@
 | 英文论文稿 | [方法](reconnect_study/method.tex) · [实验](reconnect_study/experiments.tex) · [PDF](runs/reconnect_study/publication/publication_preview.pdf) |
 | 第二轮补实验 | [一分钟汇报](docs/round2-brief.zh-CN.md) · [数据与复现入口](docs/round2.md) |
 | 获取数据与准备本机环境 | [数据下载指引](docs/datasets.md) · [复跑步骤](reconnect_study/reproduction.md) |
-| 查原始统计结果 | [ByteTrack 测试](runs/reconnect_study/personpath22/test-byte.json) · [BoT-SORT 测试](runs/reconnect_study/personpath22/test-bot.json) · [风险证据](runs/reconnect_study/personpath22/finite-certificate-result.json) · [复现审计](runs/reconnect_study/reproducibility-audit.json) |
+| 查原始统计结果 | [ByteTrack 测试](runs/reconnect_study/personpath22/test-byte.json) · [BoT-SORT 测试](runs/reconnect_study/personpath22/test-bot.json) · [归档风险证据（未进入投稿版本）](runs/reconnect_study/personpath22/finite-certificate-result.json) · [复现审计](runs/reconnect_study/reproducibility-audit.json) |
+| 投稿版本的取材范围 | [研究范围说明](docs/submission-scope.md) |
 
-PersonPath22 的官方测试子集含 74 个视频和 3,155 个自然检测缺口。在相同重连限额下，ByteTrack 的可评估失败比例由 46.77% 降到 35.39%，正确执行的重连由 239 增至 283，恢复自然缺口数由 388 增至 393。不限额原版恢复 529 个缺口。固定 165 视频总体上，预先随机抽样得到的 19.95% 上界适用于按活跃视频等权的风险；事件加权上界另列。两个分析的选点与视频划分有各自的文件。评分训练使用本机 RTX 3060 Ti。
+PersonPath22 的官方测试子集含 74 个视频和 3,155 个自然检测缺口。在相同重连限额下，ByteTrack 的可评估失败比例由 46.77% 降到 35.39%，正确执行的重连由 239 增至 283，恢复自然缺口数由 388 增至 393。不限额原版恢复 529 个缺口。评分训练使用本机 RTX 3060 Ti。投稿版本只报告观测到的失败比例，不包含有限总体风险证书，取舍理由见研究范围说明。
 
 ## 运行入口
 
