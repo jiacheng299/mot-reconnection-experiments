@@ -81,6 +81,59 @@ in the score looks at a future frame, at another source, or at any
 annotation; the training labels attach to proposals after the tracker has
 produced them, and never enter the gate at run time.
 
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=5mm and 8mm,
+  box/.style={draw, rounded corners=2pt, align=center, font=\scriptsize,
+              inner sep=3.5pt, minimum height=6.5mm},
+  arr/.style={-latex, semithick}
+]
+\node[box] (det) {Detector};
+\node[box, right=of det] (asc) {Association\\cascade};
+\node[box, right=of asc, fill=blue!10] (gate) {Gate\\$g(x)\!\geq\!\tau$};
+\node[box, above left=7mm and -2mm of gate] (com) {Commit};
+\node[box, below left=7mm and -2mm of gate] (rej) {Unmatched\\pool};
+\draw[arr] (det) -- (asc);
+\draw[arr] (asc) -- node[above, font=\tiny] {proposal} (gate);
+\draw[arr] (gate) -- node[above, font=\tiny] {accept} (com);
+\draw[arr] (gate) -- node[below, font=\tiny] {refuse} (rej);
+\draw[arr] (rej.west) -- ++(-3mm,0) |- ([yshift=-3mm]asc.south);
+\end{tikzpicture}
+\caption{Where the gate sits. The tracker proposes a reactivation in its
+ordinary association cascade; the gate scores that single proposal and
+either commits it or returns the detection to the unmatched pool. A refused
+detection re-enters the next association step, so the decision changes the
+state that later frames are judged against.}
+\label{fig:gate}
+\end{figure}
+
+\subsection{Reading the coordinates}
+
+The 23 coordinates fall into three groups, and the grouping is also what
+the ablation separates. The first twelve describe the proposal in
+isolation: how long the track has been gone, how old it was when it
+disappeared, how confident the returning detection is and how confident the
+last accepted one was, how well the predicted box matches, and what the
+native assignment cost was. These are the quantities a hand-written
+threshold would use, and a linear score over them is the additive baseline.
+
+The next three describe the competition rather than the proposal. A
+candidate can look good in isolation and still be the wrong choice, because
+a better one sits in the same row of the assignment matrix; $m_r$ and $m_c$
+measure how much room the proposal has on each side, and the minimum, the
+imbalance and the size of the competing set summarize that room. A single
+proposal from a crowded frame and an identical proposal from an empty one
+carry the same first twelve coordinates and different last eleven.
+
+The final eight are products. A product is a statement that one piece of
+evidence matters more under a condition named by another: motion agreement
+matters little across a one-frame gap and a great deal across a five-frame
+gap, and assignment ambiguity matters more when the detection is confident
+than when it is marginal. An additive score can only average those effects
+into one weight; adding the products is the smallest change to the design
+that lets a weight move with its condition.
+
 \subsection{Fixing the operating point}
 
 A gate is only meaningful if its threshold is fixed before evaluation.

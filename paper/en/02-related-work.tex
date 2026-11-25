@@ -80,3 +80,26 @@ different actions, so a comparison that matches only the totals still
 leaves the per-proposal decision unexamined. That is why we match admission
 counts source by source and compare the paired decisions rather than the
 aggregate rate alone.
+
+\subsection{Benchmarks and how tracking is scored}
+
+Three benchmarks shape what a tracking result is allowed to claim. MOT16
+\cite{milan2016mot16} standardised annotation and made crowded pedestrian
+sequences the default test, where clothing and build vary enough that an
+appearance model has something to learn. DanceTrack
+\cite{sun2022dancetrack} removes that advantage by design: its dancers wear
+near-identical costumes, so appearance carries almost no information and
+association has to rest on motion. PersonPath22
+\cite{shuai2022personpath22}, the dataset used here, sits elsewhere again,
+with sparse manual keyframes, a frozen detector and long sequences in which
+the same person leaves the frame and comes back.
+
+Metrics moved with the benchmarks. HOTA \cite{luiten2021hota} separates
+detection accuracy from association accuracy and reports both before
+combining them, which matters when a method changes only the association
+step. PersonPath22 supports a measurement that neither benchmark offers
+directly: because each keyframe carries both a box and an identity, a
+detector gap can be located exactly, and its recovery counted separately
+from the association quality of the sequence as a whole. That separation is
+what lets this paper report an action-level failure proportion next to a
+trajectory-level score instead of choosing between them.

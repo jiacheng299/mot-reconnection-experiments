@@ -365,12 +365,86 @@ cover seven CPU replays of 293 development keyframes each, excluding
 detector inference and evaluation. The gate is a scalar evaluation per
 proposal, so its cost does not grow with the number of tracks.
 
-\subsection{Scope}
-Every analysis after Table~\ref{tab:reconnection-main} reuses the same 74
-assets. The matched-acceptance points, the ablation and the external
-comparison are sensitivity analyses over one set of sources, not
-independent replications, and no interval accounts for the others. The
-gate uses no appearance signal, which bounds the claim to detection-only
-pipelines. The cap of 12 admissions per source is a design parameter: the
-ordering of methods holds across the caps we locked, the absolute numbers
-do not. Cross-dataset results transfer frozen thresholds and nothing else.
+\subsection{Qualitative examples}
+
+Three cases show what the gate changes, and they do not all favour it. In
+\texttt{uid\_vid\_00013}, annotated identity 66 has matched detections at
+keyframes 47 and 49 with keyframe 48 missing. The native association
+threshold declines the return, and the identity is lost; the interaction
+gate accepts it, and the track keeps its number across the gap. The reverse
+occurs in \texttt{uid\_vid\_00008}: identity 20 disappears across keyframes
+66--68, the native threshold re-attaches the old identifier, and the gate
+declines. On the annotation that decline is correct, but it costs the
+recovery. A third case comes from the matched-acceptance round.
+\texttt{uid\_vid\_00019} has identity 143 present at keyframes 22 and 24
+with keyframe 23 missing; the structure interaction score accepts the
+return on track 132, while both the native cost threshold and the additive
+score, replayed independently, decline it.
+
+We report the three together rather than the first two alone. The pair from
+the official split is a disagreement in both directions, and the third case
+shows that the additive score can fail where the full score succeeds, which
+is the mechanism the ablation attributes to the product terms. None of the
+three is evidence on its own; they are there to make the counted decisions
+concrete.
+
+\subsection{Implementation and reproduction}
+
+Every number reported here comes from a closed-loop replay that starts at
+the first frame of each source. The score is fit on the 16 development
+sources for 200 Adam updates with learning rate 0.04, coefficient penalty
+0.002 and seed 362, and with the ranking weight explicitly set to zero.
+Candidate thresholds come from development score quantiles, densified to
+steps of 0.01 when the grid cannot match methods, and are then evaluated on
+the 91 calibration sources. The selected policies run once on the 74 test
+sources with no further adjustment. Input and configuration hashes are
+written to disk before any test source is read, and the stored bytes of the
+frozen configurations are kept unchanged because the audit scripts compare
+them.
+
+Training used a single GeForce RTX 3060 Ti with a peak allocation of about
+17 MB, which reflects the size of the model rather than the size of the
+data: the score is a linear model over 23 coordinates. At run time the gate
+adds roughly 1.5 ms of decision logging per keyframe to a tracker whose
+association step already costs about the same. The repository that
+accompanies this paper carries the frozen configurations, the per-video
+statistics, the audit scripts and the hash manifests; the detection caches
+and per-frame traces stay on the machine that produced them because of
+their size.
+
+\subsection{Threats to validity}
+
+Four threats bound what the numbers can support.
+
+The first is that one test set carries every analysis. The matched
+acceptance points, the ablation, the external comparison and the cap sweep
+all reuse the same 74 assets, so they are sensitivity analyses over one set
+of sources rather than independent replications, and no interval accounts
+for the others. The seven points that still satisfy the between-method
+tolerance are not seven confirmations.
+
+The second is the detector. Its output defines both the proposals the
+tracker sees and the gaps we count, so a different detector would change
+the population of gaps and with it every proportion in the tables. The
+claim is conditional on this frozen FCOS model, which we state rather than
+average over.
+
+The third is the annotation grid. Observations are at 5 Hz, so a two-frame
+gap is a fraction of a second of real time, and a missing detection between
+two annotated keyframes need not be an occlusion; it can be a pose the
+detector does not like. Recovery counts inherit that resolution, and a
+denser grid would likely move both the recovery rates and the failure
+proportions.
+
+The fourth is selection. Thresholds were chosen from a swept family on
+calibration data, and the failure proportions we report are observations on
+the named split. Procedures exist that would attach a calibrated bound to
+such a choice \cite{angelopoulos2021learn}; we do not apply one here, and
+the scope of the guarantee would in any case be the finite panel of
+publisher-hosted assets rather than the open world.
+
+A fifth consideration is closer to the measurement itself: a reactivation
+that cannot be verified against the annotation counts as a failure, which
+penalises a gate that accepts hard cases and flatters one that accepts only
+easy ones. The unverified counts are reported in the accompanying artifacts
+so that a reader who prefers a stricter denominator can recompute.

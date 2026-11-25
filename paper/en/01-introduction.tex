@@ -20,6 +20,15 @@ tracker or as a linking stage after it. We ask a narrower question that
 neither answers directly. Given the proposals a tracker has already made,
 which ones should be committed?
 
+Three deployment settings make that narrow question worth asking. A
+privacy-constrained installation may not permit storing face or clothing
+embeddings at all. An edge device may not have the budget to run a second
+network beside the detector. A retrospective analysis may inherit a tracker
+whose association rule cannot be changed, only wrapped. In each case the
+available lever is not a better match but a better decision about whether to
+commit the match, and in each case the decision has to be made from the
+evidence at that frame.
+
 We treat reactivation as a decision and place a scalar gate in front of
 it. The gate reads the detector confidence, the predicted box residuals,
 the track age, the observed gap, and the margins between the proposed
