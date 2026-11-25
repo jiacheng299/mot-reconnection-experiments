@@ -1,0 +1,47 @@
+\section{Discussion}
+
+The gate does not track better; it declines to commit. Every policy in
+Table~\ref{tab:reconnection-main} below the unconstrained row accepts fewer
+reactivations, and the HOTA gap is the price of that refusal. Keeping the
+distinction matters for how the method should be read. HOTA scores a
+trajectory; the gate scores a decision. The two agree only when every
+decision the gate refuses would also have been wrong, which is not what the
+numbers show: the gate refuses some correct returns along with the wrong
+ones, and the recovery counts are there to say how many.
+
+Why the product terms help at one operating point and not at the other four
+is the question the ablation leaves open. A plausible account is that a
+relaxed ceiling is where the gate has to adjudicate borderline returns, and
+borderline returns are where motion agreement decays with gap length; at a
+strict ceiling the admitted set is small and already unambiguous, so no
+weighting scheme has much left to separate. We offer that as an
+interpretation rather than a tested mechanism. Separating the two would
+require proposals stratified by their true difficulty, and our labels
+record only whether a committed decision turned out to be right.
+
+The cost is worth stating in the units of the application rather than in
+HOTA points. A system that counts people, measures dwell time, or hands
+trajectories to a human reviewer keeps paying for a wrong identity long
+after the frame that caused it; for such a system, trading 136 recovered
+gaps for 1,397 avoided failures is a good exchange. A system judged on HOTA
+alone should not make that trade, and Table~\ref{tab:reconnection-main}
+says so plainly.
+
+Appearance is the obvious complement rather than a competitor. Where a
+re-identification model and usable crops exist, a descriptor answers
+questions this gate cannot: whether two boxes show the same clothing, the
+same gait, the same carried object. What the gate offers instead is a
+version of the decision that needs none of that infrastructure, together
+with a measurement of how far geometry alone gets. A future study that puts
+both signals on the same proposals would separate the failures caused by
+missing evidence from the failures caused by a score that weighed the
+available evidence badly. Our results say the second category is real and
+worth roughly a third of the failure mass; they say nothing about the first.
+
+Two further questions follow from the scope. The first is whether the
+ordering survives on sources no earlier round of the analysis has touched.
+The second is whether the same construction transfers past the cap of
+twelve admissions per source, which is a design parameter rather than a
+measured quantity; Table~\ref{tab:caps} shows the ordering holding across
+caps while the magnitude moves, and a deployment would have to choose the
+cap from its own tolerance for missed returns rather than from this table.

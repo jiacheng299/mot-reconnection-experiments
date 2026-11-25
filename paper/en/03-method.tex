@@ -32,6 +32,55 @@ A threshold on $g$ governs reactivation. A refused detection returns to
 the tracker as unmatched, so the next association step sees the state that
 decision produced.
 
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\caption{Coordinates of the gate. Features 1--12 form $z(x)$; the three
+competition summaries extend it to 15 dimensions, and the eight products
+to 23. A dagger marks a coordinate passed through $\log(1+\cdot)$ before
+standardization. $m_r$ and $m_c$ are the row and column margins;
+$n_r$ and $n_c$ are the sizes of the competing sets; $h$ is the transformed
+gap; $d$, $a$, $o$ are the normalized center distance, area change and
+overlap; $q$ is the detection confidence and $q_0$ the previous one.}
+\label{tab:features}
+\begin{tabular}{rll}
+\hline
+Id & Feature & What it measures \\
+\hline
+1 & \texttt{gap}$^\dagger$ & frames since the track was lost \\
+2 & \texttt{track\_age}$^\dagger$ & age of the track at loss \\
+3 & \texttt{det\_score} & confidence of the return \\
+4 & \texttt{prev\_score} & confidence at the last accepted box \\
+5 & \texttt{iou} & overlap with the predicted box \\
+6 & \texttt{center\_dist}$^\dagger$ & normalized center offset \\
+7 & \texttt{area\_ratio}$^\dagger$ & log area ratio to the last box \\
+8 & \texttt{assign\_cost} & native cost of the proposed pair \\
+9 & \texttt{row\_margin} & best row competitor minus chosen cost \\
+10 & \texttt{col\_margin} & best column competitor minus chosen cost \\
+11 & \texttt{row\_alts}$^\dagger$ & competing entries in the row \\
+12 & \texttt{col\_alts}$^\dagger$ & competing entries in the column \\
+\hline
+13 & $\min(m_r,m_c)$ & weaker side of the competition \\
+14 & $|m_r-m_c|$ & imbalance between the two sides \\
+15 & $\max(n_r,n_c)$ & larger competing set \\
+16 & $h\,d$ & motion disagreement times gap \\
+17 & $h\,a$ & area change times gap \\
+18 & $h\,o$ & overlap times gap \\
+19 & $h\,m$ & ambiguity times gap \\
+20 & $q\,m$ & confidence times ambiguity \\
+21 & $q_0\,q$ & agreement of the two confidences \\
+22 & $d\,m$ & displacement times ambiguity \\
+23 & $a\,m$ & track age times ambiguity \\
+\hline
+\end{tabular}
+\end{table}
+
+Every coordinate is available before the assignment is committed. Nothing
+in the score looks at a future frame, at another source, or at any
+annotation; the training labels attach to proposals after the tracker has
+produced them, and never enter the gate at run time.
+
 \subsection{Fixing the operating point}
 
 A gate is only meaningful if its threshold is fixed before evaluation.

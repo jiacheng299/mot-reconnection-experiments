@@ -21,6 +21,15 @@ threshold decide how often this happens, and neither is a statement about
 whether a particular return is the same person. That is the gap we
 address.
 
+In a two-stage cascade the reactivation decision is made by the same scalar
+threshold that governs ordinary association. That threshold is tuned for
+the bulk of assignments, most of which involve no gap at all, so a return
+after eight frames and a return after one frame are judged by the same
+number; the only per-event variation comes from whatever motion cost the
+filter happened to predict. Nothing in the cascade asks whether the
+evidence at this particular proposal is strong. A learned per-proposal
+score asks exactly that.
+
 \subsection{Appearance-based re-identification}
 
 The standard answer to an ambiguous return is an appearance descriptor.
@@ -29,6 +38,13 @@ keep a re-identification branch alongside motion, or link tracklets after
 tracking with a learned similarity. Where a trained embedding model and
 enough pixels per crop are available, this signal is strong, and it
 addresses occlusion gaps that geometry cannot resolve.
+
+A descriptor is not free of failure modes of its own. Clothing changes,
+matching uniforms and crowds of near-identical people all degrade it, and a
+gallery has to be maintained across the sequence rather than read once. Its
+cost also scales with the number of active tracks instead of the number of
+reactivations, which matters in long sequences where most tracks live for a
+few seconds.
 
 It also imposes conditions we do not assume. It requires a network, a
 feature gallery or a re-identification budget, and crops of usable
@@ -55,3 +71,12 @@ observed failure proportions without claiming a calibrated bound. What
 distinguishes the present study is not the statistics but the object being
 measured: committed reactivations after closed-loop replay, counted
 separately from the gap recoveries they produce.
+
+Selection and filtering are easy to conflate, and the difference decides
+what a fair comparison looks like. A threshold selects one operating point
+for every proposal; a score decides each proposal on its own evidence. Two
+rules that admit the same total number of actions can still commit
+different actions, so a comparison that matches only the totals still
+leaves the per-proposal decision unexamined. That is why we match admission
+counts source by source and compare the paired decisions rather than the
+aggregate rate alone.
