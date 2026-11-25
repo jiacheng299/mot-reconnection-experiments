@@ -4,8 +4,9 @@
 
 Tracking-by-detection pipelines pair a detector with a data association
 rule. SORT \cite{bewley2016sort} fixed the modern form: a Kalman filter
-predicts each track, and a Hungarian assignment on box overlap consumes
-the detections. DeepSORT \cite{wojke2017deepsort} added an appearance
+\cite{kalman1960} predicts each track, and a Hungarian assignment
+\cite{kuhn1955} on box overlap consumes the detections. DeepSORT
+\cite{wojke2017deepsort} added an appearance
 metric to the same cascade. ByteTrack \cite{zhang2022bytetrack} broke the
 rule that low-confidence detections are discarded, and it introduced the
 track buffer that makes reactivation routine: a track survives thirty
@@ -13,6 +14,14 @@ frames of absence and any later detection above the association threshold
 is re-attached. BoT-SORT \cite{aharon2022botsort} improved the motion model
 and compensated camera movement; OC-SORT \cite{cao2023ocsort} replaced the
 filter state used in matching with observation-centered estimates.
+
+A second line removes the separation between detection and tracking
+altogether. JDE \cite{wang2020jde}, CenterTrack \cite{zhou2020centertrack}
+and FairMOT \cite{zhang2021fairmot} predict boxes and identity features in
+one network, so part of the association is absorbed into the detector. The
+saving is computational rather than conceptual: a returning person still has
+to be admitted or refused, and in these trackers that decision is made by
+the same kind of cost threshold as before.
 
 These systems change what counts as a good match. Reconnection is a
 by-product of that choice: the tracker keeps a lost track alive, and
@@ -38,6 +47,15 @@ keep a re-identification branch alongside motion, or link tracklets after
 tracking with a learned similarity. Where a trained embedding model and
 enough pixels per crop are available, this signal is strong, and it
 addresses occlusion gaps that geometry cannot resolve.
+
+StrongSORT \cite{du2023strongsort} revisits the DeepSORT pipeline and adds
+AFLink, a link model that uses spatio-temporal context rather than an
+appearance descriptor to stitch tracklets. That is the closest prior work
+to the present study, and the difference is the setting rather than the
+signal: linking runs after tracking, over a complete sequence, and can look
+both ways in time, while our gate has to decide at the frame where the
+return appears and cannot know whether the sequence would have supported a
+better choice later.
 
 A descriptor is not free of failure modes of its own. Clothing changes,
 matching uniforms and crowds of near-identical people all degrade it, and a
@@ -84,7 +102,8 @@ aggregate rate alone.
 \subsection{Benchmarks and how tracking is scored}
 
 Three benchmarks shape what a tracking result is allowed to claim. MOT16
-\cite{milan2016mot16} standardised annotation and made crowded pedestrian
+\cite{milan2016mot16}, with the survey that later catalogued the family
+\cite{dendorfer2020motchallenge}, standardised annotation and made crowded pedestrian
 sequences the default test, where clothing and build vary enough that an
 appearance model has something to learn. DanceTrack
 \cite{sun2022dancetrack} removes that advantage by design: its dancers wear
@@ -94,7 +113,11 @@ association has to rest on motion. PersonPath22
 with sparse manual keyframes, a frozen detector and long sequences in which
 the same person leaves the frame and comes back.
 
-Metrics moved with the benchmarks. HOTA \cite{luiten2021hota} separates
+Metrics moved with the benchmarks. The CLEAR MOT metrics
+\cite{bernardin2008clear} summarized a run by folding false positives,
+misses and identity switches into a single figure, which is compact but
+hides which of the three a method improved. HOTA \cite{luiten2021hota}
+separates
 detection accuracy from association accuracy and reports both before
 combining them, which matters when a method changes only the association
 step. PersonPath22 supports a measurement that neither benchmark offers
